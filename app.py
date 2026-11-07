@@ -1,15 +1,30 @@
-"""Safe, synthetic-data demo trading simulator. No broker orders, no secrets required."""
-import os, time, math, random, secrets, threading
-from flask import Flask, jsonify, request, Response
+"""Synthetic-data demo trading simulator with a password-protected mobile dashboard.
+No broker orders. All simulator state is in memory and resets on service restart.
+"""
+import os
+import math
+import random
+import secrets
+import threading
+from functools import wraps
+from flask import Flask, jsonify, request, Response, redirect, url_for, session, render_template_string
 
 app = Flask(__name__)
+# A stable session signing key is derived from the existing dashboard token.
+# Change DASHBOARD_TOKEN in Render and GitHub Actions if it was exposed.
+import hashlib
+app.secret_key = hashlib.sha256(('dashboard-session-v1:' + os.environ.get('DASHBOARD_TOKEN', '')).encode()).digest()
+app.config.update(SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE='Lax', SESSION_COOKIE_SECURE=True)
 LOCK = threading.Lock()
 START = 1000.0
 state = {'cash': START, 'shares': 0.0, 'price': 100.0, 'tick': 0, 'trades': [], 'halted': False, 'peak': START}
 
-def authorized():
+def valid_token(value):
     token = os.environ.get('DASHBOARD_TOKEN', '')
-    return bool(token) and secrets.compare_digest(request.headers.get('X-Dashboard-Token', ''), token)
+    return bool(token) and secrets.compare_digest(value, token)
+
+def authorized():
+    return valid_token(request.headers.get('X-Dashboard-Token', ''))
 
 def snapshot():
     equity = state['cash'] + state['shares'] * state['price']
@@ -19,11 +34,13 @@ def snapshot():
 def no_cache(response):
     response.headers['Cache-Control'] = 'no-store'
     response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'DENY'
+    response.headers['Referrer-Policy'] = 'no-referrer'
     return response
 
 @app.get('/')
 def home():
-    return Response('Demo simulator is running. /health is public; /status and /step require X-Dashboard-Token. No Trading 212 orders.', mimetype='text/plain')
+    return redirect(url_for('dashboard'))
 
 @app.get('/health')
 def health():
@@ -66,6 +83,31 @@ def stop():
     with LOCK:
         state['halted'] = True
         return jsonify(snapshot())
+
+PAGE = '''<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101827"><title>Mein Demo-Trading-Bot</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0b1220;color:#f3f6fc;font:16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:600px;margin:auto;padding:28px 18px 70px}h1{font-size:27px;margin:6px 0 6px}.sub{color:#a7b4c9;font-size:14px;margin:0 0 26px}.card{background:#172238;border:1px solid #293650;border-radius:18px;padding:19px;margin-bottom:13px}.label{font-size:13px;color:#acbad0}.big{font-size:34px;font-weight:750;margin:8px 0 2px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.grid .card{min-width:0}.grid .big{font-size:23px}.positive{color:#7ee0aa}.negative{color:#ff9b9b}.pill{display:inline-block;border-radius:99px;background:#26354d;padding:7px 11px;font-size:13px}table{border-collapse:collapse;width:100%;font-size:13px}td,th{padding:12px 5px;text-align:left;border-bottom:1px solid #304059}th{color:#acbad0;font-weight:500}td:last-child,th:last-child{text-align:right}button{background:#3c83f6;color:white;border:0;border-radius:12px;padding:14px 17px;font-weight:650;font-size:16px;width:100%;cursor:pointer}input{background:#0e182b;border:1px solid #40506b;color:white;padding:14px;border-radius:12px;width:100%;font-size:16px;margin:12px 0}a{color:#a9c8ff}.foot{font-size:12px;color:#91a0b7;line-height:1.6;margin-top:24px}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.logout{font-size:13px}.empty{color:#acbad0;font-size:14px}
+</style></head><body><main>{% if login %}<h1>🤖 Mein Demo-Trading-Bot</h1><p class="sub">Bitte mit deinem Dashboard-Passwort anmelden.</p><div class="card"><form method="post" action="{{ url_for('dashboard_login') }}"><label for="token">Dashboard-Passwort</label><input id="token" name="token" type="password" autocomplete="current-password" required><button type="submit">Anmelden</button></form>{% if error %}<p class="negative">Passwort falsch. Bitte erneut versuchen.</p>{% endif %}</div>{% else %}<div class="row"><h1>🤖 Mein Trading-Bot</h1><a class="logout" href="{{ url_for('dashboard_logout') }}">Abmelden</a></div><p class="sub">Virtuelle Simulation · Keine echten Aktienkäufe</p><div class="card"><div class="label">Virtueller Kontostand</div><div class="big">{{ '%.2f'|format(data.equity) }} €</div><span class="pill">{{ '⛔ Gestoppt' if data.halted else '🟢 Simulation bereit' }}</span></div><div class="grid"><div class="card"><div class="label">Gewinn / Verlust</div><div class="big {{ 'positive' if gain >= 0 else 'negative' }}">{{ '%+.2f'|format(gain) }} €</div></div><div class="card"><div class="label">Simulationsschritte</div><div class="big">{{ data.tick }}</div></div><div class="card"><div class="label">Verfügbares Geld</div><div class="big">{{ '%.2f'|format(data.cash) }} €</div></div><div class="card"><div class="label">Virtuelle Position</div><div class="big">{{ '%.2f'|format(data.shares * data.price) }} €</div></div></div><div class="card"><h2 style="font-size:18px;margin:0 0 12px">Letzte simulierte Trades</h2>{% if data.trades %}<table><thead><tr><th>Schritt</th><th>Aktion</th><th>Betrag</th></tr></thead><tbody>{% for trade in data.trades|reverse %}<tr><td>{{ trade.step }}</td><td>{{ 'Kauf' if trade.side == 'SIM_BUY' else 'Verkauf' }}</td><td>{{ '%.2f'|format(trade.amount) }} €</td></tr>{% endfor %}</tbody></table>{% else %}<p class="empty">Noch keine simulierten Käufe oder Verkäufe.</p>{% endif %}</div><button type="button" onclick="location.reload()">🔄 Werte aktualisieren</button><p class="foot">Startkapital: 1.000 € · Künstliche Kurse, keine Trading-212-Verbindung. Die Anzeige beweist nicht, dass GitHub regelmäßig startet. Auf dem kostenlosen Render-Dienst kann der Simulationsstand bei Neustart oder Neuveröffentlichung zurückgesetzt werden.</p>{% endif %}</main></body></html>'''
+
+@app.get('/dashboard')
+def dashboard():
+    if not session.get('dashboard_logged_in'):
+        return render_template_string(PAGE, login=True, error=False)
+    with LOCK:
+        data = snapshot()
+    return render_template_string(PAGE, login=False, data=data, gain=data['equity']-START)
+
+@app.post('/dashboard/login')
+def dashboard_login():
+    if valid_token(request.form.get('token', '')):
+        session.clear()
+        session['dashboard_logged_in'] = True
+        return redirect(url_for('dashboard'))
+    return render_template_string(PAGE, login=True, error=True), 401
+
+@app.get('/dashboard/logout')
+def dashboard_logout():
+    session.clear()
+    return redirect(url_for('dashboard'))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', '10000')))
