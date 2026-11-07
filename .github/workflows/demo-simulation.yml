@@ -1,0 +1,22 @@
+
+name: Demo-Simulation automatisch starten
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  simulation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Simulator starten
+        env:
+          DASHBOARD_TOKEN: ${{ secrets.DASHBOARD_TOKEN }}
+        run: |
+          curl --fail --show-error --silent \
+            --max-time 120 \
+            -X POST \
+            -H "X-Dashboard-Token: $DASHBOARD_TOKEN" \
+            https://trading212-demo-server.onrender.com/step
