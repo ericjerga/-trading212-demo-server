@@ -91,7 +91,18 @@ def fetch_news():
 
 # Unentgeltliche historische Tageskurse: Yahoo Chart API, mit Stooq als Fallback.
 # Diese Endpunkte sind nicht garantiert verfügbar und können verzögert sein.
-WATCHLIST = [('AAPL', 'Apple'), ('MSFT', 'Microsoft'), ('NVDA', 'Nvidia')]
+# Globale Auswahl: US-notierte Aktien und ADRs, Preise in USD.
+WATCHLIST = [
+    ('AAPL','Apple (USA)'),('MSFT','Microsoft (USA)'),('NVDA','Nvidia (USA)'),
+    ('GOOGL','Alphabet (USA)'),('JPM','JPMorgan (USA)'),
+    ('SAP','SAP (Deutschland)'),('ASML','ASML (Niederlande)'),
+    ('NVO','Novo Nordisk (Daenemark)'),('SNY','Sanofi (Frankreich)'),
+    ('UL','Unilever (Europa)'),('AZN','AstraZeneca (UK)'),
+    ('TM','Toyota (Japan)'),('SONY','Sony (Japan)'),
+    ('TSM','TSMC (Taiwan)'),('BABA','Alibaba (China)'),
+    ('INFY','Infosys (Indien)'),('VALE','Vale (Brasilien)'),
+    ('BHP','BHP (Australien)')
+]
 
 def fetch_closes(symbol):
     yahoo_url = 'https://query1.finance.yahoo.com/v8/finance/chart/%s?range=6mo&interval=1d' % symbol
