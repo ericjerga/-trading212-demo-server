@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: trading212-demo-readonly
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT app:app
+    envVars:
+      - key: T212_API_KEY
+        sync: false
+      - key: T212_API_SECRET
+        sync: false
+      - key: DASHBOARD_TOKEN
+        generateValue: true
