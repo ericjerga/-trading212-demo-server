@@ -13,6 +13,7 @@ from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 import secrets
 import threading
+from concurrent.futures import ThreadPoolExecutor
 from functools import wraps
 from flask import Flask, jsonify, request, Response, redirect, url_for, session, render_template_string
 
@@ -149,8 +150,8 @@ def backtest_trend(prices):
 
 def fetch_market():
     today = datetime.now(timezone.utc).date()
-    out = []
-    for symbol, name in WATCHLIST:
+    def one_stock(item):
+        symbol, name = item
         try:
             rows, source = fetch_closes(symbol)
             latest_date, price = rows[-1]
@@ -165,14 +166,15 @@ def fetch_market():
             avg = sum(returns) / len(returns)
             volatility = (sum((r-avg)**2 for r in returns)/len(returns))**0.5 * 100
             test = backtest_trend(prices)
-            out.append({'symbol':symbol,'name':name,'price':round(price,4),'sma20':round(sma20,4),
+            return {'symbol':symbol,'name':name,'price':round(price,4),'sma20':round(sma20,4),
                         'sma50':round(sma50,4),'daily_change':round(daily_change,2),
                         'trend':trend,'date':latest_date.isoformat(),'source':source,'currency':'USD',
-                        'signal':'Abwarten','reason':'Noch nicht bewertet','available':True, 'volatility_pct':round(volatility,2), 'backtest':test})
+                        'signal':'Abwarten','reason':'Noch nicht bewertet','available':True, 'volatility_pct':round(volatility,2), 'backtest':test}
         except Exception:
-            out.append({'symbol':symbol,'name':name,'available':False,'signal':'Keine Daten',
-                        'reason':'Kursquelle nicht verfügbar oder Kurse veraltet'})
-    return out
+            return {'symbol':symbol,'name':name,'available':False,'signal':'Keine Daten',
+                    'reason':'Kursquelle nicht verfügbar oder Kurse veraltet'}
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        return list(pool.map(one_stock, WATCHLIST))
 
 @app.post('/step')
 def step():
@@ -226,7 +228,8 @@ def step():
         state['news_checked'] = now.strftime('%d.%m.%Y %H:%M UTC')
         state['news'], state['news_score'], state['news_error'] = news, score, error
         state['market_checked'] = now.strftime('%d.%m.%Y %H:%M UTC')
-        state['market_error'] = None if any(m['available'] for m in market) else 'Keine aktuellen Marktdaten verfügbar – keine Trades'
+        available_count = sum(bool(m['available']) for m in market)
+        state['market_error'] = None if available_count >= 3 else 'Zu wenige aktuelle Marktdaten (mindestens 3 erforderlich) – keine neuen Käufe'
         state['tick'] += 1
         state['last_step_at'] = now.isoformat()
         held = next((m for m in market if m['available'] and m['symbol'] == state['symbol']), None)
