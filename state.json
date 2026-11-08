@@ -3,7 +3,7 @@
   "shares": 0.0,
   "price": 0.0,
   "peak": 1000.0,
-  "tick": 4,
+  "tick": 5,
   "halted": false,
   "symbol": null,
   "trades": [],
@@ -15,16 +15,29 @@
       "equity": 1000.0
     }
   ],
-  "last_step_at": "2026-11-08T00:44:31.879241+00:00",
+  "last_step_at": "2026-11-08T00:47:37.505273+00:00",
   "crypto": {
     "cash": 200.0,
-    "checked": "2026-11-08T00:44:31.879241+00:00",
+    "checked": "2026-11-08T00:47:37.505273+00:00",
     "entry_price": 0.0,
-    "error": "Kryptokurse nicht verfügbar – kein Handel",
+    "error": null,
     "halted": false,
-    "last_decision": "Warten: aktuelle Kryptokurse fehlen",
+    "last_decision": "Kein Krypto-Kauf: Nachrichten fehlen oder sind negativ",
     "last_trade_date": null,
-    "market": [],
+    "market": [
+      {
+        "change_24h": -0.16,
+        "price": 75657.67,
+        "source": "Coinbase Exchange",
+        "symbol": "BTC"
+      },
+      {
+        "change_24h": -0.16,
+        "price": 2232.97,
+        "source": "Coinbase Exchange",
+        "symbol": "ETH"
+      }
+    ],
     "news": [
       {
         "published": "07.11. 13:01 UTC",
