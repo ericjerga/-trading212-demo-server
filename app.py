@@ -13,6 +13,7 @@ from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 import secrets
 import threading
+from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor
 from functools import wraps
 from flask import Flask, jsonify, request, Response, redirect, url_for, session, render_template_string
@@ -25,7 +26,8 @@ app.secret_key = hashlib.sha256(('dashboard-session-v1:' + os.environ.get('DASHB
 app.config.update(SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE='Lax', SESSION_COOKIE_SECURE=True)
 LOCK = threading.Lock()
 START = 1000.0
-state = {'cash': START, 'shares': 0.0, 'price': 0.0, 'symbol': None, 'tick': 0, 'trades': [], 'halted': False, 'peak': START, 'news': [], 'news_checked': None, 'news_error': None, 'last_decision': 'Noch keine Prüfung', 'news_score': None, 'market': [], 'market_checked': None, 'market_error': None, 'last_trade_date': None, 'equity_history': [], 'last_step_at': None}
+CRYPTO_START = 200.0
+state = {'cash': START, 'shares': 0.0, 'price': 0.0, 'symbol': None, 'tick': 0, 'trades': [], 'halted': False, 'peak': START, 'news': [], 'news_checked': None, 'news_error': None, 'last_decision': 'Noch keine Prüfung', 'news_score': None, 'market': [], 'market_checked': None, 'market_error': None, 'last_trade_date': None, 'equity_history': [], 'last_step_at': None, 'crypto': {'cash': CRYPTO_START, 'shares': 0.0, 'price': 0.0, 'symbol': None, 'entry_price': 0.0, 'peak': CRYPTO_START, 'halted': False, 'trades': [], 'last_trade_date': None, 'last_decision': 'Noch keine Prüfung', 'market': [], 'checked': None, 'error': None}}
 
 def valid_token(value):
     token = os.environ.get('DASHBOARD_TOKEN', '')
@@ -35,8 +37,10 @@ def authorized():
     return valid_token(request.headers.get('X-Dashboard-Token', ''))
 
 def snapshot():
+    crypto = state['crypto']
+    crypto_equity = crypto['cash'] + crypto['shares'] * crypto['price']
     equity = state['cash'] + state['shares'] * state['price']
-    return {**state, 'equity': round(equity, 2), 'cash': round(state['cash'], 2), 'price': round(state['price'], 4), 'shares': round(state['shares'], 5), 'environment': 'historical_market_data_paper_trading', 'real_orders_enabled': False, 'trading212_connected': False}
+    return {**state, 'crypto_equity': round(crypto_equity, 2), 'equity': round(equity, 2), 'cash': round(state['cash'], 2), 'price': round(state['price'], 4), 'shares': round(state['shares'], 5), 'environment': 'historical_market_data_paper_trading', 'real_orders_enabled': False, 'trading212_connected': False}
 
 @app.after_request
 def no_cache(response):
@@ -186,6 +190,91 @@ def fetch_market():
     with ThreadPoolExecutor(max_workers=6) as pool:
         return list(pool.map(one_stock, WATCHLIST))
 
+def us_stock_session(now):
+    ny = now.astimezone(ZoneInfo('America/New_York'))
+    # Conservative: no stock paper orders on weekends or full US market holidays.
+    from datetime import date, time
+    d = ny.date()
+    if d.weekday() >= 5:
+        return False
+    def observed(y, m, day):
+        x = date(y, m, day)
+        return x + timedelta(days=1) if x.weekday() == 6 else x - timedelta(days=1) if x.weekday() == 5 else x
+    def nth(y, m, wd, n):
+        x = date(y, m, 1)
+        return x + timedelta(days=(wd-x.weekday())%7+7*(n-1))
+    def last_monday(y, m):
+        x = date(y, m+1, 1)-timedelta(days=1)
+        return x-timedelta(days=x.weekday())
+    def easter(y):
+        a=y%19; b=y//100; c=y%100; d=b//4; e=b%4
+        f=(b+8)//25; g=(b-f+1)//3; h=(19*a+b-d-g+15)%30
+        i=c//4; k=c%4; l=(32+2*e+2*i-h-k)%7
+        m=(a+11*h+22*l)//451; month=(h+l-7*m+114)//31
+        return date(y,month,(h+l-7*m+114)%31+1)
+    holidays = set()
+    for y in (d.year-1,d.year,d.year+1):
+        holidays.update((observed(y,1,1),nth(y,1,0,3),nth(y,2,0,3),
+                         easter(y)-timedelta(days=2),last_monday(y,5),
+                         observed(y,6,19),observed(y,7,4),nth(y,9,0,1),
+                         nth(y,11,3,4),observed(y,12,25)))
+    if d in holidays:
+        return False
+    early = d == nth(d.year,11,3,4)+timedelta(days=1) or (d.month,d.day) in ((12,24),(7,3))
+    return time(9,30) <= ny.time().replace(tzinfo=None) < (time(13) if early else time(16))
+
+
+def fetch_crypto_market():
+    url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true'
+    req = urllib.request.Request(url,headers={'User-Agent':'DemoPaperBot/1.0','Accept':'application/json'})
+    with urllib.request.urlopen(req,timeout=9) as resp:
+        data=json.load(resp)
+    now=datetime.now(timezone.utc).timestamp()
+    result=[]
+    for symbol,coin in (('BTC','bitcoin'),('ETH','ethereum')):
+        item=data.get(coin,{})
+        price=float(item.get('usd',0)); change=float(item.get('usd_24h_change',0)); updated=float(item.get('last_updated_at',0))
+        if not all(math.isfinite(x) for x in (price,change,updated)) or price<=0 or not 0<=now-updated<=1800:
+            raise ValueError('Kryptokurse fehlen oder sind veraltet')
+        result.append({'symbol':symbol,'price':price,'change_24h':round(change,2)})
+    return result
+
+
+def simulate_crypto(now,market,error):
+    c=state['crypto']; today=now.date().isoformat()
+    c['market'],c['checked'],c['error']=market,now.isoformat(),error
+    held=next((m for m in market if m['symbol']==c['symbol']),None)
+    if held: c['price']=held['price']
+    equity=c['cash']+c['shares']*c['price']
+    c['peak']=max(c['peak'],equity)
+    if error or (c['shares'] and not held):
+        c['last_decision']='Warten: aktuelle Kryptokurse fehlen'; return
+    if equity<c['peak']*0.95: c['halted']=True
+    if c['halted']:
+        c['last_decision']='Krypto-Risikogrenze erreicht'
+    elif c['last_trade_date']==today:
+        c['last_decision']='Tageslimit: maximal ein Krypto-Trade'
+    elif held and (held['price']<=c['entry_price']*0.97 or held['change_24h'] < -1):
+        amount=c['shares']*held['price']; c['cash']+=amount
+        c['trades'].append({'side':'SIM_SELL','symbol':c['symbol'],'price':round(held['price'],4),'amount':round(amount,2),'date':today})
+        c['shares'],c['symbol'],c['price'],c['entry_price']=0.0,None,0.0,0.0
+        c['last_trade_date']=today; c['last_decision']='Virtueller Krypto-Verkauf'
+    elif c['shares']==0:
+        candidates=[m for m in market if 1<=m['change_24h']<=5]
+        if candidates:
+            chosen=max(candidates,key=lambda m:m['change_24h'])
+            spend=min(c['cash'],equity*0.10)
+            if spend>0:
+                c['cash']-=spend; c['shares']=spend/chosen['price']
+                c['symbol'],c['price'],c['entry_price']=chosen['symbol'],chosen['price'],chosen['price']
+                c['last_trade_date']=today
+                c['trades'].append({'side':'SIM_BUY','symbol':chosen['symbol'],'price':round(chosen['price'],4),'amount':round(spend,2),'date':today})
+                c['last_decision']='Virtueller Kauf '+chosen['symbol']
+        else: c['last_decision']='Kein Krypto-Kaufsignal'
+    else: c['last_decision']='Krypto-Position halten'
+    c['trades']=c['trades'][-50:]
+
+
 @app.post('/step')
 def step():
     if not authorized(): return jsonify(error='Unauthorized'), 401
@@ -195,6 +284,10 @@ def step():
     except Exception:
         news, score, error = [], None, 'Nachrichten momentan nicht abrufbar – keine neuen Käufe'
     market = fetch_market()
+    try:
+        crypto_market, crypto_error = fetch_crypto_market(), None
+    except Exception:
+        crypto_market, crypto_error = [], 'Kryptokurse nicht verfügbar – kein Handel'
     now = datetime.now(timezone.utc)
     today = now.date().isoformat()
     with LOCK:
@@ -216,7 +309,8 @@ def step():
                     'last_trade_date': previous.get('last_trade_date'),
                     'entry_price': float(previous.get('entry_price') or 0),
                     'equity_history': previous.get('equity_history', []),
-                    'last_step_at': previous.get('last_step_at')
+                    'last_step_at': previous.get('last_step_at'),
+                    'crypto': previous.get('crypto', state['crypto'])
                 }
                 valid = (
                     all(math.isfinite(restored[k]) and restored[k] >= 0
@@ -227,6 +321,9 @@ def step():
                     and len(restored['trades']) <= 50
                     and isinstance(restored['equity_history'], list)
                     and len(restored['equity_history']) <= 120
+                    and isinstance(restored['crypto'], dict)
+                    and isinstance(restored['crypto'].get('trades'), list)
+                    and len(restored['crypto']['trades']) <= 50
                     and (restored['symbol'] is None or
                          restored['symbol'] in [x[0] for x in WATCHLIST])
                     and (restored['shares'] == 0 or restored['symbol'] is not None)
@@ -235,6 +332,7 @@ def step():
                     state.update(restored)
             except (KeyError, TypeError, ValueError, OverflowError):
                 pass
+        simulate_crypto(now, crypto_market, crypto_error)
         state['news_checked'] = now.strftime('%d.%m.%Y %H:%M UTC')
         state['news'], state['news_score'], state['news_error'] = news, score, error
         state['market_checked'] = now.strftime('%d.%m.%Y %H:%M UTC')
@@ -263,7 +361,9 @@ def step():
             else:
                 m['signal'], m['reason'] = 'Abwarten', 'Trend, Tagesbewegung oder Nachrichtenfilter nicht erfüllt'
         state['market'] = market
-        if state['halted']:
+        if not us_stock_session(now):
+            state['last_decision'] = 'US-Aktienbörse geschlossen: keine virtuellen Aktien-Trades'
+        elif state['halted']:
             state['last_decision'] = 'Simulation durch Risikogrenze gestoppt'
         elif state['shares'] > 0 and held is None:
             state['last_decision'] = 'Abwarten: kein aktueller Kurs für gehaltene Aktie'
