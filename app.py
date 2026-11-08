@@ -224,19 +224,65 @@ def us_stock_session(now):
     return time(9,30) <= ny.time().replace(tzinfo=None) < (time(13) if early else time(16))
 
 
+def _crypto_price_rows(data, source):
+    now = datetime.now(timezone.utc).timestamp()
+    result = []
+    for symbol, coin in (('BTC', 'bitcoin'), ('ETH', 'ethereum')):
+        item = data.get(coin, {})
+        price = float(item.get('usd', 0))
+        change = float(item.get('usd_24h_change', float('nan')))
+        updated = float(item.get('last_updated_at', 0))
+        if (not all(math.isfinite(x) for x in (price, change, updated))
+                or price <= 0 or not 0 <= now-updated <= 1800):
+            raise ValueError('Kryptokurs fehlt oder ist älter als 30 Minuten')
+        result.append({'symbol': symbol, 'price': price, 'change_24h': round(change, 2),
+                       'source': source})
+    return result
+
+
+def _fetch_coingecko_crypto():
+    url = ('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum'
+           '&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true')
+    req = urllib.request.Request(url, headers={
+        'User-Agent': 'Mozilla/5.0 (compatible; PaperTradingDemo/1.0)',
+        'Accept': 'application/json'})
+    with urllib.request.urlopen(req, timeout=8) as resp:
+        return _crypto_price_rows(json.load(resp), 'CoinGecko')
+
+
 def fetch_crypto_market():
-    url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true'
-    req = urllib.request.Request(url,headers={'User-Agent':'DemoPaperBot/1.0','Accept':'application/json'})
-    with urllib.request.urlopen(req,timeout=9) as resp:
-        data=json.load(resp)
-    now=datetime.now(timezone.utc).timestamp()
-    result=[]
-    for symbol,coin in (('BTC','bitcoin'),('ETH','ethereum')):
-        item=data.get(coin,{})
-        price=float(item.get('usd',0)); change=float(item.get('usd_24h_change',0)); updated=float(item.get('last_updated_at',0))
-        if not all(math.isfinite(x) for x in (price,change,updated)) or price<=0 or not 0<=now-updated<=1800:
-            raise ValueError('Kryptokurse fehlen oder sind veraltet')
-        result.append({'symbol':symbol,'price':price,'change_24h':round(change,2)})
+    try:
+        return _fetch_coingecko_crypto()
+    except (OSError, ValueError, TypeError, KeyError, OverflowError):
+        return _fetch_coinbase_crypto()
+
+
+def _fetch_coinbase_crypto():
+    # Coinbase Exchange public endpoints expose a timestamped ticker and
+    # 24-hour stats (open). No credentials or trading permissions required.
+    now = datetime.now(timezone.utc)
+    result = []
+    for symbol in ('BTC', 'ETH'):
+        base = 'https://api.exchange.coinbase.com/products/' + symbol + '-USD/'
+        headers = {'User-Agent': 'Mozilla/5.0 PaperTradingDemo/1.0',
+                   'Accept': 'application/json'}
+        req = urllib.request.Request(base+'ticker', headers=headers)
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            ticker = json.load(resp)
+        req = urllib.request.Request(base+'stats', headers=headers)
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            stats = json.load(resp)
+        price = float(ticker.get('price', 0))
+        opening = float(stats.get('open', 0))
+        observed = datetime.fromisoformat(str(ticker.get('time','')).replace('Z','+00:00'))
+        age = (now-observed).total_seconds()
+        if (not math.isfinite(price) or not math.isfinite(opening)
+                or price <= 0 or opening <= 0 or not 0 <= age <= 900):
+            raise ValueError('Coinbase-Kurs fehlt oder ist veraltet')
+        # Coinbase Exchange 24h stats open is the rolling 24h opening price.
+        change = (price/opening-1)*100
+        result.append({'symbol':symbol, 'price':price, 'change_24h':round(change,2),
+                       'source':'Coinbase Exchange'})
     return result
 
 
