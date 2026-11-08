@@ -1,32 +1,98 @@
 {
-  "cash": 1000,
-  "shares": 0,
-  "price": 0,
-  "peak": 1000,
-  "tick": 0,
+  "cash": 1000.0,
+  "shares": 0.0,
+  "price": 0.0,
+  "peak": 1000.0,
+  "tick": 3,
   "halted": false,
   "symbol": null,
   "trades": [],
   "last_trade_date": null,
   "entry_price": 0,
-  "equity_history": [],
-  "last_step_at": null,
+  "equity_history": [
+    {
+      "date": "2026-11-08",
+      "equity": 1000.0
+    }
+  ],
+  "last_step_at": "2026-11-08T00:42:10.293856+00:00",
   "crypto": {
-    "cash": 200,
-    "shares": 0,
-    "price": 0,
-    "symbol": null,
-    "entry_price": 0,
-    "peak": 200,
+    "cash": 200.0,
+    "checked": "2026-11-08T00:42:10.293856+00:00",
+    "entry_price": 0.0,
+    "error": "Kryptokurse nicht verfügbar – kein Handel",
     "halted": false,
-    "trades": [],
+    "last_decision": "Warten: aktuelle Kryptokurse fehlen",
     "last_trade_date": null,
-    "last_decision": "Noch keine Prüfung",
     "market": [],
-    "checked": null,
-    "error": null,
-    "news": [],
-    "news_score": null,
-    "news_error": null
+    "news": [
+      {
+        "published": "07.11. 13:01 UTC",
+        "score": -2,
+        "title": "Bitcoin-Entwickler schlägt eine Quantensicherungsfalle für Hacker vor - Yahoo Finanzen Deutschland",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcnN3eVQ3eC1LUGtjUmhJWW1VX2lnNEFKZlVpbklrbGo5d3R5WlRxZkRKdVVsS1BnT2pBMURSWGl1azNJS1E5LWd1TnlYNTQzejM4LVYxcjcwa1R1UGtlWGFWNnA2elFMU21EZWY5QXJsYXd2WDRleHJrZUxaRV92NWlOb2t0X0lVb3BvVU41OHBHcGlVMl9pU3drSkdMYVl0T1AwVTdFU1hqY0hUMjRYVzRmQWlaMm8wcGow?oc=5"
+      },
+      {
+        "published": "08.11. 00:26 UTC",
+        "score": 0,
+        "title": "Bitcoin News November 2026: 1,28 Milliarden fließen aus ETFs, doch eine Zahl fehlt in den Schlagzeilen - FinanzNachrichten.de",
+        "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOT2tIN0tlNE9HeTNCVmZlTWFObjdzTkJwNFM3NmVzOGlleFgzd2xrSW1CS0tKbFFwQkNDZnp1LXJvUnR2dXlwTDYzUTJSTUc0M2Q1eHZ3bzllR2M1MHFCTmdWNjZlSDA1TkhGV2tVaEttZUpqcUxiNTVyRkZpM2c0cE1hdTFoMDA4ajFoWFdhT3hWTkFNdGt1YXRBaTF0V3ZRQ21RNkJ2aGp2UjVtTHJfYUg4UUVYeUQyT2VSTGNicGtQVXAzM0ZyUjVfZml2c2p3VHRYdFZVSExBUHpFVW5wN3JQZDhTTmM2eko2SllScWVTRU1WWTJkV0J4Tm5BU1Iw?oc=5"
+      },
+      {
+        "published": "07.11. 18:48 UTC",
+        "score": 0,
+        "title": "Ethereum Kurs bei 2.000 Euro: Was Anleger nach der sechsten ETF-Abflusswoche wissen müssen - CryptoTicker.io",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOekJ6MTFwanFUNE1kUHZWa0w0S21Lb1VOUFMyTXJpTUJqQV8tU1lYbjh6ZFJOVjExQWloMUJpUzJPdzM2ZzBQcU1td25JX3NrZVgxVlhoUjN2YmlvZHB6MHhkUGZYdHREMEd2dG5RY05UYktyd24zNTVoMW02eTB3bTBkakhvYmV5STYzNw?oc=5"
+      },
+      {
+        "published": "07.11. 09:23 UTC",
+        "score": 0,
+        "title": "Krypto News: Bitcoin unter Druck – Tech-Selloff und US-Midterms belasten den Markt ₿📉 - XTB.com",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbmxyU01HQmt1LUYzY19SOVYxMk1zQ29PcXhRR0ltUTJFZlRSY0ZKaktIQ2stY3haLU9rLUMwMG9fM0VWUVFqSE9JWURNdlNNR2tHRklRcGlJQXdFUUZKZ2ViVDZiaG9KN3NpNlhVc0NOVWJiX1JlWW1zcjg2M2FMRThfMjRQTDFnNlJ2N0gtenBaNl9kYzNuMlJ5a1E0QnRfTFNnLVc5SnIya1FlUUx1d2xVOTBiSU1fV2I5RlVOZ01qZ2ZBZkpSS3E5RUJOeUMtbkJfNWJNSDVLcVd5NmlEN1dlelI1WGc?oc=5"
+      },
+      {
+        "published": "07.11. 17:51 UTC",
+        "score": 0,
+        "title": "Bitcoin: Haben die Bullen versagt? - sharedeals.de",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4xcEF5dEw2RW41RnhfeWl5YUhVSGV6MEFaalh2aGdILXBycXM3bjlsNkppM1ByR0FfeGVYLXNGWUt1NHlKbzJHUjJxTFhUYkxwc3JCUkVSM01RR2ZHLWhTU2FERTl6R1JjUUE0?oc=5"
+      },
+      {
+        "published": "07.11. 07:55 UTC",
+        "score": 0,
+        "title": "Das sind die aktuellen Kurse von Bitcoin, Dogecoin & Co. - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONzdFMUxJZ1FCWkNoaVlGWHQ4S3I4MUtldnI3emlyOG5kNGdSSklDMmJqdl9SUkd1WUtNRTBHS3VHNXQ4U2Z2V1R6TmttbTlnNndvSUNhTXhITTQwQzlGZTZDakJEZXFrWHlBdUEya0plWmhyQU05WWp2aHpLX2FkekxRd01RTi0yMmI1OGRqQjRNdmtLV1hiblJPTktoT0YtbkNnc0ltbw?oc=5"
+      },
+      {
+        "published": "07.11. 11:52 UTC",
+        "score": -2,
+        "title": "Krypto-Handel in Russland: Notenbank nennt Bitcoin-Stichtag - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNREtOQlZzU1VqcGd3M0V2Rm12X1d4czBIM3RybjhYTlRlYzZDMndMOFh6MGJ1SDZNYzY5LVdWbDVjUXdHWWRHU01XS19nVGVDZTF3MVI3ZFl1RTBPMzRFOGpLVkl1N3kyczhOZEF2WmE0NllZLVZMOFJmbTJTQW1pR0c2WnVWczZ2RFFSSXRSWHdDd1c4QjRtN2JxRHc?oc=5"
+      },
+      {
+        "published": "07.11. 15:23 UTC",
+        "score": 0,
+        "title": "Zcash-Kurs sendet Warnsignal für Bitcoin und Ethereum - BeInCrypto",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBHS2RvNWIxNXgwZm95VVF0S3l2VEhWQUR3ODN3UXpaNWF2Vkg4dmNDM3BjZzhudkJSZzh1OTNIUTBMS3dnVkkwTmtLbW1ta25rczdsQVAzbklnbjh1VV96R3diRWFsbGdOb3hMM3hR?oc=5"
+      },
+      {
+        "published": "07.11. 22:46 UTC",
+        "score": 0,
+        "title": "Ethereum News: $365 Mio. fliehen aus ETFs, doch Wale kaufen ETH für $51 Mio. - Wallstreet Online",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSmpBal9DOFJTdjM1ajY4U3FnOTQ5QTF6MEVDMENrT3BVbENjc0lDRy1mQkZkWnV1VnB5aFZmVXJCb29FY3NQVlN2MXBEU1hFVmNDVlZtYTduWFdTQlFJSWxubk1DQ0s3c2tRRDVoZGdGaHRYc1VOSURUUTE5WE5Hbm1WRzA2dmY1emhYU3RhU1gzN0pBemNIcnBSWkEyNEx5WHdNTUZwbHFTczNiVFE?oc=5"
+      },
+      {
+        "published": "07.11. 16:23 UTC",
+        "score": 0,
+        "title": "Aktueller Marktbericht zu Bitcoin & Co. - finanzen.ch",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZ1pXRjh0a2lHa2VndGRhU2ZSeGI5X2h6LWRxaHZxLUpaVGxnam9hN3NPVnB5OXYzbUJyc1pJaXNzMXdBb09qR0JyVkJaUDNQV2J1Yktsd01XMjUtZjV6SXp5NGhiUVo4ZlRQSnE3Zjl3NGNXTUU1eG13UUl0NER6THQ3bjFkVnY1dzNCam1kZlEyaXh2b2VSMkNR?oc=5"
+      }
+    ],
+    "news_error": null,
+    "news_score": -4,
+    "peak": 200.0,
+    "price": 0.0,
+    "shares": 0.0,
+    "symbol": null,
+    "trades": []
   }
 }
