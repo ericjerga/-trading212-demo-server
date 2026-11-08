@@ -3,7 +3,7 @@
   "shares": 0.0,
   "price": 0.0,
   "peak": 1000.0,
-  "tick": 29,
+  "tick": 30,
   "halted": false,
   "symbol": null,
   "trades": [],
@@ -15,10 +15,10 @@
       "equity": 1000.0
     }
   ],
-  "last_step_at": "2026-11-08T19:41:37.806592+00:00",
+  "last_step_at": "2026-11-08T20:17:41.575170+00:00",
   "crypto": {
     "cash": 200.0,
-    "checked": "2026-11-08T19:41:37.806592+00:00",
+    "checked": "2026-11-08T20:17:41.575170+00:00",
     "entry_price": 0.0,
     "error": null,
     "halted": false,
@@ -26,51 +26,51 @@
     "last_trade_date": null,
     "market": [
       {
-        "change_24h": 0.15,
-        "price": 75809.0,
-        "source": "CoinGecko",
+        "change_24h": 0.24,
+        "price": 75766.97,
+        "source": "Coinbase Exchange",
         "symbol": "BTC"
       },
       {
-        "change_24h": -0.06,
-        "price": 2229.98,
-        "source": "CoinGecko",
+        "change_24h": -0.03,
+        "price": 2224.92,
+        "source": "Coinbase Exchange",
         "symbol": "ETH"
       },
       {
-        "change_24h": -0.05,
-        "price": 89.47,
-        "source": "CoinGecko",
+        "change_24h": 0.42,
+        "price": 89.29,
+        "source": "Coinbase Exchange",
         "symbol": "SOL"
       },
       {
-        "change_24h": -0.49,
-        "price": 1.16,
-        "source": "CoinGecko",
+        "change_24h": -0.41,
+        "price": 1.15,
+        "source": "Coinbase Exchange",
         "symbol": "XRP"
       },
       {
-        "change_24h": -0.36,
-        "price": 0.180308,
-        "source": "CoinGecko",
+        "change_24h": -0.27,
+        "price": 0.17972,
+        "source": "Coinbase Exchange",
         "symbol": "ADA"
       },
       {
-        "change_24h": -1.33,
-        "price": 10.68,
-        "source": "CoinGecko",
+        "change_24h": -0.69,
+        "price": 10.659,
+        "source": "Coinbase Exchange",
         "symbol": "LINK"
       },
       {
-        "change_24h": -0.05,
-        "price": 8.19,
-        "source": "CoinGecko",
+        "change_24h": 0.48,
+        "price": 8.186,
+        "source": "Coinbase Exchange",
         "symbol": "AVAX"
       },
       {
-        "change_24h": -0.65,
-        "price": 0.071233,
-        "source": "CoinGecko",
+        "change_24h": -0.24,
+        "price": 0.07107,
+        "source": "Coinbase Exchange",
         "symbol": "DOGE"
       }
     ],
@@ -143,6 +143,15 @@
         "coins": [
           "AVAX"
         ],
+        "published": "08.11. 08:04 UTC",
+        "score": -2,
+        "title": "Dritte Pleite in Folge! Red Wings kassieren Klatsche gegen Avalanche - Sky.de",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTjliSjkzVFpaWEZRMlROLVBPbWtRRkxoVDFJSFRPN0NNQU1TMExCZXR4U1JrdFVROTNUeW50Z2g4ckU5MENuRDFYQ1hFSk1GbUxkRXAwUFlVRU4xNDNFZ0hUU1lVTXhVMVZGUFEtQ1VaalBXakFGYVRKVHRYTEhfS3IzNmhhN21pbGdCYXNyN0pObUxrMFJuWTFVQVpNY3Z5TzdQZTFyYkZHeDhXeHp4Skk2Ym55dw?oc=5"
+      },
+      {
+        "coins": [
+          "AVAX"
+        ],
         "published": "08.11. 09:27 UTC",
         "score": 0,
         "title": "Detroit Red Wings - Colorado Avalanche - 07.11.2026 - NHL.com",
@@ -156,15 +165,6 @@
         "score": 0,
         "title": "Chainlink Labs im Test + So verdienst du QUA auf Quasa - quasa.io",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOOVpEVUlnVmd0Z2FlcjgwVk5HdDVKNGZIaDQ3ZnRrUnJsc0tJa2FlM2hWMFZyYU1GVTZNS0ZFcFhhUkxyTnY5RG92YUd6UDVwMU1Uc05RYWV4SEJ4UEZrYURfOUlwUWlfTWRXZ25VUGM0dGhGdnRaS08wdGJ4MHJWaU5TRUg?oc=5"
-      },
-      {
-        "coins": [
-          "AVAX"
-        ],
-        "published": "08.11. 08:04 UTC",
-        "score": -2,
-        "title": "Dritte Pleite in Folge! Red Wings kassieren Klatsche gegen Avalanche - Sky.de",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTjliSjkzVFpaWEZRMlROLVBPbWtRRkxoVDFJSFRPN0NNQU1TMExCZXR4U1JrdFVROTNUeW50Z2g4ckU5MENuRDFYQ1hFSk1GbUxkRXAwUFlVRU4xNDNFZ0hUU1lVTXhVMVZGUFEtQ1VaalBXakFGYVRKVHRYTEhfS3IzNmhhN21pbGdCYXNyN0pObUxrMFJuWTFVQVpNY3Z5TzdQZTFyYkZHeDhXeHp4Skk2Ym55dw?oc=5"
       },
       {
         "coins": [
@@ -257,6 +257,15 @@
       },
       {
         "coins": [
+          "BTC"
+        ],
+        "published": "08.11. 10:34 UTC",
+        "score": 0,
+        "title": "\"Bitcoin ist die Mindestrendite\": Strive kauft 15.124 BTC – und will mehr - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZHhuU19GMGJGS1A2Yk9qQlYzTzdrSzJ4b1BhNnlhSjFQbVdSOXFLUUVLZDlVcUx2RlNndzA3eFNkLVEySndodWs3QzRLM1hTajBseElXVjU5R2o3UV8zQnM5dVVXMVlQdzJRRXYxRVZTQUxxeWkzRHdyZmRITmoyQ0o0dkZ5dnVGTWJhbFRwb0l1dFAy?oc=5"
+      },
+      {
+        "coins": [
           "BTC",
           "ETH"
         ],
@@ -269,19 +278,19 @@
         "coins": [
           "BTC"
         ],
-        "published": "08.11. 06:30 UTC",
+        "published": "08.11. 10:00 UTC",
         "score": 0,
-        "title": "Bitcoin verharrt unter 76.000 Dollar – Binance-Kontoschließungen in der EU belasten Kryptomarkt - Yahoo Finanzen Deutschland",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUjBNYzE3Z3BwRkZ6QlE1eFAzanhtUHNsQlRWZUo1YzZNUzZQQ1lheFRaRkgzcFYxc29jc2prdUJiUF9abmtid2ZuLXoySm1VaTBWMnNCV2RPeG1UdmFyaXgyZGRZaW9GelpMWHFOYkJWWWl1NXpzQ3RHXy1LNjlsTFhuSlI3NlRoSHRXcDEtcw?oc=5"
+        "title": "“Wer Bitcoin keinen Aufschlag gibt, hat Bitcoin nicht verstanden” - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdy1oUVk1UkV3eUdnMzVsY3JTenlwdkxlS2RxNFFjQlVGcXozdFJfVUJiY3RlbFVQVWlQLVBRN3hvLTUzaGFFbEw3b0tJUk1XMTJjeklETGtISnZFLXktWUVWOTF3T2hlNTMtdEpyM2VreVNLU3NaUmpGcVRqeHpnSTE0V2RZeVdBNjVvUXFsRGJTMUJULWtLYzBFNU1kOWlq?oc=5"
       },
       {
         "coins": [
           "BTC"
         ],
-        "published": "08.11. 10:00 UTC",
+        "published": "08.11. 06:30 UTC",
         "score": 0,
-        "title": "“Wer Bitcoin keinen Aufschlag gibt, hat Bitcoin nicht verstanden” - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdy1oUVk1UkV3eUdnMzVsY3JTenlwdkxlS2RxNFFjQlVGcXozdFJfVUJiY3RlbFVQVWlQLVBRN3hvLTUzaGFFbEw3b0tJUk1XMTJjeklETGtISnZFLXktWUVWOTF3T2hlNTMtdEpyM2VreVNLU3NaUmpGcVRqeHpnSTE0V2RZeVdBNjVvUXFsRGJTMUJULWtLYzBFNU1kOWlq?oc=5"
+        "title": "Bitcoin verharrt unter 76.000 Dollar – Binance-Kontoschließungen in der EU belasten Kryptomarkt - Yahoo Finanzen Deutschland",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUjBNYzE3Z3BwRkZ6QlE1eFAzanhtUHNsQlRWZUo1YzZNUzZQQ1lheFRaRkgzcFYxc29jc2prdUJiUF9abmtid2ZuLXoySm1VaTBWMnNCV2RPeG1UdmFyaXgyZGRZaW9GelpMWHFOYkJWWWl1NXpzQ3RHXy1LNjlsTFhuSlI3NlRoSHRXcDEtcw?oc=5"
       },
       {
         "coins": [
@@ -303,12 +312,12 @@
       },
       {
         "coins": [
-          "ETH"
+          "ADA"
         ],
-        "published": "08.11. 12:13 UTC",
+        "published": "08.11. 16:50 UTC",
         "score": 0,
-        "title": "Ethereum im Test auf Quasa: Der König der Smart Contracts - quasa.io",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQ096MmR5TFd3Y3RRYmQ3TUtoV1kyU1liQV9YNURmR2prSGJyd05GemE0TUNiNHdQZDR6LUtxTDBlMDhxUzdWNExIVFVMSkw5S29mOWFtOWJmN2haUnd2alFEaGhsR21BUUQ5bHZieF9Xcl9ZSEd1UXVub3hUamRGczlyQ3VHVHZ0Sjg4?oc=5"
+        "title": "Cardano: Leios-Test erreicht 26,8 Kilobytes - Börse Express",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOV01SWVdjVHY2R3N5eDlKMmFZWWhmN1ZNVWxmTElwekl1UC10LXJGMGRZRjhZOWlOMGJLdHR2S19WN0JsUkxTekpsWGx5V0w1dUg1SE9oWF9sbFV3c1lMNjlQd185eVg4VXVJZFppbU5GWU5KdW1ZOWgtbEdhZFFIS2FxRVJEOGF6MWpTUTNTZC1QNVFMSWhDRw?oc=5"
       },
       {
         "coins": [
@@ -318,6 +327,15 @@
         "score": 0,
         "title": "Chainlink: Die Reserve kauft 94.500 LINK, die ETFs ziehen Geld ab - CryptoTicker.io",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ubm41bUktdGhoVDNlWWJZZUxOZXdKYWYwRVk1TUl0VXExYUdpYmJMNjBTR1JOMkluSkdQY0N4anlZQ1FoMlJiR3BGMDBLbE5paktWaEVQcm5hbTBlTloyazMtcVVfWS1UT1pzWld4a0pkbFpXcUMw?oc=5"
+      },
+      {
+        "coins": [
+          "ETH"
+        ],
+        "published": "08.11. 12:13 UTC",
+        "score": 0,
+        "title": "Ethereum im Test auf Quasa: Der König der Smart Contracts - quasa.io",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQ096MmR5TFd3Y3RRYmQ3TUtoV1kyU1liQV9YNURmR2prSGJyd05GemE0TUNiNHdQZDR6LUtxTDBlMDhxUzdWNExIVFVMSkw5S29mOWFtOWJmN2haUnd2alFEaGhsR21BUUQ5bHZieF9Xcl9ZSEd1UXVub3hUamRGczlyQ3VHVHZ0Sjg4?oc=5"
       },
       {
         "coins": [
@@ -338,13 +356,11 @@
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE94VDN3Y0JtUi04OUl1b1M2bzdTbkZBTmp0LUJ1QTlYYlpxaVFuUUtxVk9xcXVzME1ORnEzbm1CajdmZ2dFd1NILUZGbmcxSHN6bXpnVnh5S09qX3QxWGdYdTQyRVpZYnZXeVRF?oc=5"
       },
       {
-        "coins": [
-          "DOGE"
-        ],
-        "published": "07.11. 20:39 UTC",
+        "coins": [],
+        "published": "08.11. 19:41 UTC",
         "score": 0,
-        "title": "Dogecoin (DOGE) Fünfjahres-Kursprognose: Kann der Kurs bis 2030 10 US-Dollar erreichen? - TradingKey",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOX1B3bnZMSHRZenpLNVppNHNvYmNPNUJkU203YTBhYTdpUW82T1ZpckxiX3I3bjVuMEYyVlkxOTRqbEdWMXgxbDg5dkxQZmVjWlJIcXZlM3g4bUhoUHRlaVVaQ2c3Y2NqeU95SENrVHgxYklhMzhobTV4NXNhZHpjaDUwUU9ia2Q1UTFPVHgyb0dnWF9KT3FUUlJGdzg1ajYyNTJFU1NpdnhrRmh5TF9QallPT1BYR01GcFFGQm9Yclk2bV94VnF0NEtUSjB4OGpjTFJQTTNMZXJUdw?oc=5"
+        "title": "Über memeputer - Coinbase",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWS3hHX19WekNXS2MtMmhPck1Ta0J1cGFmWS1CUW5jUjN6eTBEM0pfWlpFNURUZlJEWG5nNnZ2dy1EQm1QRzVnR1BpbHlHU184SzVHRTJOU0FnTlRHWEhLSWkyX3pTSmFiMWNz?oc=5"
       },
       {
         "coins": [
@@ -356,11 +372,23 @@
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMmVTWEpMSTBXT0ZkUkhVTlp0cHVpN1B2MHpZcE5ENE05aTB0SmJUQ3g5bC1wSTR5ZDYyUmxKZ0xnU0IyWXBPdlkxMUxLQ0ZjM2hSTktQeF8yUlpDbjJneWRWWDBwblp6TnJDYVFzV2h2bFNqel9kWjlZdUNiMGFoV0hR?oc=5"
       },
       {
-        "coins": [],
-        "published": "08.11. 19:41 UTC",
+        "coins": [
+          "DOGE"
+        ],
+        "published": "07.11. 20:39 UTC",
         "score": 0,
-        "title": "Über memeputer - Coinbase",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWS3hHX19WekNXS2MtMmhPck1Ta0J1cGFmWS1CUW5jUjN6eTBEM0pfWlpFNURUZlJEWG5nNnZ2dy1EQm1QRzVnR1BpbHlHU184SzVHRTJOU0FnTlRHWEhLSWkyX3pTSmFiMWNz?oc=5"
+        "title": "Dogecoin (DOGE) Fünfjahres-Kursprognose: Kann der Kurs bis 2030 10 US-Dollar erreichen? - TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOX1B3bnZMSHRZenpLNVppNHNvYmNPNUJkU203YTBhYTdpUW82T1ZpckxiX3I3bjVuMEYyVlkxOTRqbEdWMXgxbDg5dkxQZmVjWlJIcXZlM3g4bUhoUHRlaVVaQ2c3Y2NqeU95SENrVHgxYklhMzhobTV4NXNhZHpjaDUwUU9ia2Q1UTFPVHgyb0dnWF9KT3FUUlJGdzg1ajYyNTJFU1NpdnhrRmh5TF9QallPT1BYR01GcFFGQm9Yclk2bV94VnF0NEtUSjB4OGpjTFJQTTNMZXJUdw?oc=5"
+      },
+      {
+        "coins": [
+          "BTC",
+          "ETH"
+        ],
+        "published": "08.11. 13:44 UTC",
+        "score": 0,
+        "title": "Die Performance der Kryptowährungen in KW 45: Das hat sich bei Bitcoin, Ether & Co. getan - finanzen.ch",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNelp6TEozcHhQVDlUUkstcXR3YmprODRLQWxXSnFrdW9KMGtIYWN6OVB2T1lZN25oSDA0WUZBcFItYk1mcDRXNVRPelhTZ1BZY19Lb3VhOFdUc0prRnpxNXFoNUpIZmlUNkQ0MldIX0pqenhKTFE5aWgweE5nQ3NaOUVweHVidjcxU21fc3VDYm1EOFNHWm83Smtyeko5OWZJMHY0UDlZYWVBUWRRWmpJOGVJeG42NEJTY1cxV3hoOEFLLW5fUTRQeGs4ckVYQWx6ZEhZdm92LTg?oc=5"
       },
       {
         "coins": [],
@@ -384,16 +412,6 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDVDVEE1UDJWWjMtQ0Z6Q3djSTNMOTYyQkNZTUlEcVRFZVg5ejVuWWY0NDctZFd6eHZ0TkhiUkRKaENIdEt2ajhpWTVBcXRHUERTaEJnRzh2Tk1fNnI5N1gwSnVvLXktZzROdEVFOG9RakxBUjQ1d1FMWXdsYWdGbFhIQklEMzl2eXZBdWJTZ2F6dmI0d0w3ZExObWJCdUNvaGJaMmlCZDJFNV80V21QNVhR?oc=5"
       },
       {
-        "coins": [
-          "BTC",
-          "ETH"
-        ],
-        "published": "08.11. 13:44 UTC",
-        "score": 0,
-        "title": "Die Performance der Kryptowährungen in KW 45: Das hat sich bei Bitcoin, Ether & Co. getan - finanzen.ch",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNelp6TEozcHhQVDlUUkstcXR3YmprODRLQWxXSnFrdW9KMGtIYWN6OVB2T1lZN25oSDA0WUZBcFItYk1mcDRXNVRPelhTZ1BZY19Lb3VhOFdUc0prRnpxNXFoNUpIZmlUNkQ0MldIX0pqenhKTFE5aWgweE5nQ3NaOUVweHVidjcxU21fc3VDYm1EOFNHWm83Smtyeko5OWZJMHY0UDlZYWVBUWRRWmpJOGVJeG42NEJTY1cxV3hoOEFLLW5fUTRQeGs4ckVYQWx6ZEhZdm92LTg?oc=5"
-      },
-      {
         "coins": [],
         "published": "08.11. 19:41 UTC",
         "score": 0,
@@ -408,24 +426,6 @@
         "score": -2,
         "title": "Michael Saylor warnt: Bitcoin ist sicher vor KI-Hackern, Börsen aber nicht - BTC-ECHO",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVTBEMVpUS0dqQ28zRmEzOHpUTGg3NUtWb0tQU3VhQUFfbV9IMVFSLU45VEM5YnplV1RWUm9udE05aDlZSU9pbGZINkVMSDN3SWtuVWQySnN3Y29UZ0s1SUpNRDBOS25WVWJKaEV3UWtfdlBtNXlqNkFfbUZYNWMwTnBBZVAxeHMxMHBoTmFBN3h4OU1IMlE?oc=5"
-      },
-      {
-        "coins": [
-          "ETH"
-        ],
-        "published": "08.11. 11:18 UTC",
-        "score": 0,
-        "title": "Ethereum: Entwickler warnen vor Risiken beim Glamsterdam-Upgrade - BeInCrypto",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE83U0dsZk04Mkx4Q0dxamZLYU5rZFJfUG5mUzBmVjlaeXNxMkR3NEZrb3VwQmdrSzJ1QTBpbU9ZQW5GVWFYaHQxeWQxLXN5SmFlMFJudkk0ak8zQnV3QW1QQVhEMVFNRHA3T3FTSVY1TjBLVFZtNm5VSWJiVQ?oc=5"
-      },
-      {
-        "coins": [
-          "ADA"
-        ],
-        "published": "08.11. 16:50 UTC",
-        "score": 0,
-        "title": "Cardano: Leios-Test erreicht 26,8 Kilobytes - Börse Express",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOV01SWVdjVHY2R3N5eDlKMmFZWWhmN1ZNVWxmTElwekl1UC10LXJGMGRZRjhZOWlOMGJLdHR2S19WN0JsUkxTekpsWGx5V0w1dUg1SE9oWF9sbFV3c1lMNjlQd185eVg4VXVJZFppbU5GWU5KdW1ZOWgtbEdhZFFIS2FxRVJEOGF6MWpTUTNTZC1QNVFMSWhDRw?oc=5"
       }
     ],
     "news_by_coin": {
@@ -438,7 +438,7 @@
         "score": -2
       },
       "BTC": {
-        "count": 21,
+        "count": 22,
         "score": -4
       },
       "DOGE": {
@@ -446,7 +446,7 @@
         "score": 0
       },
       "ETH": {
-        "count": 6,
+        "count": 5,
         "score": 0
       },
       "LINK": {
