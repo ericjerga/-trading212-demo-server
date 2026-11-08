@@ -3,7 +3,7 @@
   "shares": 0.0,
   "price": 0.0,
   "peak": 1000.0,
-  "tick": 33,
+  "tick": 34,
   "halted": false,
   "symbol": null,
   "trades": [],
@@ -15,10 +15,10 @@
       "equity": 1000.0
     }
   ],
-  "last_step_at": "2026-11-08T22:31:23.557238+00:00",
+  "last_step_at": "2026-11-08T23:17:06.628023+00:00",
   "crypto": {
     "cash": 200.0,
-    "checked": "2026-11-08T22:31:23.557238+00:00",
+    "checked": "2026-11-08T23:17:06.628023+00:00",
     "entry_price": 0.0,
     "error": null,
     "halted": false,
@@ -26,51 +26,51 @@
     "last_trade_date": null,
     "market": [
       {
-        "change_24h": -1.79,
-        "price": 74314.94,
-        "source": "Coinbase Exchange",
+        "change_24h": -0.41,
+        "price": 75382.0,
+        "source": "CoinGecko",
         "symbol": "BTC"
       },
       {
-        "change_24h": -4.85,
-        "price": 2123.22,
-        "source": "Coinbase Exchange",
+        "change_24h": -3.47,
+        "price": 2154.04,
+        "source": "CoinGecko",
         "symbol": "ETH"
       },
       {
-        "change_24h": -3.56,
-        "price": 85.97,
-        "source": "Coinbase Exchange",
+        "change_24h": -1.77,
+        "price": 87.7,
+        "source": "CoinGecko",
         "symbol": "SOL"
       },
       {
-        "change_24h": -3.89,
-        "price": 1.1138,
-        "source": "Coinbase Exchange",
+        "change_24h": -2.86,
+        "price": 1.13,
+        "source": "CoinGecko",
         "symbol": "XRP"
       },
       {
-        "change_24h": -3.75,
-        "price": 0.17378,
-        "source": "Coinbase Exchange",
+        "change_24h": -1.95,
+        "price": 0.177561,
+        "source": "CoinGecko",
         "symbol": "ADA"
       },
       {
-        "change_24h": -3.97,
-        "price": 10.338,
-        "source": "Coinbase Exchange",
+        "change_24h": -2.54,
+        "price": 10.54,
+        "source": "CoinGecko",
         "symbol": "LINK"
       },
       {
-        "change_24h": -3.36,
-        "price": 7.916,
-        "source": "Coinbase Exchange",
+        "change_24h": -2.26,
+        "price": 8.02,
+        "source": "CoinGecko",
         "symbol": "AVAX"
       },
       {
-        "change_24h": -3.58,
-        "price": 0.06866,
-        "source": "Coinbase Exchange",
+        "change_24h": -1.88,
+        "price": 0.069999,
+        "source": "CoinGecko",
         "symbol": "DOGE"
       }
     ],
@@ -113,12 +113,21 @@
       },
       {
         "coins": [
+          "ETH"
+        ],
+        "published": "08.11. 22:57 UTC",
+        "score": -2,
+        "title": "Ethereum Kurs: 343 Millionen Dollar Long-Liquidationen drücken Ether auf 2.120 Dollar - CryptoTicker.io",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNXJtdUVmUlozaWliNHAyN1BlejNqVFZlazZnUENOWWh4ZnQwSXNuUjJEanVpVEN1MnZxMjdWaUl4NWV3STlrOVZvamRaZm5NRTFrSVIxYVA5Um1EOTZvTEJKZ3U0Qk94TUFZbGxHNXRtWHRJcXBnNHNVLXNVY0RxYi1RWC1yVmJ4UXJnXw?oc=5"
+      },
+      {
+        "coins": [
           "BTC"
         ],
-        "published": "08.11. 07:36 UTC",
+        "published": "08.11. 09:58 UTC",
         "score": 0,
-        "title": "Bitcoin Prognose 2030: Kursziele von ARK & Co. im Check - CryptoTicker.io",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5lUnoxdHdsVHB1RnhQd1lQTFh5RlJRcUp1akZ4WmQ3LU9iUERvVGtCaThUbThMM05ndTNKUEJ5Vlc1cWo1ZjdmTFJ3NjRucFdwVGNuLXpHLXdEZVliNGNUYU1sM2JZUElqNmpBZ3pHMjRFMTQ?oc=5"
+        "title": "Live Micro Bitcoin Dec 26 Future Kurs, Charts und Nachrichten – BTC.DEC26 Heute - eToro",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9uaUFFa3RZR3M5RjN3WUlZc203VWRkV1hzcjItRTBvb2JXNkpicmtoSVVZbHhjZEFMMEdUbkFWTFo0UzZfN1NfempBVHhYeDFySzk2Nw?oc=5"
       },
       {
         "coins": [
@@ -159,21 +168,12 @@
       },
       {
         "coins": [
-          "LINK"
+          "BTC"
         ],
-        "published": "08.11. 15:47 UTC",
+        "published": "08.11. 07:36 UTC",
         "score": 0,
-        "title": "Chainlink Labs im Test + So verdienst du QUA auf Quasa - quasa.io",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOOVpEVUlnVmd0Z2FlcjgwVk5HdDVKNGZIaDQ3ZnRrUnJsc0tJa2FlM2hWMFZyYU1GVTZNS0ZFcFhhUkxyTnY5RG92YUd6UDVwMU1Uc05RYWV4SEJ4UEZrYURfOUlwUWlfTWRXZ25VUGM0dGhGdnRaS08wdGJ4MHJWaU5TRUg?oc=5"
-      },
-      {
-        "coins": [
-          "ETH"
-        ],
-        "published": "08.11. 18:47 UTC",
-        "score": 0,
-        "title": "Ethereum Prognose: 2.982 neue ETH an einem Tag, nur 10 davon verbrannt - CryptoTicker.io",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPS0JXUmJKOVZBRjh5TERaUUp2dXJRT2o1UlZiMElfUUN1ejBla21hT1pDZDQ2MDNqMXF5OTg5N2ZseGhYTW9wTEdpekxVYzBsejF0U1hPOUQ2MXNhRlpkMTZJWmh3QTdnTFV2U0FsbVJ0OVRBbENHQkkwYjhMYlZMbDFCSzgxYl9U?oc=5"
+        "title": "Bitcoin Prognose 2030: Kursziele von ARK & Co. im Check - CryptoTicker.io",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5lUnoxdHdsVHB1RnhQd1lQTFh5RlJRcUp1akZ4WmQ3LU9iUERvVGtCaThUbThMM05ndTNKUEJ5Vlc1cWo1ZjdmTFJ3NjRucFdwVGNuLXpHLXdEZVliNGNUYU1sM2JZUElqNmpBZ3pHMjRFMTQ?oc=5"
       },
       {
         "coins": [
@@ -196,6 +196,15 @@
       },
       {
         "coins": [
+          "DOGE"
+        ],
+        "published": "08.11. 16:51 UTC",
+        "score": 0,
+        "title": "Dogecoin Kurs: Käufer vom November 2025 liegen 58 Prozent im Minus - CryptoTicker.io",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSlNWb2VqTFlFZEJTaVRiVHg0dUowVkg0X19JZlh2MVp2eFFVckRFQXkwdThDbUt5NHhMcjFEQ2hpTzJYQ19nMnFORjVKRUNlTVN6NHRZVFBjWHQ5X3EwV3k1NG1rMTdPLWlyZkUtTy1acVJMRDJQVlpiUGdlaklBX3ktamFQd3pSdTcyVl9n?oc=5"
+      },
+      {
+        "coins": [
           "BTC"
         ],
         "published": "08.11. 03:00 UTC",
@@ -205,21 +214,30 @@
       },
       {
         "coins": [
-          "DOGE"
-        ],
-        "published": "08.11. 16:51 UTC",
-        "score": 0,
-        "title": "Dogecoin Kurs: Novemberkäufer liegen 58 Prozent im Minus - CryptoTicker.io",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSlNWb2VqTFlFZEJTaVRiVHg0dUowVkg0X19JZlh2MVp2eFFVckRFQXkwdThDbUt5NHhMcjFEQ2hpTzJYQ19nMnFORjVKRUNlTVN6NHRZVFBjWHQ5X3EwV3k1NG1rMTdPLWlyZkUtTy1acVJMRDJQVlpiUGdlaklBX3ktamFQd3pSdTcyVl9n?oc=5"
-      },
-      {
-        "coins": [
           "BTC"
         ],
         "published": "08.11. 11:43 UTC",
         "score": 0,
         "title": "So entwickeln sich Bitcoin & Co. am Sonntagmittag - Finanzen.net",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNV0M1dWZrNzNDVFc2QnRtMjc5WkdNYTdXdkNxQ0E0aHBvX3VzdWVHc3M5YVUxZkgwVHF0VTl6anh1eDFnV3FpSl95eDZYcTZOWWt5NnFXMWFTMlIzd1NvY240UUFzdm54NXZjcUdzd2tzb3RzN29GNHkzSDZBVUtrY3FCSFZpWHBIeWFkNE9kWUpxT05zMVhUempIbkVhU00?oc=5"
+      },
+      {
+        "coins": [
+          "ETH"
+        ],
+        "published": "08.11. 18:47 UTC",
+        "score": 0,
+        "title": "Ethereum Prognose: 2.982 neue ETH an einem Tag, nur 10 davon verbrannt - CryptoTicker.io",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPS0JXUmJKOVZBRjh5TERaUUp2dXJRT2o1UlZiMElfUUN1ejBla21hT1pDZDQ2MDNqMXF5OTg5N2ZseGhYTW9wTEdpekxVYzBsejF0U1hPOUQ2MXNhRlpkMTZJWmh3QTdnTFV2U0FsbVJ0OVRBbENHQkkwYjhMYlZMbDFCSzgxYl9U?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "08.11. 14:47 UTC",
+        "score": 0,
+        "title": "Gewiefte Bitcoin-Falle: Entwickler plant \"Landminen\" gegen Krypto-Diebe - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd3hHaUpzbzVTbHd0SGh4RUlULWNEQ2doa0tDcElRVHJyaF9XbXZlSk1kdzBDelg4eWxONXlNN3FJY1Q2Wnd4bmVyakRHcWhxemVaWXRsYUZGSWNQUGlIVF95cnR2LUh4WmU3S1VTLUxZMkRLNzNsd3QzUWpyOWI5WDYwVHdsMDhxWEZESUQ2Zw?oc=5"
       },
       {
         "coins": [
@@ -234,19 +252,19 @@
         "coins": [
           "BTC"
         ],
-        "published": "08.11. 14:47 UTC",
-        "score": 0,
-        "title": "Gewiefte Bitcoin-Falle: Entwickler plant \"Landminen\" gegen Krypto-Diebe - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd3hHaUpzbzVTbHd0SGh4RUlULWNEQ2doa0tDcElRVHJyaF9XbXZlSk1kdzBDelg4eWxONXlNN3FJY1Q2Wnd4bmVyakRHcWhxemVaWXRsYUZGSWNQUGlIVF95cnR2LUh4WmU3S1VTLUxZMkRLNzNsd3QzUWpyOWI5WDYwVHdsMDhxWEZESUQ2Zw?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
         "published": "08.11. 10:34 UTC",
         "score": 0,
         "title": "\"Bitcoin ist die Mindestrendite\": Strive kauft 15.124 BTC – und will mehr - BTC-ECHO",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZHhuU19GMGJGS1A2Yk9qQlYzTzdrSzJ4b1BhNnlhSjFQbVdSOXFLUUVLZDlVcUx2RlNndzA3eFNkLVEySndodWs3QzRLM1hTajBseElXVjU5R2o3UV8zQnM5dVVXMVlQdzJRRXYxRVZTQUxxeWkzRHdyZmRITmoyQ0o0dkZ5dnVGTWJhbFRwb0l1dFAy?oc=5"
+      },
+      {
+        "coins": [
+          "LINK"
+        ],
+        "published": "08.11. 15:47 UTC",
+        "score": 0,
+        "title": "Chainlink Labs im Test + So verdienst du QUA auf Quasa - quasa.io",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOOVpEVUlnVmd0Z2FlcjgwVk5HdDVKNGZIaDQ3ZnRrUnJsc0tJa2FlM2hWMFZyYU1GVTZNS0ZFcFhhUkxyTnY5RG92YUd6UDVwMU1Uc05RYWV4SEJ4UEZrYURfOUlwUWlfTWRXZ25VUGM0dGhGdnRaS08wdGJ4MHJWaU5TRUg?oc=5"
       },
       {
         "coins": [
@@ -354,6 +372,15 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQjdMVjlnQUFBdnQ5MHRvM29Tc1QtQTBscE5ERXowN2ZNRjVtMktmTDhVSS1LdE9EWXJtdmlLbmQ4ams5M3JfUnZoUjN3SG1wcGRRWi1IVHRfNkZuVTFtWjZUdnFxaTBHQmhDa2swbDhmakljNC1zWndOT1p2TG9FemF3d0VEYkpnMFdXazZhSWF2WVVueUJDdmZCeVVYQ0k0UDBfOFc3MjBZUUNRSVE?oc=5"
       },
       {
+        "coins": [
+          "BTC"
+        ],
+        "published": "08.11. 07:00 UTC",
+        "score": -2,
+        "title": "Michael Saylor warnt: Bitcoin ist sicher vor KI-Hackern, Börsen aber nicht - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVTBEMVpUS0dqQ28zRmEzOHpUTGg3NUtWb0tQU3VhQUFfbV9IMVFSLU45VEM5YnplV1RWUm9udE05aDlZSU9pbGZINkVMSDN3SWtuVWQySnN3Y29UZ0s1SUpNRDBOS25WVWJKaEV3UWtfdlBtNXlqNkFfbUZYNWMwTnBBZVAxeHMxMHBoTmFBN3h4OU1IMlE?oc=5"
+      },
+      {
         "coins": [],
         "published": "08.11. 19:41 UTC",
         "score": 0,
@@ -373,15 +400,6 @@
         "score": 0,
         "title": "Jabil xStock-Preis, JBLX-Preis, Live-Charts und Marktkapitalisierung - Coinbase Deutschland - Coinbase",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTVNsQ2l2eXlUUEoxUTNpSG1QTDRYRXFMcEY2eDVqNXJORTZPV1lqeHRESDlvbzczcTZMOTRtV2o1U3FMX01wdm9GTkF6YUJRUnJBbThEVTZTdGVhTEVhdXdNMUMwRnV3WmpKX0VKQXR4RXdYdU1SSzNnVGsxaDI1Q1JvdGFqOVhfSElxNEhWOVpHemU0S0xZQXNQbWo?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "08.11. 07:00 UTC",
-        "score": -2,
-        "title": "Michael Saylor warnt: Bitcoin ist sicher vor KI-Hackern, Börsen aber nicht - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVTBEMVpUS0dqQ28zRmEzOHpUTGg3NUtWb0tQU3VhQUFfbV9IMVFSLU45VEM5YnplV1RWUm9udE05aDlZSU9pbGZINkVMSDN3SWtuVWQySnN3Y29UZ0s1SUpNRDBOS25WVWJKaEV3UWtfdlBtNXlqNkFfbUZYNWMwTnBBZVAxeHMxMHBoTmFBN3h4OU1IMlE?oc=5"
       },
       {
         "coins": [
@@ -410,35 +428,19 @@
         "score": 0,
         "title": "Phantom Wallet einrichten: Anleitung für Solana und Swaps - CryptoTicker.io",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBaOU1lbFBTZzlmekNIWTlQLV9mWUVoSVdpb0xaRGxzT2NzQlRZNjI3OWFkSVpEczlpNGZ4dk9IVWlEZmNiYm9nQkxvUFc5YXFrUDIwQ19FNVpTX2o3YUYtaUNnbDU5ekNfV3NN?oc=5"
-      },
-      {
-        "coins": [
-          "ADA"
-        ],
-        "published": "08.11. 16:50 UTC",
-        "score": 0,
-        "title": "Cardano: Leios-Test erreicht 26,8 Kilobytes - Börse Express",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOV01SWVdjVHY2R3N5eDlKMmFZWWhmN1ZNVWxmTElwekl1UC10LXJGMGRZRjhZOWlOMGJLdHR2S19WN0JsUkxTekpsWGx5V0w1dUg1SE9oWF9sbFV3c1lMNjlQd185eVg4VXVJZFppbU5GWU5KdW1ZOWgtbEdhZFFIS2FxRVJEOGF6MWpTUTNTZC1QNVFMSWhDRw?oc=5"
-      },
-      {
-        "coins": [],
-        "published": "08.11. 19:41 UTC",
-        "score": 0,
-        "title": "Rockwell Automation, Inc.-Preis, ROKC-Preis, Live-Charts und Marktkapitalisierung - Coinbase Deutschland - Coinbase",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTDUtTWZBVTZDVHJtQXJ3TU9ONlljVlR2Y3FkT3JnM01EMHRIdjdhUXVTMWhHQk1maXNCdDR2aW05c3A4UThxMldrcVhRa1padExacUpodGF1THRWX3laLU0wNkJCMzZ5ZmhXR1RBUkJCU2NOaGpINFlrSlF6VElid2duZHlkVkR2UXNIR1R0cklBV0NyYzdjTktqdEFYUElKT3pBd1J6V04?oc=5"
       }
     ],
     "news_by_coin": {
       "ADA": {
-        "count": 1,
-        "score": 0
+        "count": 0,
+        "score": null
       },
       "AVAX": {
         "count": 2,
         "score": -2
       },
       "BTC": {
-        "count": 21,
+        "count": 22,
         "score": -4
       },
       "DOGE": {
@@ -446,8 +448,8 @@
         "score": 0
       },
       "ETH": {
-        "count": 6,
-        "score": 0
+        "count": 7,
+        "score": -2
       },
       "LINK": {
         "count": 2,
