@@ -3,7 +3,7 @@
   "shares": 0.0,
   "price": 0.0,
   "peak": 1000.0,
-  "tick": 16,
+  "tick": 17,
   "halted": false,
   "symbol": null,
   "trades": [],
@@ -15,10 +15,10 @@
       "equity": 1000.0
     }
   ],
-  "last_step_at": "2026-11-08T09:28:25.809425+00:00",
+  "last_step_at": "2026-11-08T10:17:10.104321+00:00",
   "crypto": {
     "cash": 200.0,
-    "checked": "2026-11-08T09:28:25.809425+00:00",
+    "checked": "2026-11-08T10:17:10.104321+00:00",
     "entry_price": 0.0,
     "error": null,
     "halted": false,
@@ -26,50 +26,50 @@
     "last_trade_date": null,
     "market": [
       {
-        "change_24h": -0.19,
-        "price": 75812.59,
+        "change_24h": -0.14,
+        "price": 75797.16,
         "source": "Coinbase Exchange",
         "symbol": "BTC"
       },
       {
-        "change_24h": -0.4,
-        "price": 2233.75,
+        "change_24h": -0.51,
+        "price": 2232.69,
         "source": "Coinbase Exchange",
         "symbol": "ETH"
       },
       {
-        "change_24h": -0.9,
-        "price": 89.15,
+        "change_24h": -0.87,
+        "price": 89.11,
         "source": "Coinbase Exchange",
         "symbol": "SOL"
       },
       {
-        "change_24h": -0.68,
-        "price": 1.162,
+        "change_24h": -0.82,
+        "price": 1.1601,
         "source": "Coinbase Exchange",
         "symbol": "XRP"
       },
       {
-        "change_24h": -1.91,
-        "price": 0.17929,
+        "change_24h": -1.92,
+        "price": 0.17944,
         "source": "Coinbase Exchange",
         "symbol": "ADA"
       },
       {
-        "change_24h": -0.99,
-        "price": 10.721,
+        "change_24h": -0.43,
+        "price": 10.758,
         "source": "Coinbase Exchange",
         "symbol": "LINK"
       },
       {
-        "change_24h": -1.91,
-        "price": 8.13,
+        "change_24h": -1.28,
+        "price": 8.16,
         "source": "Coinbase Exchange",
         "symbol": "AVAX"
       },
       {
-        "change_24h": -1.46,
-        "price": 0.07077,
+        "change_24h": -1.53,
+        "price": 0.07078,
         "source": "Coinbase Exchange",
         "symbol": "DOGE"
       }
@@ -134,19 +134,20 @@
         "coins": [
           "BTC"
         ],
-        "published": "08.11. 07:00 UTC",
-        "score": -2,
-        "title": "Michael Saylor warnt: Bitcoin ist sicher vor KI-Hackern, Börsen aber nicht - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVTBEMVpUS0dqQ28zRmEzOHpUTGg3NUtWb0tQU3VhQUFfbV9IMVFSLU45VEM5YnplV1RWUm9udE05aDlZSU9pbGZINkVMSDN3SWtuVWQySnN3Y29UZ0s1SUpNRDBOS25WVWJKaEV3UWtfdlBtNXlqNkFfbUZYNWMwTnBBZVAxeHMxMHBoTmFBN3h4OU1IMlE?oc=5"
+        "published": "08.11. 10:00 UTC",
+        "score": 0,
+        "title": "Der Preis der Unabhängigkeit: Bitcoin gegen Aktien - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdy1oUVk1UkV3eUdnMzVsY3JTenlwdkxlS2RxNFFjQlVGcXozdFJfVUJiY3RlbFVQVWlQLVBRN3hvLTUzaGFFbEw3b0tJUk1XMTJjeklETGtISnZFLXktWUVWOTF3T2hlNTMtdEpyM2VreVNLU3NaUmpGcVRqeHpnSTE0V2RZeVdBNjVvUXFsRGJTMUJULWtLYzBFNU1kOWlq?oc=5"
       },
       {
         "coins": [
-          "BTC"
+          "BTC",
+          "DOGE"
         ],
-        "published": "08.11. 07:47 UTC",
+        "published": "08.11. 08:48 UTC",
         "score": 0,
-        "title": "Bitcoin-Prognose bis 2036: JPMorgan entwirft drei mögliche Szenarien - finanzen.ch",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRmVWbFFUSEdUZ244ZXRTMTBoTkJCeTRadUZfeVk3aUtpVUhFRDh4dS11RzI0dHNuQnZfWEFtUFQ1U1Y4RnFVRnNET0l0djJqVW9XY0w4TkhxVUEta1BTQ1FOWnFoems2UjNUdGwtQ0NJQ3p4cnZ2TzBmbHR1SlFvUWRvZmo1cElEWVozMlJhemxIWG5CS3Z0X3ZxdWFBUi1JZmNXUHZXZlVONDBfRlZkXzJGQnBXUi10bzR4MU9mQjM?oc=5"
+        "title": "Das sind die aktuellen Kurse von Bitcoin, Dogecoin & Co. - finanzen.ch",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZHZmaHFENEVrQlhFaE9vTWVxWUx0c3pvQUJWQWlSQzRmaGhuQ3FsWS1xLUpBWDJKMVZRTHBFM3JyM1YtTERDX0w5NTd2RHcybWVlVEtrZVdxMEFzYjdsS1FKWEpZN2dMd3o3amJjRXNsZDkxNFVKSS1tdjRBOTdsaEQ0aTVGaXMxdHJNVF9ZZ21rMU5HU0xTSF81STQ3WlpkTUxLRDNJV2R0RnZfR244?oc=5"
       },
       {
         "coins": [
@@ -168,30 +169,21 @@
       },
       {
         "coins": [
+          "BTC"
+        ],
+        "published": "08.11. 07:00 UTC",
+        "score": -2,
+        "title": "Michael Saylor warnt: Bitcoin ist sicher vor KI-Hackern, Börsen aber nicht - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVTBEMVpUS0dqQ28zRmEzOHpUTGg3NUtWb0tQU3VhQUFfbV9IMVFSLU45VEM5YnplV1RWUm9udE05aDlZSU9pbGZINkVMSDN3SWtuVWQySnN3Y29UZ0s1SUpNRDBOS25WVWJKaEV3UWtfdlBtNXlqNkFfbUZYNWMwTnBBZVAxeHMxMHBoTmFBN3h4OU1IMlE?oc=5"
+      },
+      {
+        "coins": [
           "XRP"
         ],
         "published": "08.11. 06:49 UTC",
         "score": 0,
         "title": "XRP Prognose: Binance-Knappheit vor schwachem Wochenschluss - CryptoTicker.io",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZFBacTZuYko0OTk1RllQVVJQY0xrdnEwZjZzdERBSmVwZ1dyNzV0N3JwbGs2bk9LTmg2V0tEZXpIYmw2eVRiamxxUjUxM04zM2FlUWR6Y3RSRVZXckZudlJpTXdOdFZZMnM2dS01UVR4c1pkb0laaHV4WFV0UkF5dWZNa1JLNTF4MnBOTnVaeVVlR0swcEo3UGp3?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "08.11. 03:00 UTC",
-        "score": -2,
-        "title": "Krypto-News: KI-Crash, Bitcoin-Wende in Russland und BMF-Überwachungspläne - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdDJOV0txYzBwcmJZNEZEVXRJMVdiQXFKaWdkWGUwOFB5SHVPQ3hSZ19FYm1YeHlVU1FCSUt1dzVRbVFzNUx6SllCMnE0TWt6b19lRXQ5M21aS3BqVDhic1BZd2RxUWFFT1p2eXQyendmd1NWNDhrbW9CajBjNFlsSTE0dEtUU040MTh6TVd1ak1jcXg4bW9lUEw2MEJnSHM?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "08.11. 04:12 UTC",
-        "score": 0,
-        "title": "Gold vs. Bitcoin: CZ entfacht viralen Schlagabtausch mit Peter Schiff - finanzen.ch",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcVBOM1U5TnpTU2UtX1NJeVo0My0tOEg3dS1wTGdUQ2hQU21VcW9tVmNVbnVMQkhPT2RjbWVNUjktczdnQ1UwYXViMktndi05RTNfZDQxQ2lOdU1UdGYyZV95ajFvQjVsV2RoNWNRN1JibGpLUGhGS0thbFpyNzJod1RWTHFVOTdYcFQ3X0RSTDUzRDZxT0RETDBxcnpwYVBkTXFyX0lYNmQyUF95Z0RueGRFdW1XNnFJeUdfOWpXNA?oc=5"
       },
       {
         "coins": [
@@ -207,6 +199,24 @@
         "coins": [
           "BTC"
         ],
+        "published": "08.11. 04:12 UTC",
+        "score": 0,
+        "title": "Gold vs. Bitcoin: CZ entfacht viralen Schlagabtausch mit Peter Schiff - finanzen.ch",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcVBOM1U5TnpTU2UtX1NJeVo0My0tOEg3dS1wTGdUQ2hQU21VcW9tVmNVbnVMQkhPT2RjbWVNUjktczdnQ1UwYXViMktndi05RTNfZDQxQ2lOdU1UdGYyZV95ajFvQjVsV2RoNWNRN1JibGpLUGhGS0thbFpyNzJod1RWTHFVOTdYcFQ3X0RSTDUzRDZxT0RETDBxcnpwYVBkTXFyX0lYNmQyUF95Z0RueGRFdW1XNnFJeUdfOWpXNA?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "08.11. 03:00 UTC",
+        "score": -2,
+        "title": "Krypto-News: KI-Crash, Bitcoin-Wende in Russland und BMF-Überwachungspläne - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdDJOV0txYzBwcmJZNEZEVXRJMVdiQXFKaWdkWGUwOFB5SHVPQ3hSZ19FYm1YeHlVU1FCSUt1dzVRbVFzNUx6SllCMnE0TWt6b19lRXQ5M21aS3BqVDhic1BZd2RxUWFFT1p2eXQyendmd1NWNDhrbW9CajBjNFlsSTE0dEtUU040MTh6TVd1ak1jcXg4bW9lUEw2MEJnSHM?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
         "published": "08.11. 07:06 UTC",
         "score": 0,
         "title": "Wird Bitcoin wieder steigen? 3 Szenarien bis Jahresende - CryptoTicker.io",
@@ -214,23 +224,12 @@
       },
       {
         "coins": [
-          "BTC",
-          "DOGE"
+          "BTC"
         ],
-        "published": "08.11. 08:48 UTC",
+        "published": "08.11. 07:47 UTC",
         "score": 0,
-        "title": "Das sind die aktuellen Kurse von Bitcoin, Dogecoin & Co. - finanzen.ch",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZHZmaHFENEVrQlhFaE9vTWVxWUx0c3pvQUJWQWlSQzRmaGhuQ3FsWS1xLUpBWDJKMVZRTHBFM3JyM1YtTERDX0w5NTd2RHcybWVlVEtrZVdxMEFzYjdsS1FKWEpZN2dMd3o3amJjRXNsZDkxNFVKSS1tdjRBOTdsaEQ0aTVGaXMxdHJNVF9ZZ21rMU5HU0xTSF81STQ3WlpkTUxLRDNJV2R0RnZfR244?oc=5"
-      },
-      {
-        "coins": [
-          "BTC",
-          "XRP"
-        ],
-        "published": "07.11. 10:27 UTC",
-        "score": 0,
-        "title": "Ripple-Stimmung am Tiefpunkt: Krypto-Experte sieht ideale XRP-Kaufchance - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdFA1bHo4YThWNTFVRTVOUmhFbjhXcmZoZUdwaFJWZ3FfazJscEgwcjRTd3FvdTdJZDBCTTlSZk9BRDA3SFg5b05laVF5WkQtZlVCYTByMWlpRVRCY1lyYkdYbVNrTkZYaXd2NldJRUpqQXNkRkFBUHJDT0FXV3pzRFV5ZHRaaVN3Sk9qeGN3MWw0TFAwWEtV?oc=5"
+        "title": "Bitcoin-Prognose bis 2036: JPMorgan entwirft drei mögliche Szenarien - finanzen.ch",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRmVWbFFUSEdUZ244ZXRTMTBoTkJCeTRadUZfeVk3aUtpVUhFRDh4dS11RzI0dHNuQnZfWEFtUFQ1U1Y4RnFVRnNET0l0djJqVW9XY0w4TkhxVUEta1BTQ1FOWnFoems2UjNUdGwtQ0NJQ3p4cnZ2TzBmbHR1SlFvUWRvZmo1cElEWVozMlJhemxIWG5CS3Z0X3ZxdWFBUi1JZmNXUHZXZlVONDBfRlZkXzJGQnBXUi10bzR4MU9mQjM?oc=5"
       },
       {
         "coins": [
@@ -268,6 +267,16 @@
         "score": 0,
         "title": "Die Performance der Kryptowährungen in KW 45: Das hat sich bei Bitcoin, Ether & Co. getan - finanzen.ch",
         "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNelp6TEozcHhQVDlUUkstcXR3YmprODRLQWxXSnFrdW9KMGtIYWN6OVB2T1lZN25oSDA0WUZBcFItYk1mcDRXNVRPelhTZ1BZY19Lb3VhOFdUc0prRnpxNXFoNUpIZmlUNkQ0MldIX0pqenhKTFE5aWgweE5nQ3NaOUVweHVidjcxU21fc3VDYm1EOFNHWm83Smtyeko5OWZJMHY0UDlZYWVBUWRRWmpJOGVJeG42NEJTY1cxV3hoOEFLLW5fUTRQeGs4ckVYQWx6ZEhZdm92LTg?oc=5"
+      },
+      {
+        "coins": [
+          "BTC",
+          "XRP"
+        ],
+        "published": "07.11. 10:27 UTC",
+        "score": 0,
+        "title": "Ripple-Stimmung am Tiefpunkt: Krypto-Experte sieht ideale XRP-Kaufchance - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdFA1bHo4YThWNTFVRTVOUmhFbjhXcmZoZUdwaFJWZ3FfazJscEgwcjRTd3FvdTdJZDBCTTlSZk9BRDA3SFg5b05laVF5WkQtZlVCYTByMWlpRVRCY1lyYkdYbVNrTkZYaXd2NldJRUpqQXNkRkFBUHJDT0FXV3pzRFV5ZHRaaVN3Sk9qeGN3MWw0TFAwWEtV?oc=5"
       },
       {
         "coins": [
@@ -350,18 +359,6 @@
       },
       {
         "coins": [
-          "BTC",
-          "ETH",
-          "SOL",
-          "XRP"
-        ],
-        "published": "07.11. 09:46 UTC",
-        "score": -2,
-        "title": "Krypto Crash: Warum Bitcoin, Ethereum, XRP und Solana abstürzen und was jetzt zählt - CryptoTicker.io",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSThEcF9zb25HNTRfeXh0V3NfYmxERm9TOHdKcU4tZV9FZlpYWGxGRXROeTFCd25RWjFyYmxaTklmMnlqZlpDQ2M4cno2TFNvU1VyVTJ0VjdUTUV0YmVsOHd4Tm5heDR2WmRpWl9PUHBUaUVTeGk3bUQ1RXJGRUc2X3VR?oc=5"
-      },
-      {
-        "coins": [
           "ETH"
         ],
         "published": "07.11. 18:48 UTC",
@@ -398,16 +395,6 @@
       },
       {
         "coins": [
-          "BTC",
-          "XRP"
-        ],
-        "published": "07.11. 11:43 UTC",
-        "score": 0,
-        "title": "So entwickeln sich Bitcoin, Ripple & Co am Samstagmittag am Kryptomarkt - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOenQ4U0dsRU1xako0MmIzRFlBbjVrQ0ltUUFGN2JTT3dLSlNFZE9xVGtWN2R5anczckoxaU1DNDY2NDVDbk9VeUt5UVBFVEVlU2hIN3Fkel9FTmJYaTNtSFN1UDdZUE1WVGJjQmI2emkxZTZueFBpcHA0Nm5WZDdBTW1EdlAtU0I3RDE0R3ZuREl3X2NqMTBfeDQ0RGxUMmw3dGM2dklsb0RwMGpIQ2RWc2lubmJOd29FOW9GUA?oc=5"
-      },
-      {
-        "coins": [
           "ETH"
         ],
         "published": "07.11. 22:26 UTC",
@@ -417,12 +404,13 @@
       },
       {
         "coins": [
-          "AVAX"
+          "BTC",
+          "XRP"
         ],
-        "published": "07.11. 10:45 UTC",
+        "published": "07.11. 11:43 UTC",
         "score": 0,
-        "title": "Detroit Red Wings - Colorado Avalanche - 07.11.2026 - NHL.com",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBvNWJMUkV3Q29TV2p6NEhzUzU4SGxheW1ibXF5SzZkb3hnZUhRakY3dzlRX2ZsZlotdDljRUNSbTY5NEN3b1cwZ1VBdjNZUlU2dXhLY1ZuSnpsVEJHQkt5VkNoS3Jna0tSUkxQN0hXVkJMMmlD?oc=5"
+        "title": "So entwickeln sich Bitcoin, Ripple & Co am Samstagmittag am Kryptomarkt - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOenQ4U0dsRU1xako0MmIzRFlBbjVrQ0ltUUFGN2JTT3dLSlNFZE9xVGtWN2R5anczckoxaU1DNDY2NDVDbk9VeUt5UVBFVEVlU2hIN3Fkel9FTmJYaTNtSFN1UDdZUE1WVGJjQmI2emkxZTZueFBpcHA0Nm5WZDdBTW1EdlAtU0I3RDE0R3ZuREl3X2NqMTBfeDQ0RGxUMmw3dGM2dklsb0RwMGpIQ2RWc2lubmJOd29FOW9GUA?oc=5"
       },
       {
         "coins": [
@@ -435,12 +423,21 @@
       },
       {
         "coins": [
+          "AVAX"
+        ],
+        "published": "07.11. 10:45 UTC",
+        "score": 0,
+        "title": "Detroit Red Wings - Colorado Avalanche - 07.11.2026 - NHL.com",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBvNWJMUkV3Q29TV2p6NEhzUzU4SGxheW1ibXF5SzZkb3hnZUhRakY3dzlRX2ZsZlotdDljRUNSbTY5NEN3b1cwZ1VBdjNZUlU2dXhLY1ZuSnpsVEJHQkt5VkNoS3Jna0tSUkxQN0hXVkJMMmlD?oc=5"
+      },
+      {
+        "coins": [
           "BTC"
         ],
-        "published": "07.11. 15:31 UTC",
+        "published": "07.11. 16:23 UTC",
         "score": 0,
-        "title": "Bitcoin und Nvidia: Snack-Aktien überholen 2026 - BeInCrypto",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Ba0NuTlNmdHJVNm5RUEctY01Fd3NZT3p2NXZ5MWRZQTFiM0R3ZE9aQkNYdF84YjZjSnZzakYtaFB6TW9mR3VQMUltUHd6dFVoTEZwdDkxS1I2NHVROXlZVkFEcUNDZFQ5Rmxv?oc=5"
+        "title": "Aktueller Marktbericht zu Bitcoin & Co. - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNLXpiU2NXUjRaQ29HalF2aGotOWFlUDlBNm0wRk5XcGRuX2lzb19fZGxzeUEybnRZS0VsVXMxSDY4WkdFTldPaGhxREd2TXhIMFEyTTh0SXNNa1V4LVI0akZseE9HMDFELTdfeVpmcTUzSl9MOVRVWlN5TllyZnRSb1FOakNDMFNWdWdkekdLc3pndw?oc=5"
       }
     ],
     "news_by_coin": {
@@ -454,27 +451,27 @@
       },
       "BTC": {
         "count": 21,
-        "score": -10
+        "score": -8
       },
       "DOGE": {
         "count": 4,
         "score": 0
       },
       "ETH": {
-        "count": 7,
-        "score": -2
+        "count": 6,
+        "score": 0
       },
       "LINK": {
         "count": 1,
         "score": 0
       },
       "SOL": {
-        "count": 2,
-        "score": -2
+        "count": 1,
+        "score": 0
       },
       "XRP": {
-        "count": 7,
-        "score": -2
+        "count": 6,
+        "score": 0
       }
     },
     "news_error": null,
