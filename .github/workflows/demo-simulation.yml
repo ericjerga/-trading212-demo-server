@@ -47,7 +47,7 @@ jobs:
           python3 - <<'PY'
           import json, math, pathlib
           response = json.loads(pathlib.Path('response.json').read_text(encoding='utf-8'))
-          fields = ('cash','shares','price','peak','tick','halted','symbol','trades','last_trade_date','entry_price','equity_history','last_step_at')
+          fields = ('cash','shares','price','peak','tick','halted','symbol','trades','last_trade_date','entry_price','equity_history','last_step_at','crypto')
           state = {key: response.get(key) for key in fields}
           if not isinstance(state['tick'], int) or state['tick'] < 1:
               raise ValueError('Invalid step response: no simulation tick')
@@ -59,6 +59,8 @@ jobs:
           state['equity_history'] = (state['equity_history'] or [])[-120:]
           if not isinstance(state['equity_history'], list):
               raise ValueError('Invalid equity history')
+          if not isinstance(state['crypto'], dict) or not isinstance(state['crypto'].get('trades'), list):
+              raise ValueError('Invalid crypto ledger')
           pathlib.Path('state.json').write_text(json.dumps(state, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
           PY
           rm -f request.json response.json
