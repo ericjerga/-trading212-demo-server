@@ -3,7 +3,7 @@
   "shares": 0.0,
   "price": 0.0,
   "peak": 1000.0,
-  "tick": 5,
+  "tick": 6,
   "halted": false,
   "symbol": null,
   "trades": [],
@@ -15,10 +15,10 @@
       "equity": 1000.0
     }
   ],
-  "last_step_at": "2026-11-08T00:47:37.505273+00:00",
+  "last_step_at": "2026-11-08T00:49:18.854086+00:00",
   "crypto": {
     "cash": 200.0,
-    "checked": "2026-11-08T00:47:37.505273+00:00",
+    "checked": "2026-11-08T00:49:18.854086+00:00",
     "entry_price": 0.0,
     "error": null,
     "halted": false,
@@ -26,14 +26,14 @@
     "last_trade_date": null,
     "market": [
       {
-        "change_24h": -0.16,
-        "price": 75657.67,
+        "change_24h": -0.17,
+        "price": 75657.0,
         "source": "Coinbase Exchange",
         "symbol": "BTC"
       },
       {
-        "change_24h": -0.16,
-        "price": 2232.97,
+        "change_24h": -0.18,
+        "price": 2232.47,
         "source": "Coinbase Exchange",
         "symbol": "ETH"
       }
