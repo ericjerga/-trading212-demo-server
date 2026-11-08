@@ -27,7 +27,7 @@ app.config.update(SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE='Lax', S
 LOCK = threading.Lock()
 START = 1000.0
 CRYPTO_START = 200.0
-state = {'cash': START, 'shares': 0.0, 'price': 0.0, 'symbol': None, 'tick': 0, 'trades': [], 'halted': False, 'peak': START, 'news': [], 'news_checked': None, 'news_error': None, 'last_decision': 'Noch keine Prüfung', 'news_score': None, 'market': [], 'market_checked': None, 'market_error': None, 'last_trade_date': None, 'equity_history': [], 'last_step_at': None, 'crypto': {'cash': CRYPTO_START, 'shares': 0.0, 'price': 0.0, 'symbol': None, 'entry_price': 0.0, 'peak': CRYPTO_START, 'halted': False, 'trades': [], 'last_trade_date': None, 'last_decision': 'Noch keine Prüfung', 'market': [], 'checked': None, 'error': None}}
+state = {'cash': START, 'shares': 0.0, 'price': 0.0, 'symbol': None, 'tick': 0, 'trades': [], 'halted': False, 'peak': START, 'news': [], 'news_checked': None, 'news_error': None, 'last_decision': 'Noch keine Prüfung', 'news_score': None, 'market': [], 'market_checked': None, 'market_error': None, 'last_trade_date': None, 'equity_history': [], 'last_step_at': None, 'crypto': {'cash': CRYPTO_START, 'shares': 0.0, 'price': 0.0, 'symbol': None, 'entry_price': 0.0, 'peak': CRYPTO_START, 'halted': False, 'trades': [], 'last_trade_date': None, 'last_decision': 'Noch keine Prüfung', 'market': [], 'checked': None, 'error': None, 'news': [], 'news_score': None, 'news_error': None}}
 
 def valid_token(value):
     token = os.environ.get('DASHBOARD_TOKEN', '')
@@ -240,8 +240,40 @@ def fetch_crypto_market():
     return result
 
 
-def simulate_crypto(now,market,error):
+CRYPTO_RSS_URL = 'https://news.google.com/rss/search?q=Bitcoin+OR+Ethereum+OR+Kryptowaehrung+when%3A1d&hl=de&gl=DE&ceid=DE:de'
+CRYPTO_NEGATIVE = ('hack', 'gehackt', 'diebstahl', 'betrug', 'scam', 'pleite', 'insolvenz', 'verbot', 'verboten', 'klage', 'crash', 'einbruch', 'verlust', 'liquidation', 'sanktion', 'exploit', 'breach', 'fraud', 'ban', 'lawsuit')
+CRYPTO_POSITIVE = ('zulassung', 'genehmigung', 'etf-zufluss', 'zuflüsse', 'adoption', 'akzeptanz', 'erholung', 'approval', 'inflows', 'recovery')
+
+def fetch_crypto_news():
+    req = urllib.request.Request(CRYPTO_RSS_URL, headers={'User-Agent':'Mozilla/5.0 DemoResearchBot/1.0','Accept':'application/rss+xml'})
+    with urllib.request.urlopen(req,timeout=9) as resp:
+        root = ET.fromstring(resp.read(250000))
+    now = datetime.now(timezone.utc)
+    items = []
+    seen = set()
+    for item in root.findall('./channel/item')[:40]:
+        title = (item.findtext('title') or '').strip()
+        link = (item.findtext('link') or '').strip()
+        try:
+            published = parsedate_to_datetime(item.findtext('pubDate') or '').astimezone(timezone.utc)
+        except (ValueError, TypeError, OverflowError):
+            continue
+        if not title or title.casefold() in seen or published > now+timedelta(minutes=5) or now-published > timedelta(hours=24):
+            continue
+        seen.add(title.casefold())
+        lower = title.casefold()
+        score = sum(term in lower for term in CRYPTO_POSITIVE) - 2*sum(term in lower for term in CRYPTO_NEGATIVE)
+        items.append({'title':title[:180],'url':link if link.startswith('https://') else '',
+                      'published':published.strftime('%d.%m. %H:%M UTC'),'score':score})
+        if len(items) >= 10: break
+    if len(items) < 3:
+        raise ValueError('Zu wenige aktuelle Kryptomeldungen')
+    return items, sum(x['score'] for x in items)
+
+
+def simulate_crypto(now,market,error,news,news_score,news_error):
     c=state['crypto']; today=now.date().isoformat()
+    c['news'],c['news_score'],c['news_error']=news,news_score,news_error
     c['market'],c['checked'],c['error']=market,now.isoformat(),error
     held=next((m for m in market if m['symbol']==c['symbol']),None)
     if held: c['price']=held['price']
@@ -259,6 +291,8 @@ def simulate_crypto(now,market,error):
         c['trades'].append({'side':'SIM_SELL','symbol':c['symbol'],'price':round(held['price'],4),'amount':round(amount,2),'date':today})
         c['shares'],c['symbol'],c['price'],c['entry_price']=0.0,None,0.0,0.0
         c['last_trade_date']=today; c['last_decision']='Virtueller Krypto-Verkauf'
+    elif c['shares']==0 and (news_error or news_score is None or news_score < 0):
+        c['last_decision']='Kein Krypto-Kauf: Nachrichten fehlen oder sind negativ'
     elif c['shares']==0:
         candidates=[m for m in market if 1<=m['change_24h']<=5]
         if candidates:
@@ -288,6 +322,12 @@ def step():
         crypto_market, crypto_error = fetch_crypto_market(), None
     except Exception:
         crypto_market, crypto_error = [], 'Kryptokurse nicht verfügbar – kein Handel'
+    try:
+        crypto_news, crypto_news_score = fetch_crypto_news()
+        crypto_news_error = None
+    except Exception:
+        crypto_news, crypto_news_score = [], None
+        crypto_news_error = 'Keine ausreichend aktuellen Kryptonachrichten – keine neuen Käufe'
     now = datetime.now(timezone.utc)
     today = now.date().isoformat()
     with LOCK:
@@ -332,7 +372,7 @@ def step():
                     state.update(restored)
             except (KeyError, TypeError, ValueError, OverflowError):
                 pass
-        simulate_crypto(now, crypto_market, crypto_error)
+        simulate_crypto(now, crypto_market, crypto_error, crypto_news, crypto_news_score, crypto_news_error)
         state['news_checked'] = now.strftime('%d.%m.%Y %H:%M UTC')
         state['news'], state['news_score'], state['news_error'] = news, score, error
         state['market_checked'] = now.strftime('%d.%m.%Y %H:%M UTC')
