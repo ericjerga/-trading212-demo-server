@@ -5,6 +5,7 @@ import os
 import math
 import random
 import urllib.request
+import urllib.error
 import json
 import csv
 import io
@@ -250,11 +251,28 @@ def _fetch_coingecko_crypto():
         return _crypto_price_rows(json.load(resp), 'CoinGecko')
 
 
+def _safe_crypto_error(exc):
+    # Do not expose request URLs, tokens, response bodies, or credentials.
+    if isinstance(exc, urllib.error.HTTPError):
+        return 'HTTP ' + str(exc.code)
+    if isinstance(exc, urllib.error.URLError):
+        return 'Netzwerk-/DNS-/TLS-Fehler'
+    if isinstance(exc, TimeoutError):
+        return 'Zeitüberschreitung'
+    if isinstance(exc, (ValueError, TypeError, KeyError, OverflowError)):
+        return 'Ungültige/veraltete Kursdaten (' + type(exc).__name__ + ')'
+    return 'Abruffehler (' + type(exc).__name__ + ')'
+
+
 def fetch_crypto_market():
     try:
         return _fetch_coingecko_crypto()
-    except (OSError, ValueError, TypeError, KeyError, OverflowError):
-        return _fetch_coinbase_crypto()
+    except Exception as first:
+        try:
+            return _fetch_coinbase_crypto()
+        except Exception as second:
+            raise ValueError('CoinGecko: ' + _safe_crypto_error(first)
+                             + '; Coinbase: ' + _safe_crypto_error(second)) from None
 
 
 def _fetch_coinbase_crypto():
@@ -366,8 +384,8 @@ def step():
     market = fetch_market()
     try:
         crypto_market, crypto_error = fetch_crypto_market(), None
-    except Exception:
-        crypto_market, crypto_error = [], 'Kryptokurse nicht verfügbar – kein Handel'
+    except Exception as exc:
+        crypto_market, crypto_error = [], 'Kryptokurse nicht verfügbar – kein Handel. Diagnose: ' + str(exc)[:180]
     try:
         crypto_news, crypto_news_score = fetch_crypto_news()
         crypto_news_error = None
