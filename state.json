@@ -1,0 +1,32 @@
+{
+  "cash": 1000,
+  "shares": 0,
+  "price": 0,
+  "peak": 1000,
+  "tick": 0,
+  "halted": false,
+  "symbol": null,
+  "trades": [],
+  "last_trade_date": null,
+  "entry_price": 0,
+  "equity_history": [],
+  "last_step_at": null,
+  "crypto": {
+    "cash": 200,
+    "shares": 0,
+    "price": 0,
+    "symbol": null,
+    "entry_price": 0,
+    "peak": 200,
+    "halted": false,
+    "trades": [],
+    "last_trade_date": null,
+    "last_decision": "Noch keine Prüfung",
+    "market": [],
+    "checked": null,
+    "error": null,
+    "news": [],
+    "news_score": null,
+    "news_error": null
+  }
+}
