@@ -13,6 +13,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 import secrets
+import re
 import threading
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor
@@ -299,35 +300,40 @@ CRYPTO_NEGATIVE = ('hack', 'gehackt', 'diebstahl', 'betrug', 'scam', 'pleite', '
 CRYPTO_POSITIVE = ('zulassung', 'genehmigung', 'etf-zufluss', 'zuflüsse', 'adoption', 'akzeptanz', 'erholung', 'approval', 'inflows', 'recovery')
 
 def fetch_crypto_news():
-    req = urllib.request.Request(CRYPTO_RSS_URL, headers={'User-Agent':'Mozilla/5.0 DemoResearchBot/1.0','Accept':'application/rss+xml'})
-    with urllib.request.urlopen(req,timeout=9) as resp:
-        root = ET.fromstring(resp.read(250000))
-    now = datetime.now(timezone.utc)
-    items = []
-    seen = set()
-    for item in root.findall('./channel/item')[:40]:
-        title = (item.findtext('title') or '').strip()
-        link = (item.findtext('link') or '').strip()
-        try:
-            published = parsedate_to_datetime(item.findtext('pubDate') or '').astimezone(timezone.utc)
-        except (ValueError, TypeError, OverflowError):
-            continue
-        if not title or title.casefold() in seen or published > now+timedelta(minutes=5) or now-published > timedelta(hours=24):
-            continue
+    req=urllib.request.Request(CRYPTO_RSS_URL,headers={'User-Agent':'Mozilla/5.0 DemoResearchBot/1.0','Accept':'application/rss+xml'})
+    with urllib.request.urlopen(req,timeout=9) as resp: root=ET.fromstring(resp.read(250000))
+    now=datetime.now(timezone.utc)
+    items=[]
+    seen=set()
+    per_coin={symbol:{'score':None,'count':0} for symbol in CRYPTO_COINS}
+    scores={symbol:0 for symbol in CRYPTO_COINS}
+    for item in root.findall('./channel/item')[:80]:
+        title=(item.findtext('title') or '').strip()
+        link=(item.findtext('link') or '').strip()
+        try: published=parsedate_to_datetime(item.findtext('pubDate') or '').astimezone(timezone.utc)
+        except (ValueError,TypeError,OverflowError): continue
+        if not title or title.casefold() in seen or published>now+timedelta(minutes=5) or now-published>timedelta(hours=24): continue
         seen.add(title.casefold())
-        lower = title.casefold()
-        score = sum(term in lower for term in CRYPTO_POSITIVE) - 2*sum(term in lower for term in CRYPTO_NEGATIVE)
+        lower=title.casefold()
+        score=sum(term in lower for term in CRYPTO_POSITIVE)-2*sum(term in lower for term in CRYPTO_NEGATIVE)
+        matched=[symbol for symbol,(_,_,aliases) in CRYPTO_COINS.items()
+                 if any(re.search(r'(?<![a-z0-9])'+re.escape(alias)+r'(?![a-z0-9])',lower) for alias in aliases)]
+        for symbol in matched:
+            scores[symbol]+=score
+            per_coin[symbol]['count']+=1
         items.append({'title':title[:180],'url':link if link.startswith('https://') else '',
-                      'published':published.strftime('%d.%m. %H:%M UTC'),'score':score})
-        if len(items) >= 10: break
-    if len(items) < 3:
-        raise ValueError('Zu wenige aktuelle Kryptomeldungen')
-    return items, sum(x['score'] for x in items)
+                      'published':published.strftime('%d.%m. %H:%M UTC'),'score':score,'coins':matched})
+        if len(items)>=40: break
+    for symbol in CRYPTO_COINS:
+        if per_coin[symbol]['count']: per_coin[symbol]['score']=scores[symbol]
+    if not items: raise ValueError('Keine aktuellen Kryptomeldungen')
+    return items,per_coin
 
 
 def simulate_crypto(now,market,error,news,news_score,news_error):
     c=state['crypto']; today=now.date().isoformat()
-    c['news'],c['news_score'],c['news_error']=news,news_score,news_error
+    c['news'],c['news_by_coin'],c['news_error']=news,news_score,news_error
+    c['news_score']=None
     c['market'],c['checked'],c['error']=market,now.isoformat(),error
     held=next((m for m in market if m['symbol']==c['symbol']),None)
     if held: c['price']=held['price']
@@ -345,10 +351,11 @@ def simulate_crypto(now,market,error,news,news_score,news_error):
         c['trades'].append({'side':'SIM_SELL','symbol':c['symbol'],'price':round(held['price'],4),'amount':round(amount,2),'date':today})
         c['shares'],c['symbol'],c['price'],c['entry_price']=0.0,None,0.0,0.0
         c['last_trade_date']=today; c['last_decision']='Virtueller Krypto-Verkauf'
-    elif c['shares']==0 and (news_error or news_score is None or news_score < 0):
-        c['last_decision']='Kein Krypto-Kauf: Nachrichten fehlen oder sind negativ'
     elif c['shares']==0:
-        candidates=[m for m in market if 1<=m['change_24h']<=5]
+        candidates=[m for m in market if 1<=m['change_24h']<=5
+                    and not news_error and isinstance(news_score,dict)
+                    and news_score.get(m['symbol'],{}).get('score') is not None
+                    and news_score[m['symbol']]['score'] >= 0]
         if candidates:
             chosen=max(candidates,key=lambda m:m['change_24h'])
             spend=min(c['cash'],equity*0.10)
@@ -358,7 +365,7 @@ def simulate_crypto(now,market,error,news,news_score,news_error):
                 c['last_trade_date']=today
                 c['trades'].append({'side':'SIM_BUY','symbol':chosen['symbol'],'price':round(chosen['price'],4),'amount':round(spend,2),'date':today})
                 c['last_decision']='Virtueller Kauf '+chosen['symbol']
-        else: c['last_decision']='Kein Krypto-Kaufsignal'
+        else: c['last_decision']='Kein Kaufsignal mit ausreichenden, nicht-negativen Coin-Nachrichten'
     else: c['last_decision']='Krypto-Position halten'
     c['trades']=c['trades'][-50:]
 
