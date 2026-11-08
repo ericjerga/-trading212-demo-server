@@ -3,7 +3,7 @@
   "shares": 0.0,
   "price": 0.0,
   "peak": 1000.0,
-  "tick": 9,
+  "tick": 10,
   "halted": false,
   "symbol": null,
   "trades": [],
@@ -15,10 +15,10 @@
       "equity": 1000.0
     }
   ],
-  "last_step_at": "2026-11-08T02:46:41.081848+00:00",
+  "last_step_at": "2026-11-08T03:46:42.758987+00:00",
   "crypto": {
     "cash": 200.0,
-    "checked": "2026-11-08T02:46:41.081848+00:00",
+    "checked": "2026-11-08T03:46:42.758987+00:00",
     "entry_price": 0.0,
     "error": null,
     "halted": false,
@@ -26,50 +26,50 @@
     "last_trade_date": null,
     "market": [
       {
-        "change_24h": -0.47,
-        "price": 75582.74,
+        "change_24h": -0.02,
+        "price": 75780.0,
         "source": "Coinbase Exchange",
         "symbol": "BTC"
       },
       {
-        "change_24h": -0.76,
-        "price": 2226.79,
+        "change_24h": -0.28,
+        "price": 2235.6,
         "source": "Coinbase Exchange",
         "symbol": "ETH"
       },
       {
-        "change_24h": -1.69,
-        "price": 88.77,
+        "change_24h": -0.8,
+        "price": 89.21,
         "source": "Coinbase Exchange",
         "symbol": "SOL"
       },
       {
-        "change_24h": -1.11,
-        "price": 1.1539,
+        "change_24h": 0.09,
+        "price": 1.1596,
         "source": "Coinbase Exchange",
         "symbol": "XRP"
       },
       {
-        "change_24h": -2.55,
-        "price": 0.17943,
+        "change_24h": -2.05,
+        "price": 0.18036,
         "source": "Coinbase Exchange",
         "symbol": "ADA"
       },
       {
-        "change_24h": -0.45,
-        "price": 10.734,
+        "change_24h": -0.1,
+        "price": 10.769,
         "source": "Coinbase Exchange",
         "symbol": "LINK"
       },
       {
-        "change_24h": -1.72,
-        "price": 8.148,
+        "change_24h": -1.31,
+        "price": 8.189,
         "source": "Coinbase Exchange",
         "symbol": "AVAX"
       },
       {
-        "change_24h": -1.92,
-        "price": 0.07086,
+        "change_24h": -0.93,
+        "price": 0.07122,
         "source": "Coinbase Exchange",
         "symbol": "DOGE"
       }
@@ -96,21 +96,21 @@
       },
       {
         "coins": [
-          "ADA"
-        ],
-        "published": "07.11. 22:49 UTC",
-        "score": 0,
-        "title": "Cardano heute: Amaru darf Blöcke im Mainnet bauen - CryptoTicker.io",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBlZl9pYkxfQXdCNnhic3NXZ24zZG5xeXVESWZDVkk4M09tTlUybzdUZjM1akF6NjZFOGxtY3hITzRBMExqZEVjaFZMcTRtV1ZJTGJUOG5kUzdmQnYwSVRYUS1fNk5Pa1EydWg1Nm9VVm93WFZiQzRzcjhVSUhEdw?oc=5"
-      },
-      {
-        "coins": [
           "BTC"
         ],
         "published": "07.11. 17:51 UTC",
         "score": 0,
         "title": "Bitcoin: Haben die Bullen versagt? - sharedeals.de",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4xcEF5dEw2RW41RnhfeWl5YUhVSGV6MEFaalh2aGdILXBycXM3bjlsNkppM1ByR0FfeGVYLXNGWUt1NHlKbzJHUjJxTFhUYkxwc3JCUkVSM01RR2ZHLWhTU2FERTl6R1JjUUE0?oc=5"
+      },
+      {
+        "coins": [
+          "ADA"
+        ],
+        "published": "07.11. 22:49 UTC",
+        "score": 0,
+        "title": "Cardano heute: Amaru darf Blöcke im Mainnet bauen - CryptoTicker.io",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBlZl9pYkxfQXdCNnhic3NXZ24zZG5xeXVESWZDVkk4M09tTlUybzdUZjM1akF6NjZFOGxtY3hITzRBMExqZEVjaFZMcTRtV1ZJTGJUOG5kUzdmQnYwSVRYUS1fNk5Pa1EydWg1Nm9VVm93WFZiQzRzcjhVSUhEdw?oc=5"
       },
       {
         "coins": [
@@ -123,22 +123,21 @@
       },
       {
         "coins": [
+          "BTC"
+        ],
+        "published": "08.11. 01:47 UTC",
+        "score": 0,
+        "title": "Bitcoin-Prognose bis 2036: JPMorgan entwirft drei mögliche Szenarien - finanzen.ch",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRmVWbFFUSEdUZ244ZXRTMTBoTkJCeTRadUZfeVk3aUtpVUhFRDh4dS11RzI0dHNuQnZfWEFtUFQ1U1Y4RnFVRnNET0l0djJqVW9XY0w4TkhxVUEta1BTQ1FOWnFoems2UjNUdGwtQ0NJQ3p4cnZ2TzBmbHR1SlFvUWRvZmo1cElEWVozMlJhemxIWG5CS3Z0X3ZxdWFBUi1JZmNXUHZXZlVONDBfRlZkXzJGQnBXUi10bzR4MU9mQjM?oc=5"
+      },
+      {
+        "coins": [
           "XRP"
         ],
         "published": "08.11. 02:26 UTC",
         "score": 0,
         "title": "XRP News: $22 Millionen liquidiert, aber Wale kaufen weiter, was Kleinanleger nicht sehen sollen - FinanzNachrichten.de",
         "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNMmxuOGNwQk40dWF0cGdpZHU1RWQwVXB1SWJVV3gyZzVYZkpsZ1NaWGtJeGlaWVk4a2ZFMEhoblFkS3NYQThpZkhFQWFiWElVR09rT2VxRnU1VHFuYWtoWE5kb21XQ1RLOHpnSWJxZnNidk5iR194SmRqUjE5aXVVSFVsblZVeDM2QmswR2hJd0NwV3VaeWw4cDF3SUkzMW5lZjBMbnhTbDhMUHlrbGFQNnBFNm1JRnNhYTVSWlBLWDdiemw1MUhEbVVNSVd2a2tYRmRpVXJjQ2ZyblhuajRQUk9nQzNFREZpandZQi11M0FKOHFLSHd3MUFYdm80Zw?oc=5"
-      },
-      {
-        "coins": [
-          "BTC",
-          "ETH"
-        ],
-        "published": "08.11. 01:41 UTC",
-        "score": 0,
-        "title": "Die Performance der Kryptowährungen in KW 45: Das hat sich bei Bitcoin, Ether & Co. getan - finanzen.ch",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNelp6TEozcHhQVDlUUkstcXR3YmprODRLQWxXSnFrdW9KMGtIYWN6OVB2T1lZN25oSDA0WUZBcFItYk1mcDRXNVRPelhTZ1BZY19Lb3VhOFdUc0prRnpxNXFoNUpIZmlUNkQ0MldIX0pqenhKTFE5aWgweE5nQ3NaOUVweHVidjcxU21fc3VDYm1EOFNHWm83Smtyeko5OWZJMHY0UDlZYWVBUWRRWmpJOGVJeG42NEJTY1cxV3hoOEFLLW5fUTRQeGs4ckVYQWx6ZEhZdm92LTg?oc=5"
       },
       {
         "coins": [
@@ -163,10 +162,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "07.11. 08:33 UTC",
-        "score": 0,
-        "title": "Nach dem Nasdaq-Absturz: Fällt der Bitcoin-Kurs jetzt auf 58.000 Dollar? - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQR2Vkclk0emhUaS1Tam9XUU4wdF93ZzRrc1ZPS19NNFhUeXZTMG1YME54YWdHU0FTZmhCNUhhSGFsNlVIR0VqOW1LNFJibWRmUVdNc1RzWE50bGRyUVlNT2o4QXoyQkpMUTBITHBfSEFUZElqeXg2YlF1b1FmNEJuRDlzdzZWVDFvWlUydDJhN3MxTExodlhMZw?oc=5"
+        "published": "08.11. 03:00 UTC",
+        "score": -2,
+        "title": "Krypto-News: KI-Crash, Bitcoin-Wende in Russland und BMF-Überwachungspläne - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdDJOV0txYzBwcmJZNEZEVXRJMVdiQXFKaWdkWGUwOFB5SHVPQ3hSZ19FYm1YeHlVU1FCSUt1dzVRbVFzNUx6SllCMnE0TWt6b19lRXQ5M21aS3BqVDhic1BZd2RxUWFFT1p2eXQyendmd1NWNDhrbW9CajBjNFlsSTE0dEtUU040MTh6TVd1ak1jcXg4bW9lUEw2MEJnSHM?oc=5"
       },
       {
         "coins": [
@@ -182,21 +181,22 @@
       },
       {
         "coins": [
+          "BTC",
+          "ETH"
+        ],
+        "published": "08.11. 01:41 UTC",
+        "score": 0,
+        "title": "Die Performance der Kryptowährungen in KW 45: Das hat sich bei Bitcoin, Ether & Co. getan - finanzen.ch",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNelp6TEozcHhQVDlUUkstcXR3YmprODRLQWxXSnFrdW9KMGtIYWN6OVB2T1lZN25oSDA0WUZBcFItYk1mcDRXNVRPelhTZ1BZY19Lb3VhOFdUc0prRnpxNXFoNUpIZmlUNkQ0MldIX0pqenhKTFE5aWgweE5nQ3NaOUVweHVidjcxU21fc3VDYm1EOFNHWm83Smtyeko5OWZJMHY0UDlZYWVBUWRRWmpJOGVJeG42NEJTY1cxV3hoOEFLLW5fUTRQeGs4ckVYQWx6ZEhZdm92LTg?oc=5"
+      },
+      {
+        "coins": [
           "AVAX"
         ],
         "published": "07.11. 10:45 UTC",
         "score": 0,
         "title": "Detroit Red Wings - Colorado Avalanche - 07.11.2026 - NHL.com",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBvNWJMUkV3Q29TV2p6NEhzUzU4SGxheW1ibXF5SzZkb3hnZUhRakY3dzlRX2ZsZlotdDljRUNSbTY5NEN3b1cwZ1VBdjNZUlU2dXhLY1ZuSnpsVEJHQkt5VkNoS3Jna0tSUkxQN0hXVkJMMmlD?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "08.11. 01:47 UTC",
-        "score": 0,
-        "title": "Bitcoin-Prognose bis 2036: JPMorgan entwirft drei mögliche Szenarien - finanzen.ch",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRmVWbFFUSEdUZ244ZXRTMTBoTkJCeTRadUZfeVk3aUtpVUhFRDh4dS11RzI0dHNuQnZfWEFtUFQ1U1Y4RnFVRnNET0l0djJqVW9XY0w4TkhxVUEta1BTQ1FOWnFoems2UjNUdGwtQ0NJQ3p4cnZ2TzBmbHR1SlFvUWRvZmo1cElEWVozMlJhemxIWG5CS3Z0X3ZxdWFBUi1JZmNXUHZXZlVONDBfRlZkXzJGQnBXUi10bzR4MU9mQjM?oc=5"
       },
       {
         "coins": [
@@ -209,13 +209,12 @@
       },
       {
         "coins": [
-          "BTC",
-          "DOGE"
+          "BTC"
         ],
-        "published": "07.11. 07:55 UTC",
-        "score": 0,
-        "title": "Das sind die aktuellen Kurse von Bitcoin, Dogecoin & Co. - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONzdFMUxJZ1FCWkNoaVlGWHQ4S3I4MUtldnI3emlyOG5kNGdSSklDMmJqdl9SUkd1WUtNRTBHS3VHNXQ4U2Z2V1R6TmttbTlnNndvSUNhTXhITTQwQzlGZTZDakJEZXFrWHlBdUEya0plWmhyQU05WWp2aHpLX2FkekxRd01RTi0yMmI1OGRqQjRNdmtLV1hiblJPTktoT0YtbkNnc0ltbw?oc=5"
+        "published": "07.11. 11:52 UTC",
+        "score": -2,
+        "title": "Krypto-Handel in Russland: Notenbank nennt Bitcoin-Stichtag - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNREtOQlZzU1VqcGd3M0V2Rm12X1d4czBIM3RybjhYTlRlYzZDMndMOFh6MGJ1SDZNYzY5LVdWbDVjUXdHWWRHU01XS19nVGVDZTF3MVI3ZFl1RTBPMzRFOGpLVkl1N3kyczhOZEF2WmE0NllZLVZMOFJmbTJTQW1pR0c2WnVWczZ2RFFSSXRSWHdDd1c4QjRtN2JxRHc?oc=5"
       },
       {
         "coins": [
@@ -237,13 +236,12 @@
       },
       {
         "coins": [
-          "BTC",
-          "LINK"
+          "BTC"
         ],
-        "published": "07.11. 13:00 UTC",
+        "published": "07.11. 08:33 UTC",
         "score": 0,
-        "title": "Chainlink ETFs enttäuschen: So tief könnte der LINK-Kurs jetzt fallen - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbk9tZW81cHc1akJ0U3BLUHNfcDc2N0hxQUdUQ0dFcTM0Y3M1WkppODM2bmtESFNlZ0ZTcUhtdjVOSl9QT1dwclBneHF0X29fbGlpRmpyTnNKYUpiZHN5bWQ4aDJNM3FXZHFXN2tsWmpjdzJTOFhTTXB2aTVEdmNMTUJvN294REp5eVZZazg3TzVBUzU3dWpsVnFiU2pRNi15YTdoUXZzNHNwMnIt?oc=5"
+        "title": "Nach dem Nasdaq-Absturz: Fällt der Bitcoin-Kurs jetzt auf 58.000 Dollar? - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQR2Vkclk0emhUaS1Tam9XUU4wdF93ZzRrc1ZPS19NNFhUeXZTMG1YME54YWdHU0FTZmhCNUhhSGFsNlVIR0VqOW1LNFJibWRmUVdNc1RzWE50bGRyUVlNT2o4QXoyQkpMUTBITHBfSEFUZElqeXg2YlF1b1FmNEJuRDlzdzZWVDFvWlUydDJhN3MxTExodlhMZw?oc=5"
       },
       {
         "coins": [
@@ -262,6 +260,26 @@
         "score": 0,
         "title": "Vitalik Buterin: Vom Whitepaper mit 19 zum Ethereum-Umbau bis 2030 - CryptoTicker.io",
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5aR1UxR0VLaFY3S2R3VGh4dEctbmI1ZlFmVXhhVXhmeE9pZXd0ZzkzdG9ubXNvOWpXNEc0X0lHSzM1d1RrVE43NUk3Mkd3aDBfWmxhQkpmeHpMOElXYnJJbXU2V1U?oc=5"
+      },
+      {
+        "coins": [
+          "BTC",
+          "LINK"
+        ],
+        "published": "07.11. 13:00 UTC",
+        "score": 0,
+        "title": "Chainlink ETFs enttäuschen: So tief könnte der LINK-Kurs jetzt fallen - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbk9tZW81cHc1akJ0U3BLUHNfcDc2N0hxQUdUQ0dFcTM0Y3M1WkppODM2bmtESFNlZ0ZTcUhtdjVOSl9QT1dwclBneHF0X29fbGlpRmpyTnNKYUpiZHN5bWQ4aDJNM3FXZHFXN2tsWmpjdzJTOFhTTXB2aTVEdmNMTUJvN294REp5eVZZazg3TzVBUzU3dWpsVnFiU2pRNi15YTdoUXZzNHNwMnIt?oc=5"
+      },
+      {
+        "coins": [
+          "BTC",
+          "DOGE"
+        ],
+        "published": "07.11. 07:55 UTC",
+        "score": 0,
+        "title": "Das sind die aktuellen Kurse von Bitcoin, Dogecoin & Co. - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONzdFMUxJZ1FCWkNoaVlGWHQ4S3I4MUtldnI3emlyOG5kNGdSSklDMmJqdl9SUkd1WUtNRTBHS3VHNXQ4U2Z2V1R6TmttbTlnNndvSUNhTXhITTQwQzlGZTZDakJEZXFrWHlBdUEya0plWmhyQU05WWp2aHpLX2FkekxRd01RTi0yMmI1OGRqQjRNdmtLV1hiblJPTktoT0YtbkNnc0ltbw?oc=5"
       },
       {
         "coins": [
@@ -298,6 +316,15 @@
         "score": 0,
         "title": "Krypto News: Bitcoin unter Druck – Tech-Selloff und US-Midterms belasten den Markt ₿📉 - XTB.com",
         "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbmxyU01HQmt1LUYzY19SOVYxMk1zQ29PcXhRR0ltUTJFZlRSY0ZKaktIQ2stY3haLU9rLUMwMG9fM0VWUVFqSE9JWURNdlNNR2tHRklRcGlJQXdFUUZKZ2ViVDZiaG9KN3NpNlhVc0NOVWJiX1JlWW1zcjg2M2FMRThfMjRQTDFnNlJ2N0gtenBaNl9kYzNuMlJ5a1E0QnRfTFNnLVc5SnIya1FlUUx1d2xVOTBiSU1fV2I5RlVOZ01qZ2ZBZkpSS3E5RUJOeUMtbkJfNWJNSDVLcVd5NmlEN1dlelI1WGc?oc=5"
+      },
+      {
+        "coins": [
+          "ETH"
+        ],
+        "published": "07.11. 15:41 UTC",
+        "score": 0,
+        "title": "Ethereum: Noch erscheint nichts verloren - sharedeals.de",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9hR2VQTUFDSHVGOWx2QkFHNGFRYUFGUEFaM1dWbzU5R1JVWFdoZ0RwRlcyRGRwQW5wZWJfTVlSUnhickVNMEJfSkNUMkY2M2g0dzlHUmU4clp6WWZvMUNsVWJQbnNuRXVaZW1SREVjS1MwandJ?oc=5"
       },
       {
         "coins": [
@@ -340,15 +367,6 @@
         "coins": [
           "ETH"
         ],
-        "published": "07.11. 15:41 UTC",
-        "score": 0,
-        "title": "Ethereum: Noch erscheint nichts verloren - sharedeals.de",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9hR2VQTUFDSHVGOWx2QkFHNGFRYUFGUEFaM1dWbzU5R1JVWFdoZ0RwRlcyRGRwQW5wZWJfTVlSUnhickVNMEJfSkNUMkY2M2g0dzlHUmU4clp6WWZvMUNsVWJQbnNuRXVaZW1SREVjS1MwandJ?oc=5"
-      },
-      {
-        "coins": [
-          "ETH"
-        ],
         "published": "07.11. 22:46 UTC",
         "score": 0,
         "title": "Ethereum News: $365 Mio. fliehen aus ETFs, doch Wale kaufen ETH für $51 Mio. - Wallstreet Online",
@@ -356,12 +374,12 @@
       },
       {
         "coins": [
-          "BTC"
+          "SOL"
         ],
-        "published": "07.11. 11:52 UTC",
+        "published": "07.11. 14:47 UTC",
         "score": -2,
-        "title": "Krypto-Handel in Russland: Notenbank nennt Bitcoin-Stichtag - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNREtOQlZzU1VqcGd3M0V2Rm12X1d4czBIM3RybjhYTlRlYzZDMndMOFh6MGJ1SDZNYzY5LVdWbDVjUXdHWWRHU01XS19nVGVDZTF3MVI3ZFl1RTBPMzRFOGpLVkl1N3kyczhOZEF2WmE0NllZLVZMOFJmbTJTQW1pR0c2WnVWczZ2RFFSSXRSWHdDd1c4QjRtN2JxRHc?oc=5"
+        "title": "Solana Prognose: Chinas Zentralbank ermittelt - CryptoTicker.io",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9mTUw5eXBjelJxWUFSbXFoS0FsM0pVbjcxQUdUNnU0ZXdpTUNrUjNRa3pjNlAtcVRhTjdnOV9zOWU0T0poZ0JfXzdFeEZmQVlFQmk5LTR5YUF6Sktra3duZWtGNng2amRXenY2Zi1mX3RUU0UtSDhYbjVB?oc=5"
       },
       {
         "coins": [
@@ -380,15 +398,6 @@
         "score": -2,
         "title": "Bitcoin stabilisiert sich nach dem beispiellosen Hackerangriff und den Turbulenzen bei den US-Wahlen. - Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSHd5R2dadlZEWXQwRUk3OVZvQzFvbmluMFRoU3d3ZVZ2N1BlZFFNREJ4RWZKRjdFMUdCblI5Z1k0b3JDVElWVnNHUGlsZHJXSFZSbW9EZjdSTVNtby1TMXZfYmdwTmg2VElYOHd3YXUzQm96cVpwTDhrekZFZGxienllUlp1cmwxWTRN?oc=5"
-      },
-      {
-        "coins": [
-          "SOL"
-        ],
-        "published": "07.11. 14:47 UTC",
-        "score": -2,
-        "title": "Solana Prognose: Chinas Zentralbank ermittelt - CryptoTicker.io",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9mTUw5eXBjelJxWUFSbXFoS0FsM0pVbjcxQUdUNnU0ZXdpTUNrUjNRa3pjNlAtcVRhTjdnOV9zOWU0T0poZ0JfXzdFeEZmQVlFQmk5LTR5YUF6Sktra3duZWtGNng2amRXenY2Zi1mX3RUU0UtSDhYbjVB?oc=5"
       },
       {
         "coins": [
@@ -419,16 +428,6 @@
       },
       {
         "coins": [
-          "BTC",
-          "XRP"
-        ],
-        "published": "07.11. 08:48 UTC",
-        "score": 0,
-        "title": "So entwickeln sich Bitcoin, Ripple & Co am Samstagvormittag am Kryptomarkt - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZ21TXzJBWXUxWlVPSFJVb1YtOEpIel96Qy16dHpOQndjRk9Tcl9aY0g4T05GRXNSSGM3eHc3RFAtb1dvMnZFLWcybWVKNkJCeFhVLWtiRUhMRDdvUG9URVRZNl9xaU1aZklQdXRlbnFyQUhYYUVmZmw2UmZlamxxXzJHMUU0OWhiN1p0ZERiTFBEcEp2OThHRW5CNWVnMVhBR05lbHg5cTlSYS1FUzVRYTdhU25aUURuSUJVM1p5THc?oc=5"
-      },
-      {
-        "coins": [
           "BTC"
         ],
         "published": "07.11. 13:01 UTC",
@@ -438,12 +437,12 @@
       },
       {
         "coins": [
-          "XRP"
+          "BTC"
         ],
-        "published": "08.11. 01:16 UTC",
+        "published": "07.11. 14:36 UTC",
         "score": 0,
-        "title": "XRP News: Wale kaufen 28 Millionen-Wallets in 10 Tagen, während der Kurs auf 1,17 Dollar fällt - Wallstreet Online",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTkpLTUpSZ3lXWEFTSGJDYVNtZ0JyN3dINHNDcUVkTjVtZE1ybGlQT3BDSHpIMGtHLW9SZkZ3VTlqd1VzMFdvOFhaY2MtVllWa2RkWTE3SlMyREU4cXRwRWhXVXRCeUdSX3kwMzdWdk8wcTFMYkpuRWxwRjhsTGlJSmM5eVRMa1VNdUxaVFZ3OVp0aEJYdHVobTZUNFBydkVjZHpQSUVsTEJKbU1ZejUyZllBdUVQa2ZzT0VCbXhlU3ZQamY4?oc=5"
+        "title": "Robert Kiyosaki: Rich Dad Poor Dad und Bitcoin-Prognosen - CryptoTicker.io",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfT3A0VDd5Y200ekpCU29rSU5TZU9wLS1hUE5wUk9JVEpKcTR4d3lWU1Y3V2pEZjJ2cjFEVmU1eEVuUWJSTTNORFl2cXRyTVI3TUZPZGRn?oc=5"
       }
     ],
     "news_by_coin": {
@@ -456,8 +455,8 @@
         "score": 0
       },
       "BTC": {
-        "count": 24,
-        "score": -15
+        "count": 25,
+        "score": -17
       },
       "DOGE": {
         "count": 2,
@@ -476,7 +475,7 @@
         "score": -4
       },
       "XRP": {
-        "count": 7,
+        "count": 5,
         "score": -2
       }
     },
