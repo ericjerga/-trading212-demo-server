@@ -24,7 +24,7 @@ app.secret_key = hashlib.sha256(('dashboard-session-v1:' + os.environ.get('DASHB
 app.config.update(SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE='Lax', SESSION_COOKIE_SECURE=True)
 LOCK = threading.Lock()
 START = 1000.0
-state = {'cash': START, 'shares': 0.0, 'price': 0.0, 'symbol': None, 'tick': 0, 'trades': [], 'halted': False, 'peak': START, 'news': [], 'news_checked': None, 'news_error': None, 'last_decision': 'Noch keine Prüfung', 'news_score': None, 'market': [], 'market_checked': None, 'market_error': None, 'last_trade_date': None}
+state = {'cash': START, 'shares': 0.0, 'price': 0.0, 'symbol': None, 'tick': 0, 'trades': [], 'halted': False, 'peak': START, 'news': [], 'news_checked': None, 'news_error': None, 'last_decision': 'Noch keine Prüfung', 'news_score': None, 'market': [], 'market_checked': None, 'market_error': None, 'last_trade_date': None, 'equity_history': [], 'last_step_at': None}
 
 def valid_token(value):
     token = os.environ.get('DASHBOARD_TOKEN', '')
@@ -133,6 +133,20 @@ def fetch_closes(symbol):
         raise ValueError('Nicht genügend historische Kurse')
     return rows, 'Stooq'
 
+def backtest_trend(prices):
+    """Illustrative historical test, not a forecast. Previous day's signal."""
+    if len(prices) < 55:
+        return None
+    balance, exposure = 1.0, False
+    for i in range(50, len(prices) - 1):
+        sma20 = sum(prices[i-19:i+1]) / 20
+        sma50 = sum(prices[i-49:i+1]) / 50
+        exposure = prices[i] > sma20 > sma50
+        if exposure:
+            balance *= prices[i+1] / prices[i]
+    return {'return_pct': round((balance-1)*100, 2),
+            'buy_hold_pct': round((prices[-1]/prices[50]-1)*100, 2)}
+
 def fetch_market():
     today = datetime.now(timezone.utc).date()
     out = []
@@ -147,10 +161,14 @@ def fetch_market():
             sma50 = sum(prices[-50:]) / 50
             daily_change = (price / prices[-2] - 1) * 100
             trend = price > sma20 and sma20 > sma50
+            returns = [prices[i]/prices[i-1]-1 for i in range(-20, 0)]
+            avg = sum(returns) / len(returns)
+            volatility = (sum((r-avg)**2 for r in returns)/len(returns))**0.5 * 100
+            test = backtest_trend(prices)
             out.append({'symbol':symbol,'name':name,'price':round(price,4),'sma20':round(sma20,4),
                         'sma50':round(sma50,4),'daily_change':round(daily_change,2),
                         'trend':trend,'date':latest_date.isoformat(),'source':source,'currency':'USD',
-                        'signal':'Abwarten','reason':'Noch nicht bewertet','available':True})
+                        'signal':'Abwarten','reason':'Noch nicht bewertet','available':True, 'volatility_pct':round(volatility,2), 'backtest':test})
         except Exception:
             out.append({'symbol':symbol,'name':name,'available':False,'signal':'Keine Daten',
                         'reason':'Kursquelle nicht verfügbar oder Kurse veraltet'})
@@ -184,7 +202,9 @@ def step():
                     'symbol': previous.get('symbol'),
                     'trades': previous['trades'],
                     'last_trade_date': previous.get('last_trade_date'),
-                    'entry_price': float(previous.get('entry_price') or 0)
+                    'entry_price': float(previous.get('entry_price') or 0),
+                    'equity_history': previous.get('equity_history', []),
+                    'last_step_at': previous.get('last_step_at')
                 }
                 valid = (
                     all(math.isfinite(restored[k]) and restored[k] >= 0
@@ -193,6 +213,8 @@ def step():
                     and isinstance(restored['halted'], bool)
                     and isinstance(restored['trades'], list)
                     and len(restored['trades']) <= 50
+                    and isinstance(restored['equity_history'], list)
+                    and len(restored['equity_history']) <= 120
                     and (restored['symbol'] is None or
                          restored['symbol'] in [x[0] for x in WATCHLIST])
                     and (restored['shares'] == 0 or restored['symbol'] is not None)
@@ -206,6 +228,7 @@ def step():
         state['market_checked'] = now.strftime('%d.%m.%Y %H:%M UTC')
         state['market_error'] = None if any(m['available'] for m in market) else 'Keine aktuellen Marktdaten verfügbar – keine Trades'
         state['tick'] += 1
+        state['last_step_at'] = now.isoformat()
         held = next((m for m in market if m['available'] and m['symbol'] == state['symbol']), None)
         # Keine Bewertung auf Basis erfundener oder veralteter Preise.
         if state['symbol'] and held:
@@ -246,9 +269,9 @@ def step():
                 state['last_trade_date'] = today
                 state['last_decision'] = 'Virtueller Verkauf von ' + held['symbol']
         elif state['shares'] == 0 and state['last_trade_date'] != today and not state['market_error']:
-            candidates = [m for m in market if m['available'] and m['signal'] == 'Kaufkandidat']
+            candidates = [m for m in market if m['available'] and m['signal'] == 'Kaufkandidat' and m.get('volatility_pct',100) <= 3.5]
             if candidates:
-                chosen = sorted(candidates, key=lambda m: m['price'] / m['sma20'], reverse=True)[0]
+                chosen = sorted(candidates, key=lambda m: (m['price']/m['sma20']-1)/max(m['volatility_pct'],0.3), reverse=True)[0]
                 spend = min(state['cash'], equity * 0.10)
                 if spend > 0:
                     state['shares'] = spend / chosen['price']
@@ -262,6 +285,12 @@ def step():
         else:
             state['last_decision'] = 'Abwarten: Position halten oder Tageslimit erreicht'
         state['trades'] = state['trades'][-50:]
+        equity_now = state['cash'] + state['shares'] * state['price']
+        if not state['equity_history'] or state['equity_history'][-1].get('date') != today:
+            state['equity_history'].append({'date': today, 'equity': round(equity_now, 2)})
+        else:
+            state['equity_history'][-1] = {'date': today, 'equity': round(equity_now, 2)}
+        state['equity_history'] = state['equity_history'][-120:]
         return jsonify(snapshot())
 
 @app.post('/stop')
