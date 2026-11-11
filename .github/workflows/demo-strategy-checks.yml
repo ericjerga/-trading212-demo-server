@@ -1,0 +1,29 @@
+name: Demo strategy checks
+on:
+  pull_request:
+    paths:
+      - app.py
+      - tests/**
+      - .github/workflows/demo-strategy-checks.yml
+  push:
+    branches:
+      - aggressive-paper-strategy-review-20261111
+    paths:
+      - app.py
+      - tests/**
+      - .github/workflows/demo-strategy-checks.yml
+permissions:
+  contents: read
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m compileall -q app.py tests
+      - run: python -m unittest discover -s tests -v
