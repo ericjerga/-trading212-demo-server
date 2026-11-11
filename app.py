@@ -124,7 +124,7 @@ def health():
             age = (datetime.now(timezone.utc) - datetime.fromisoformat(last)).total_seconds() if last else None
         except (TypeError, ValueError):
             age = None
-        fresh = age is not None and 0 <= age <= 7200
+        fresh = age is not None and 0 <= age <= 2700
         return jsonify(status='ok' if fresh else 'waiting_or_stale',
                        last_step_at=last, simulation_recent=fresh,
                        real_orders_enabled=False,
@@ -353,6 +353,8 @@ def fetch_crypto_market():
                 if row: rows[symbol]=row
                 else: errors.append(symbol+': '+error)
     if not rows: raise ValueError('Keine gültigen Kryptokurse. '+'; '.join(errors[:3]))
+    if len(rows) != len(CRYPTO_COINS):
+        raise ValueError('Unvollständige Kryptokurse: %d von %d. %s' % (len(rows), len(CRYPTO_COINS), '; '.join(errors[:3])))
     return [rows[symbol] for symbol in CRYPTO_COINS if symbol in rows]
 
 CRYPTO_RSS_URL = ('https://news.google.com/rss/search?q=Bitcoin+OR+Ethereum+OR+Solana+OR+XRP+OR+Cardano+OR+Chainlink+OR+Avalanche+OR+Dogecoin+when%3A1d&hl=de&gl=DE&ceid=DE:de')
@@ -390,6 +392,21 @@ def fetch_crypto_news():
     return items,per_coin
 
 
+def crypto_trade_cooldown_active(crypto, now):
+    last = crypto.get('last_trade_at')
+    if last:
+        try:
+            parsed = datetime.fromisoformat(last)
+            if parsed.tzinfo is not None:
+                age = (now - parsed).total_seconds()
+                return age < 4 * 3600
+        except (TypeError, ValueError, OverflowError):
+            pass
+    # Older persisted states have only a date. Retain the old daily limit
+    # until the first new trade creates a precise timestamp.
+    return crypto.get('last_trade_date') == now.date().isoformat()
+
+
 def simulate_crypto(now,market,error,news,news_score,news_error):
     c=state['crypto']; today=now.date().isoformat()
     c['news'],c['news_by_coin'],c['news_error']=news,news_score,news_error
@@ -404,13 +421,13 @@ def simulate_crypto(now,market,error,news,news_score,news_error):
     if equity<c['peak']*0.95: c['halted']=True
     if c['halted']:
         c['last_decision']='Krypto-Risikogrenze erreicht'
-    elif c['last_trade_date']==today:
-        c['last_decision']='Tageslimit: maximal ein Krypto-Trade'
+    elif crypto_trade_cooldown_active(c, now):
+        c['last_decision']='Krypto-Cooldown: mindestens vier Stunden zwischen Trades'
     elif held and (held['price']<=c['entry_price']*0.97 or held['change_24h'] < -1):
         amount=c['shares']*held['price']; c['cash']+=amount
         c['trades'].append({'side':'SIM_SELL','symbol':c['symbol'],'price':round(held['price'],4),'amount':round(amount,2),'date':today})
         c['shares'],c['symbol'],c['price'],c['entry_price']=0.0,None,0.0,0.0
-        c['last_trade_date']=today; c['last_decision']='Virtueller Krypto-Verkauf'
+        c['last_trade_date']=today; c['last_trade_at']=now.isoformat(); c['last_decision']='Virtueller Krypto-Verkauf'
     elif c['shares']==0:
         candidates=[m for m in market if 1<=m['change_24h']<=5
                     and not news_error and isinstance(news_score,dict)
@@ -422,7 +439,7 @@ def simulate_crypto(now,market,error,news,news_score,news_error):
             if spend>0:
                 c['cash']-=spend; c['shares']=spend/chosen['price']
                 c['symbol'],c['price'],c['entry_price']=chosen['symbol'],chosen['price'],chosen['price']
-                c['last_trade_date']=today
+                c['last_trade_date']=today; c['last_trade_at']=now.isoformat()
                 c['trades'].append({'side':'SIM_BUY','symbol':chosen['symbol'],'price':round(chosen['price'],4),'amount':round(spend,2),'date':today})
                 c['last_decision']='Virtueller Kauf '+chosen['symbol']
         else: c['last_decision']='Kein Kaufsignal mit ausreichenden, nicht-negativen Coin-Nachrichten'
@@ -433,22 +450,29 @@ def simulate_crypto(now,market,error,news,news_score,news_error):
 @app.post('/step')
 def step():
     if not authorized(): return jsonify(error='Unauthorized'), 401
-    try:
-        news, score = fetch_news()
-        error = None
-    except Exception:
-        news, score, error = [], None, 'Nachrichten momentan nicht abrufbar – keine neuen Käufe'
-    market = fetch_market()
-    try:
-        crypto_market, crypto_error = fetch_crypto_market(), None
-    except Exception as exc:
-        crypto_market, crypto_error = [], 'Kryptokurse nicht verfügbar – kein Handel. Diagnose: ' + str(exc)[:180]
-    try:
-        crypto_news, crypto_news_score = fetch_crypto_news()
-        crypto_news_error = None
-    except Exception:
-        crypto_news, crypto_news_score = [], None
-        crypto_news_error = 'Keine ausreichend aktuellen Kryptonachrichten – keine neuen Käufe'
+    # Independent remote feeds run concurrently to reduce step latency.
+    # Each fetch retains its own timeout and fail-closed handling.
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        news_future = pool.submit(fetch_news)
+        market_future = pool.submit(fetch_market)
+        crypto_future = pool.submit(fetch_crypto_market)
+        crypto_news_future = pool.submit(fetch_crypto_news)
+        try:
+            news, score = news_future.result()
+            error = None
+        except Exception:
+            news, score, error = [], None, 'Nachrichten momentan nicht abrufbar – keine neuen Käufe'
+        market = market_future.result()
+        try:
+            crypto_market, crypto_error = crypto_future.result(), None
+        except Exception as exc:
+            crypto_market, crypto_error = [], 'Kryptokurse nicht verfügbar – kein Handel. Diagnose: ' + str(exc)[:180]
+        try:
+            crypto_news, crypto_news_score = crypto_news_future.result()
+            crypto_news_error = None
+        except Exception:
+            crypto_news, crypto_news_score = [], None
+            crypto_news_error = 'Keine ausreichend aktuellen Kryptonachrichten – keine neuen Käufe'
     now = datetime.now(timezone.utc)
     today = now.date().isoformat()
     with LOCK:
