@@ -18,6 +18,28 @@ import threading
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor
 from functools import wraps
+
+# Experimental paper-only aggressive profile; never sends broker orders.
+STOCK_COOLDOWN_HOURS = 4
+CRYPTO_COOLDOWN_HOURS = 2
+MAX_POSITION_FRACTION = 0.20
+
+def cooldown_elapsed(last_trade_at, now, hours):
+    if not last_trade_at:
+        return True
+    try:
+        then = datetime.fromisoformat(last_trade_at)
+        return then.tzinfo is not None and (now - then).total_seconds() >= hours * 3600
+    except (TypeError, ValueError, OverflowError):
+        return False
+
+def momentum_candidate(row, news_score):
+    return (row.get('available', False) and news_score is not None and news_score >= 0
+            and abs(row.get('daily_change', 100)) <= 6
+            and row.get('volatility_pct', 100) <= 5
+            and row['price'] > row['sma20'] * 0.995
+            and row['sma20'] > row['sma50'] * 0.99)
+
 from flask import Flask, jsonify, request, Response, redirect, url_for, session, render_template_string
 
 app = Flask(__name__)
@@ -87,7 +109,7 @@ def restore_from_github():
             if crypto['shares'] and not crypto.get('symbol'):
                 return False
             allowed = ('cash','shares','price','peak','tick','halted','symbol',
-                       'trades','last_trade_date','entry_price','equity_history',
+                       'trades','last_trade_date','last_trade_at','entry_price','equity_history',
                        'last_step_at','crypto')
             with LOCK:
                 if tick > state['tick'] and tick > current_tick:
@@ -124,7 +146,7 @@ def health():
             age = (datetime.now(timezone.utc) - datetime.fromisoformat(last)).total_seconds() if last else None
         except (TypeError, ValueError):
             age = None
-        fresh = age is not None and 0 <= age <= 7200
+        fresh = age is not None and 0 <= age <= 2700
         return jsonify(status='ok' if fresh else 'waiting_or_stale',
                        last_step_at=last, simulation_recent=fresh,
                        real_orders_enabled=False,
@@ -404,25 +426,25 @@ def simulate_crypto(now,market,error,news,news_score,news_error):
     if equity<c['peak']*0.95: c['halted']=True
     if c['halted']:
         c['last_decision']='Krypto-Risikogrenze erreicht'
-    elif c['last_trade_date']==today:
-        c['last_decision']='Tageslimit: maximal ein Krypto-Trade'
-    elif held and (held['price']<=c['entry_price']*0.97 or held['change_24h'] < -1):
+    elif not cooldown_elapsed(c.get('last_trade_at') or (c.get('last_trade_date') + 'T23:59:59+00:00' if c.get('last_trade_date') else None), now, CRYPTO_COOLDOWN_HOURS):
+        c['last_decision']='Krypto-Cooldown aktiv'
+    elif held and (held['price']<=c['entry_price']*0.975 or held['change_24h'] < -1.5):
         amount=c['shares']*held['price']; c['cash']+=amount
         c['trades'].append({'side':'SIM_SELL','symbol':c['symbol'],'price':round(held['price'],4),'amount':round(amount,2),'date':today})
         c['shares'],c['symbol'],c['price'],c['entry_price']=0.0,None,0.0,0.0
-        c['last_trade_date']=today; c['last_decision']='Virtueller Krypto-Verkauf'
+        c['last_trade_date']=today; c['last_trade_at']=now.isoformat(); c['last_decision']='Virtueller Krypto-Verkauf'
     elif c['shares']==0:
-        candidates=[m for m in market if 1<=m['change_24h']<=5
+        candidates=[m for m in market if 0.5<=m['change_24h']<=7
                     and not news_error and isinstance(news_score,dict)
                     and news_score.get(m['symbol'],{}).get('score') is not None
                     and news_score[m['symbol']]['score'] >= 0]
         if candidates:
             chosen=max(candidates,key=lambda m:m['change_24h'])
-            spend=min(c['cash'],equity*0.10)
+            spend=min(c['cash'],equity*MAX_POSITION_FRACTION)
             if spend>0:
                 c['cash']-=spend; c['shares']=spend/chosen['price']
                 c['symbol'],c['price'],c['entry_price']=chosen['symbol'],chosen['price'],chosen['price']
-                c['last_trade_date']=today
+                c['last_trade_date']=today; c['last_trade_at']=now.isoformat()
                 c['trades'].append({'side':'SIM_BUY','symbol':chosen['symbol'],'price':round(chosen['price'],4),'amount':round(spend,2),'date':today})
                 c['last_decision']='Virtueller Kauf '+chosen['symbol']
         else: c['last_decision']='Kein Kaufsignal mit ausreichenden, nicht-negativen Coin-Nachrichten'
@@ -468,6 +490,7 @@ def step():
                     'symbol': previous.get('symbol'),
                     'trades': previous['trades'],
                     'last_trade_date': previous.get('last_trade_date'),
+                    'last_trade_at': previous.get('last_trade_at'),
                     'entry_price': float(previous.get('entry_price') or 0),
                     'equity_history': previous.get('equity_history', []),
                     'last_step_at': previous.get('last_step_at'),
@@ -517,7 +540,7 @@ def step():
                     m['signal'], m['reason'] = 'Virtuell verkaufen', 'Kurs unter 20-Tage-Durchschnitt oder negative Nachrichten'
                 else:
                     m['signal'], m['reason'] = 'Halten', 'Position vorhanden; kein Verkaufssignal'
-            elif m['trend'] and score is not None and score >= 0 and abs(m['daily_change']) <= 5:
+            elif momentum_candidate(m, score):
                 m['signal'], m['reason'] = 'Kaufkandidat', 'Kurs über 20-Tage-Linie, 20-Tage über 50-Tage, Nachrichten nicht negativ'
             else:
                 m['signal'], m['reason'] = 'Abwarten', 'Trend, Tagesbewegung oder Nachrichtenfilter nicht erfüllt'
@@ -532,8 +555,8 @@ def step():
             state['halted'] = True
             state['last_decision'] = '5 % Rückgang vom Höchststand: Simulation angehalten (keine weiteren Trades)'
         elif state['shares'] > 0 and held and (held['signal'] == 'Virtuell verkaufen' or held['price'] <= state.get('entry_price', held['price']) * 0.97):
-            if state['last_trade_date'] == today:
-                state['last_decision'] = 'Abwarten: höchstens ein Trade pro UTC-Kalendertag'
+            if not cooldown_elapsed(state.get('last_trade_at') or (state.get('last_trade_date') + 'T23:59:59+00:00' if state.get('last_trade_date') else None), now, STOCK_COOLDOWN_HOURS):
+                state['last_decision'] = 'Abwarten: Aktien-Cooldown aktiv'
             else:
                 amount_usd = state['shares'] * state['price']
                 # Der Simulator führt ein vereinfachtes USD-Buch; kein EUR/USD-Umrechnungskurs.
@@ -541,17 +564,19 @@ def step():
                 state['trades'].append({'step':state['tick'],'side':'SIM_SELL','symbol':state['symbol'], 'price':round(state['price'],4),'amount':round(amount_usd,2),'reason':held['reason'] if held['signal'] == 'Virtuell verkaufen' else '3 % Verlustgrenze', 'currency':'USD'})
                 state['shares'], state['symbol'], state['price'] = 0.0, None, 0.0
                 state['last_trade_date'] = today
+                state['last_trade_at'] = now.isoformat()
                 state['last_decision'] = 'Virtueller Verkauf von ' + held['symbol']
-        elif state['shares'] == 0 and state['last_trade_date'] != today and not state['market_error']:
-            candidates = [m for m in market if m['available'] and m['signal'] == 'Kaufkandidat' and m.get('volatility_pct',100) <= 3.5]
+        elif state['shares'] == 0 and cooldown_elapsed(state.get('last_trade_at') or (state.get('last_trade_date') + 'T23:59:59+00:00' if state.get('last_trade_date') else None), now, STOCK_COOLDOWN_HOURS) and not state['market_error']:
+            candidates = [m for m in market if m['available'] and m['signal'] == 'Kaufkandidat' and m.get('volatility_pct',100) <= 5]
             if candidates:
                 chosen = sorted(candidates, key=lambda m: (m['price']/m['sma20']-1)/max(m['volatility_pct'],0.3), reverse=True)[0]
-                spend = min(state['cash'], equity * 0.10)
+                spend = min(state['cash'], equity * MAX_POSITION_FRACTION)
                 if spend > 0:
                     state['shares'] = spend / chosen['price']
                     state['cash'] -= spend
                     state['symbol'], state['price'], state['entry_price'] = chosen['symbol'], chosen['price'], chosen['price']
                     state['last_trade_date'] = today
+                    state['last_trade_at'] = now.isoformat()
                     state['trades'].append({'step':state['tick'],'side':'SIM_BUY','symbol':chosen['symbol'],'price':chosen['price'],'amount':round(spend,2),'reason':chosen['reason'],'currency':'USD'})
                     state['last_decision'] = 'Virtueller Kauf von ' + chosen['symbol'] + ': ' + chosen['reason']
             else:
