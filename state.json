@@ -3,7 +3,7 @@
   "shares": 2.10305,
   "price": 48.43,
   "peak": 1002.1451385,
-  "tick": 104,
+  "tick": 105,
   "halted": false,
   "symbol": "SNY",
   "trades": [
@@ -35,12 +35,16 @@
     {
       "date": "2026-11-11",
       "equity": 1001.85
+    },
+    {
+      "date": "2026-11-12",
+      "equity": 1001.85
     }
   ],
-  "last_step_at": "2026-11-11T23:44:30.352331+00:00",
+  "last_step_at": "2026-11-12T00:40:02.989518+00:00",
   "crypto": {
     "cash": 179.44816288322022,
-    "checked": "2026-11-11T23:44:30.352331+00:00",
+    "checked": "2026-11-12T00:40:02.989518+00:00",
     "entry_price": 8.577,
     "error": null,
     "halted": false,
@@ -48,50 +52,50 @@
     "last_trade_date": "2026-11-11",
     "market": [
       {
-        "change_24h": 0.13,
-        "price": 73797.23,
+        "change_24h": 0.72,
+        "price": 73966.91,
         "source": "Coinbase Exchange",
         "symbol": "BTC"
       },
       {
-        "change_24h": -0.04,
-        "price": 2049.69,
+        "change_24h": 0.59,
+        "price": 2059.5,
         "source": "Coinbase Exchange",
         "symbol": "ETH"
       },
       {
-        "change_24h": -0.4,
-        "price": 82.91,
+        "change_24h": 0.7,
+        "price": 83.63,
         "source": "Coinbase Exchange",
         "symbol": "SOL"
       },
       {
-        "change_24h": -0.67,
-        "price": 1.0479,
+        "change_24h": 0.54,
+        "price": 1.0564,
         "source": "Coinbase Exchange",
         "symbol": "XRP"
       },
       {
-        "change_24h": -0.15,
-        "price": 0.17362,
+        "change_24h": 0.26,
+        "price": 0.17511,
         "source": "Coinbase Exchange",
         "symbol": "ADA"
       },
       {
-        "change_24h": -1.24,
-        "price": 10.149,
+        "change_24h": -1.05,
+        "price": 10.207,
         "source": "Coinbase Exchange",
         "symbol": "LINK"
       },
       {
-        "change_24h": 1.29,
-        "price": 8.478,
+        "change_24h": 2.06,
+        "price": 8.586,
         "source": "Coinbase Exchange",
         "symbol": "AVAX"
       },
       {
-        "change_24h": -1.09,
-        "price": 0.0672,
+        "change_24h": -0.72,
+        "price": 0.06771,
         "source": "Coinbase Exchange",
         "symbol": "DOGE"
       }
@@ -192,10 +196,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "11.11. 16:30 UTC",
+        "published": "11.11. 22:10 UTC",
         "score": 0,
-        "title": "Ex-Krypto-Berater des Weißen Hauses: Trump habe Interesse an Bitcoin-Käufen für die strategische Reserve - Blocktrainer",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMmV0MEh0M2hGUlF0WjUxLUp5Z2VUdjZMb2hCVk9BVEhPZURWd2lFQ3djY2RKellsZ25UdW1hTkRHWTVhZXBVR0lHV1FSdGVWYURMbzBKWlRZSmJNcjRIVURxc3VtV1gyWHYzM1FySWZmME9ZS1JTZjhyUUxhN3NLdzZ6WjNXbWlFT2NaUDlPY1JBbHNkUGh4TDJrQ0VpM3BVTWxFY1RXbTRCQXNMU2c?oc=5"
+        "title": "Streichungsliste veröffentlicht: Bitcoin-Halter Strategy und Metaplanet fliegen aus MSCI-Indizes - Blocktrainer",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObmxHTEhwbElCS3JEdW5hUVFjMlhmTzdtZUx5VnhiUFktNEdzUTRlTG5BSUZtNzNFSDBrWDBuZmhwU05vMW9GYWFjd0NkRF9rNnJ4c0RwQVFMaDNNZXVocXJNY3VibUpUUmxTaG1ETVBXMm5nSkdVd3ZiMk9pNnNabkd5TExHUE1YR1RqU3U1ZXBGRGxqX3V3d1RkQ0I?oc=5"
       },
       {
         "coins": [
@@ -229,10 +233,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "11.11. 14:55 UTC",
-        "score": -2,
-        "title": "Russland ermöglicht Bitcoin-Handel, jedoch steht die größte Börse unter US-Sanktionen - Yahoo Finanzen Deutschland",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQUI3aFkwb3lDdXVGd3dQUHg3Y1RUN0Nkb0NfQm5wSkFmNC1vTGxlbk1vS04zWnp2d1ZWai05S1JMZGFobWxhSVdTQlotb3IzTkZkblZtZ1IxbFJ6Y2Z0WU9vX0JYVlBoM3VzcElRTXY2VzRhd1RlQWhabDNzVmJxYVp3WkFmRWQyaHUtM1lyWUNyVXlOdG5leXpVZUJxeHZFamVFMw?oc=5"
+        "published": "11.11. 16:30 UTC",
+        "score": 0,
+        "title": "Ex-Krypto-Berater des Weißen Hauses: Trump habe Interesse an Bitcoin-Käufen für die strategische Reserve - Blocktrainer",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMmV0MEh0M2hGUlF0WjUxLUp5Z2VUdjZMb2hCVk9BVEhPZURWd2lFQ3djY2RKellsZ25UdW1hTkRHWTVhZXBVR0lHV1FSdGVWYURMbzBKWlRZSmJNcjRIVURxc3VtV1gyWHYzM1FySWZmME9ZS1JTZjhyUUxhN3NLdzZ6WjNXbWlFT2NaUDlPY1JBbHNkUGh4TDJrQ0VpM3BVTWxFY1RXbTRCQXNMU2c?oc=5"
       },
       {
         "coins": [
@@ -266,6 +270,24 @@
         "coins": [
           "BTC"
         ],
+        "published": "11.11. 14:55 UTC",
+        "score": -2,
+        "title": "Russland ermöglicht Bitcoin-Handel, jedoch steht die größte Börse unter US-Sanktionen - Yahoo Finanzen Deutschland",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQUI3aFkwb3lDdXVGd3dQUHg3Y1RUN0Nkb0NfQm5wSkFmNC1vTGxlbk1vS04zWnp2d1ZWai05S1JMZGFobWxhSVdTQlotb3IzTkZkblZtZ1IxbFJ6Y2Z0WU9vX0JYVlBoM3VzcElRTXY2VzRhd1RlQWhabDNzVmJxYVp3WkFmRWQyaHUtM1lyWUNyVXlOdG5leXpVZUJxeHZFamVFMw?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "11.11. 17:00 UTC",
+        "score": 0,
+        "title": "Bitcoin vor historischem Debakel - Wallstreet Online",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbjlJeGJIWmdSM3RvWXRmcjM4OU85cFNUeFhqbWdHSHQxbDJ1Rmw5WUhZOWFiWWV4a3Y1UTFpaXZPX2YtTVZCcXVhZzhJYXM4VENhcjNNcG1KMFpvaUtnaWpuTDRneXJaZ1lxN1htUVI2MWw4dHppdC1ERmR1b1lESWhEbEdfdHI1MEJTeA?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
         "published": "11.11. 14:49 UTC",
         "score": 0,
         "title": "Bleiben Krypto-Gewinne steuerfrei? Neue Wende bei der Haltefrist - BTC-ECHO",
@@ -289,6 +311,15 @@
       },
       {
         "coins": [
+          "BTC"
+        ],
+        "published": "11.11. 20:35 UTC",
+        "score": 0,
+        "title": "Öl-Kurs fällt, JD Vance fordert Iran-Friedensgespräche: Warum steigt der Bitcoin-Kurs nicht? - BeInCrypto",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5CRlJGb3haNk0xaGo2X2tJb3BHZVhoX0Jad2FSa3d0Q0MwWTBNUEhkMWFnUWVOMkU3azhRUmZNLXU2ZWtEMUw1N1VsTU13aWRZVnFTUFM2NjJ6ZVNTS1RtNkZEbUVSSG4yT09DaTFMMHpTQQ?oc=5"
+      },
+      {
+        "coins": [
           "XRP"
         ],
         "published": "11.11. 20:26 UTC",
@@ -297,22 +328,11 @@
         "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQVGF5anpwMHU1X1NiSW1sNkQtc0pFazlLY21UelMtbmpTSnl1dTRJVDEyRDF3X2FPT19pMU9CU0pQZjc2RU82X29OblVlb1hnRDh1SG8wbjY0WjJVWjBOdWZLR0tzelNzNWozdGVCX0d1Xy10bHBBalMtcnlsZ0MtSmxULWVSV1lBSGpjYW80cGtqUXlTUTNhbHlIZVRYNVBBZ29UM2xSeE1kOHR3TWlsdnFMaF90R2F6OGVOYTN4c3dUWVBXNERya2ZjR3RsZ3EtRTFybEU3UTZaWmJ5VkZGV3pwZWpCR2ItdlBnTy1rVGxjVks5OTRGZQ?oc=5"
       },
       {
-        "coins": [
-          "ADA"
-        ],
-        "published": "11.11. 21:26 UTC",
+        "coins": [],
+        "published": "11.11. 22:07 UTC",
         "score": 0,
-        "title": "Cardano Kurs aktuell bei 0,175 Dollar. Droht ADA nach den US-Inflationsdaten jetzt der Rutsch auf 0,16 Dollar? - FinanzNachrichten.de",
-        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOVDQzOUtQT2M5LUhiaDhQVndGdUVhQzJvNEh3ZGUzSFF4dmUzTjNvZ1l5LXhTV090YXZWTU44OTRxZVhNM2EwejMxdzc1Y0tIVy1MaVRKRjJ0Qm5qRGJ6ZndUT1JRdzM3M1FaUmE3RFJ4MF9KcEh0ZVREYmRBUkpta3BnNGhidS1JaEJyTnhWbERsMHBzZWU3X05JQVlWSEtVcFJqZFNXU1RzYUkya0lISEdIZkI1U3Byb2JVZjlRQ2hwekFaVi0yUGxBMWN0Qld0T0JKbDBqUndZZkQ5V2lSZ3VXdE1nZ1JRNEgxMDNONWpUeXVfdW9vRzI3QnlJVV9wMGc4OXNNMzMxdw?oc=5"
-      },
-      {
-        "coins": [
-          "SOL"
-        ],
-        "published": "11.11. 22:23 UTC",
-        "score": 0,
-        "title": "Solana Company übertrifft Erwartungen im dritten Quartal 2026 deutlich – Aktie verzeichnet leichte Kursgewinne - Investing.com Deutsch",
-        "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQR3BXNzU2UDFDUjNILThOX01EWXFkRWNGbHV3dEIxMjBEWjJLbHZ3NWpZSHYzdXNoaVhYcUJ5RW00V3pwTkZKbEgwb0RWczZ5bTRNMmVIY0I1Ym9QSWItWTFpQnZucml2UlNsX2U5S2I0azhlOXd6QkppT0kyUTNQYkVsbkVwMkluYmltZ29lYWR4OE0xaDc3MGhONkVnVlUyRHRWSXE4V1huT0hxamg1LWFwOTRTZXBjaV9rQV9wYjdHYl8tLWhhZjBOR2F4emdsVWNuMGVXQ3pGVnVxek40YVhTY2ppU2hYdS1md2w1eUlXRDB5Mnpz?oc=5"
+        "title": "MSCI streicht Strategy aus US-Index: Drohen 2,8 Milliarden USD an Zwangsverkäufen bei MSTR? - BeInCrypto",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oSUxqWVNrNFMxV3VKNFlDMmdybnVvR0NsV095SjVSYm9pTU5wajBudEJjWi1NMk1aaDM4VDVoQzVUREstLUdPeU9Jay1GTDlLNXhPXzdScnhyRWRRaElITEhaOURxZkhpZWlneE85WC0?oc=5"
       },
       {
         "coins": [
@@ -341,12 +361,21 @@
       },
       {
         "coins": [
-          "BTC"
+          "ADA"
         ],
-        "published": "11.11. 20:35 UTC",
+        "published": "11.11. 21:26 UTC",
         "score": 0,
-        "title": "Öl-Kurs fällt, JD Vance fordert Iran-Friedensgespräche: Warum steigt der Bitcoin-Kurs nicht? - BeInCrypto",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5CRlJGb3haNk0xaGo2X2tJb3BHZVhoX0Jad2FSa3d0Q0MwWTBNUEhkMWFnUWVOMkU3azhRUmZNLXU2ZWtEMUw1N1VsTU13aWRZVnFTUFM2NjJ6ZVNTS1RtNkZEbUVSSG4yT09DaTFMMHpTQQ?oc=5"
+        "title": "Cardano Kurs aktuell bei 0,175 Dollar. Droht ADA nach den US-Inflationsdaten jetzt der Rutsch auf 0,16 Dollar? - FinanzNachrichten.de",
+        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOVDQzOUtQT2M5LUhiaDhQVndGdUVhQzJvNEh3ZGUzSFF4dmUzTjNvZ1l5LXhTV090YXZWTU44OTRxZVhNM2EwejMxdzc1Y0tIVy1MaVRKRjJ0Qm5qRGJ6ZndUT1JRdzM3M1FaUmE3RFJ4MF9KcEh0ZVREYmRBUkpta3BnNGhidS1JaEJyTnhWbERsMHBzZWU3X05JQVlWSEtVcFJqZFNXU1RzYUkya0lISEdIZkI1U3Byb2JVZjlRQ2hwekFaVi0yUGxBMWN0Qld0T0JKbDBqUndZZkQ5V2lSZ3VXdE1nZ1JRNEgxMDNONWpUeXVfdW9vRzI3QnlJVV9wMGc4OXNNMzMxdw?oc=5"
+      },
+      {
+        "coins": [
+          "SOL"
+        ],
+        "published": "11.11. 22:23 UTC",
+        "score": 0,
+        "title": "Solana Company übertrifft Erwartungen im dritten Quartal 2026 deutlich – Aktie verzeichnet leichte Kursgewinne - Investing.com Deutsch",
+        "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQR3BXNzU2UDFDUjNILThOX01EWXFkRWNGbHV3dEIxMjBEWjJLbHZ3NWpZSHYzdXNoaVhYcUJ5RW00V3pwTkZKbEgwb0RWczZ5bTRNMmVIY0I1Ym9QSWItWTFpQnZucml2UlNsX2U5S2I0azhlOXd6QkppT0kyUTNQYkVsbkVwMkluYmltZ29lYWR4OE0xaDc3MGhONkVnVlUyRHRWSXE4V1huT0hxamg1LWFwOTRTZXBjaV9rQV9wYjdHYl8tLWhhZjBOR2F4emdsVWNuMGVXQ3pGVnVxek40YVhTY2ppU2hYdS1md2w1eUlXRDB5Mnpz?oc=5"
       },
       {
         "coins": [
@@ -359,30 +388,12 @@
       },
       {
         "coins": [
-          "BTC"
-        ],
-        "published": "11.11. 17:00 UTC",
-        "score": 0,
-        "title": "Bitcoin vor historischem Debakel - Wallstreet Online",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbjlJeGJIWmdSM3RvWXRmcjM4OU85cFNUeFhqbWdHSHQxbDJ1Rmw5WUhZOWFiWWV4a3Y1UTFpaXZPX2YtTVZCcXVhZzhJYXM4VENhcjNNcG1KMFpvaUtnaWpuTDRneXJaZ1lxN1htUVI2MWw4dHppdC1ERmR1b1lESWhEbEdfdHI1MEJTeA?oc=5"
-      },
-      {
-        "coins": [
           "DOGE"
         ],
         "published": "11.11. 12:50 UTC",
         "score": 0,
         "title": "Dogecoin Kurs: Wale geben 750 Millionen DOGE ab - CryptoTicker.io",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02MnJ0UU4xVHNndGxGM1dOdVQxSHBySk05ZHA2VmplUHVuOVQzZG5SMVpZVTJrakZBX1pnUnp1TmRBN012bDQxOXk3bEhpYVNkdVJncnhpUE8yLWsxTHJvM09XelFMZFBPbUQtVUpRS0V3M0U?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "11.11. 22:14 UTC",
-        "score": 0,
-        "title": "Streichungsliste veröffentlicht: Bitcoin-Halter Strategy und Metaplanet fliegen aus MSCI-Indizes - Blocktrainer",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObmxHTEhwbElCS3JEdW5hUVFjMlhmTzdtZUx5VnhiUFktNEdzUTRlTG5BSUZtNzNFSDBrWDBuZmhwU05vMW9GYWFjd0NkRF9rNnJ4c0RwQVFMaDNNZXVocXJNY3VibUpUUmxTaG1ETVBXMm5nSkdVd3ZiMk9pNnNabkd5TExHUE1YR1RqU3U1ZXBGRGxqX3V3d1RkQ0I?oc=5"
       },
       {
         "coins": [
@@ -404,15 +415,6 @@
       },
       {
         "coins": [
-          "XRP"
-        ],
-        "published": "11.11. 15:32 UTC",
-        "score": 0,
-        "title": "XRP: 266 Angriffe pro Minute - Investing.com Deutsch",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYlRPSXpOOGV3RDhSYlhfOG52RDJlNEFpQnFaVUJiVVpzTGxDQ2x2MVNxUjk4MFd2bktnRW5pQXRkU2ZsdVZDYkdJNFdWLS1udlpWSmowX1NFMTkzN3A4WTlxVkVDNmFVUm1DcVhaS05TeU02RUE2WVF1aFRBbkMzbjBXVkJSWW5TaE9aamR3?oc=5"
-      },
-      {
-        "coins": [
           "BTC",
           "ETH"
         ],
@@ -420,6 +422,15 @@
         "score": 0,
         "title": "Bitcoin verteidigt 200-Tage-Linie: US-Anleiherendite springt auf 4,73 Prozent, Ether knapp über 2.000 Dollar - Finanzen.net",
         "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOSEd2dHlyZXhMcjJyUmZhWHhwSEpyejNXOWlmQmxUc1htdWVfN3dqOWgtcGdfYUF3cFJmYVVUbzJ4TWdpVU5LcllOMmJWMnU1R280R2FCQjVvMzJpVFREc2wySzBUOWFPQWRXT3J0eWhROWRsWU0zUUxmZWExeVFpNnZ0a2M5Z1lVcy1yTGZTUm5TMmw2SndvWW9Ka0lUV3pIUzl5THBfU0RLanhTVUZzdkFiSkhuQlItSmVtLUY1MW91Z1JLczRBSXhxRTF2MjNxMkdqM21md28yYzRWQmlzZDB3TERaTDZJU1oydWtuMkFjcnJIRE93OHd5M1NCdmRKNFVIeg?oc=5"
+      },
+      {
+        "coins": [
+          "XRP"
+        ],
+        "published": "11.11. 15:32 UTC",
+        "score": 0,
+        "title": "XRP: 266 Angriffe pro Minute - Investing.com Deutsch",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYlRPSXpOOGV3RDhSYlhfOG52RDJlNEFpQnFaVUJiVVpzTGxDQ2x2MVNxUjk4MFd2bktnRW5pQXRkU2ZsdVZDYkdJNFdWLS1udlpWSmowX1NFMTkzN3A4WTlxVkVDNmFVUm1DcVhaS05TeU02RUE2WVF1aFRBbkMzbjBXVkJSWW5TaE9aamR3?oc=5"
       },
       {
         "coins": [
@@ -431,15 +442,6 @@
         "score": -2,
         "title": "Bitcoin, Ethereum, Solana: 6,3 Milliarden Verlust – und der Käufer macht weiter - Investing.com Deutsch",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNWEQtLVpwQXJsRkNrV2MycWlMUGdMTmtTTmxRams5WnR2TldkdkZBYnAxZEdBVHRXa1VMNmpMRElmVXhsREUwV093U3luZ1VRNXpPUXYxRW16N3E3Mlpnb3ZBNWNhV0FkQW5zOVlGeEQ3UnltaTg5UVhaT25FN2R4T19iaW5QaUlvWlEyMXItcmlGekE2cVZiLUd2S2x3UTVZN0NqT2pNNVRrbXVnTlBjZmRwM19YR1NSVllqS01kTnVSb2hRT3kyLUVHN1Q?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "11.11. 15:51 UTC",
-        "score": 0,
-        "title": "Tor-Whitelist-Lücke in Bitcoin Core: Tausende Knoten behandelten Fremde als vertraut - CryptoTicker.io",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBnLVNKa1dvNkpockFMV1BzRWpCaUdiV0pGODd4MFpsRUhFU3NBUGkweHV4bTNyeUtXOU44M0I5SHo5bUNZQ3AzNkI3Y0hidERhNHhwT19Sb2NjRkk5cTEwSGdLNW04U3h6WHJuVUtn?oc=5"
       },
       {
         "coins": [
@@ -470,7 +472,7 @@
         "score": 0
       },
       "BTC": {
-        "count": 25,
+        "count": 24,
         "score": -8
       },
       "DOGE": {
@@ -497,7 +499,7 @@
     "news_error": null,
     "news_score": null,
     "peak": 200.41656915516032,
-    "price": 8.478,
+    "price": 8.586,
     "shares": 2.3246688544715224,
     "symbol": "AVAX",
     "trades": [
