@@ -47,10 +47,12 @@ jobs:
           python3 - <<'PY'
           import json, math, pathlib
           response = json.loads(pathlib.Path('response.json').read_text(encoding='utf-8'))
-          fields = ('cash','shares','price','peak','tick','halted','symbol','trades','last_trade_date','entry_price','equity_history','last_step_at','crypto')
+          fields = ('cash','shares','price','peak','tick','halted','symbol','trades','last_trade_date','last_trade_at','entry_price','equity_history','last_step_at','crypto')
           state = {key: response.get(key) for key in fields}
           if not isinstance(state['tick'], int) or state['tick'] < 1:
               raise ValueError('Invalid step response: no simulation tick')
+          if state.get('last_trade_at') is not None and not isinstance(state['last_trade_at'], str):
+              raise ValueError('Invalid last trade timestamp')
           if not isinstance(state['trades'], list):
               raise ValueError('Invalid trades list')
           if not all(isinstance(state[k], (int,float)) and math.isfinite(state[k]) and state[k] >= 0 for k in ('cash','shares','price','peak')):
@@ -61,6 +63,8 @@ jobs:
               raise ValueError('Invalid equity history')
           if not isinstance(state['crypto'], dict) or not isinstance(state['crypto'].get('trades'), list):
               raise ValueError('Invalid crypto ledger')
+          if state['crypto'].get('last_trade_at') is not None and not isinstance(state['crypto']['last_trade_at'], str):
+              raise ValueError('Invalid crypto last trade timestamp')
           pathlib.Path('state.json').write_text(json.dumps(state, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
           PY
           rm -f request.json response.json

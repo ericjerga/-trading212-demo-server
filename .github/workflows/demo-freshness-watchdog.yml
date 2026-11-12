@@ -1,0 +1,36 @@
+name: Demo simulation freshness watchdog
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check-ledger-freshness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Read private simulator ledger
+        uses: actions/checkout@v4
+        with:
+          ref: bot-state
+          persist-credentials: false
+      - name: Fail when the simulation has not advanced for 45 minutes
+        run: |
+          python3 - <<'PY'
+          import datetime
+          import json
+          import pathlib
+          now = datetime.datetime.now(datetime.timezone.utc)
+          saved = json.loads(pathlib.Path('state.json').read_text(encoding='utf-8'))
+          raw = saved.get('last_step_at')
+          if not isinstance(raw, str):
+              raise SystemExit('ALERT: Missing last_step_at in persisted demo ledger')
+          last = datetime.datetime.fromisoformat(raw.replace('Z', '+00:00'))
+          if last.tzinfo is None:
+              raise SystemExit('ALERT: last_step_at has no timezone')
+          age = (now - last).total_seconds()
+          if age < -300 or age > 2700:
+              raise SystemExit(f'ALERT: Demo simulation stale ({age/60:.1f} minutes)')
+          print(f'Demo simulation fresh ({age/60:.1f} minutes)')
+          PY
