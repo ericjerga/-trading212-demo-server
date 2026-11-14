@@ -3,7 +3,7 @@
   "shares": 2.10305,
   "price": 48.37,
   "peak": 1002.586779,
-  "tick": 175,
+  "tick": 176,
   "halted": false,
   "symbol": "SNY",
   "trades": [
@@ -50,10 +50,10 @@
       "equity": 1001.72
     }
   ],
-  "last_step_at": "2026-11-14T19:41:43.420745+00:00",
+  "last_step_at": "2026-11-14T20:19:36.036747+00:00",
   "crypto": {
     "cash": 198.03200863665313,
-    "checked": "2026-11-14T19:41:43.420745+00:00",
+    "checked": "2026-11-14T20:19:36.036747+00:00",
     "entry_price": 0.0,
     "error": null,
     "halted": false,
@@ -62,50 +62,50 @@
     "last_trade_date": "2026-11-13",
     "market": [
       {
-        "change_24h": -4.94,
-        "price": 65589.89,
+        "change_24h": -4.99,
+        "price": 65407.1,
         "source": "Coinbase Exchange",
         "symbol": "BTC"
       },
       {
-        "change_24h": -6.23,
-        "price": 1830.22,
+        "change_24h": -6.38,
+        "price": 1822.57,
         "source": "Coinbase Exchange",
         "symbol": "ETH"
       },
       {
-        "change_24h": -10.06,
-        "price": 72.16,
+        "change_24h": -10.22,
+        "price": 71.75,
         "source": "Coinbase Exchange",
         "symbol": "SOL"
       },
       {
-        "change_24h": -7.25,
-        "price": 0.9524,
+        "change_24h": -7.92,
+        "price": 0.9413,
         "source": "Coinbase Exchange",
         "symbol": "XRP"
       },
       {
-        "change_24h": -10.0,
-        "price": 0.15458,
+        "change_24h": -10.63,
+        "price": 0.1524,
         "source": "Coinbase Exchange",
         "symbol": "ADA"
       },
       {
-        "change_24h": -9.45,
-        "price": 9.073,
+        "change_24h": -9.74,
+        "price": 8.99,
         "source": "Coinbase Exchange",
         "symbol": "LINK"
       },
       {
-        "change_24h": -11.74,
-        "price": 7.426,
+        "change_24h": -12.41,
+        "price": 7.341,
         "source": "Coinbase Exchange",
         "symbol": "AVAX"
       },
       {
-        "change_24h": -8.77,
-        "price": 0.05989,
+        "change_24h": -9.42,
+        "price": 0.05913,
         "source": "Coinbase Exchange",
         "symbol": "DOGE"
       }
@@ -113,14 +113,12 @@
     "news": [
       {
         "coins": [
-          "BTC",
-          "ETH",
-          "DOGE"
+          "BTC"
         ],
-        "published": "14.11. 16:23 UTC",
+        "published": "14.11. 18:40 UTC",
         "score": 0,
-        "title": "Bitcoin, Dogecoin, Ethereum & Co. am Samstagnachmittag - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUUlOd2NTd3kxeE9TT3A5QTFPcm5QcURQbXlJRjBhYTM2dHJtLUxSZ3J5dnF1V3NQeEtiMldxZnB2bnpmMnlBS1loWWszbnJEN056Z0I5OERrV3FrdzNMdnMtR2V1b1NmZy1nVXRBNldFOUl0TVhsNFh6RkVMZGIzdGVQRW1ZazZ4REw2dnRlQUhRSXVTZTNHd0wtbHRtdjFaekJn?oc=5"
+        "title": "Bitcoin-Kurs nähert sich 65.000 US-Dollar: Zieht der Anthropic-Börsengang Geld ab? - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPWG1BSl83MW0wcmQ3dlQ2Ukk0Y3huZExFajNRQUwyMVNUd3NFQnZ2cHl6S1dWeU9Pc2FTd0NReS11Q2FYa2dNdjFQX2RwN04wTFdoaFV0eExnVUY2dDNZd2NoV1g3R2ZNbDMxbnN5VFhhZFFIcmxheVFobHBWSXh3UTVrZURlVFVpdDlzR3JmYS1MckNCemQ1QzZHWTZLV01BdVNPenZFMk9SRDhwYlgzMU5WME9WVXBBYzNvbGpSSDNRLXJDZFlLdVJ1WHptRHF4aHA2V0FnR2xZa0VjN1pWN09XajlaN0F0eHhESzV1ckRUQQ?oc=5"
       },
       {
         "coins": [
@@ -130,15 +128,6 @@
         "score": 0,
         "title": "Bitcoin auf 200.000 Dollar? \"Aus heutiger Sicht total naiv\" - BTC-ECHO",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaU1MTGp1eVlPMHpqMndsN2lSRUpRN2l3Rk5oXy14UFI1cDVwRHFUcVNkeWJDYm5LNTVBaGlQWnoyYk1CcmpIMWphVGNOYlJ0VEdSRVNBMVBsTURMcnA0Y1VrSU1KSzhJRWIweUdzNnFBRkx0QndORk5jQzl2Wi1IaURuaVB3dkVPZFJtcS10bTRHMlN2?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "14.11. 17:14 UTC",
-        "score": 0,
-        "title": "Nach Binance-Angriff: Wie sicher ist der Bitcoin eigentlich noch? - Berliner Morgenpost",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNGJhT2xyMHZjV3ptVExNWm1lQWcxaExTRTBoMDNmYzRLVEtScmR3X0dPMVdHSGVJQzZxVENVTTJ6NVJGRWl0SWcza2FfUm1EdWtqSVZLM1lYLWFOeElPcXpqQ3p1a2ctdHJ6aElwbEVJUlZUaDdYRkJ6Wjd2ZXdhcEdCcFJEZHdWRGFhUlltbURiLTF0b0JWcUFJZG5xU2Zzdmx1Y3o1Ny1DUlZXSXlmMXJPQlZKV2NwYzhmSnpRTQ?oc=5"
       },
       {
         "coins": [
@@ -162,6 +151,15 @@
         "coins": [
           "BTC"
         ],
+        "published": "14.11. 17:19 UTC",
+        "score": 0,
+        "title": "Bitcoin rutscht auf 65.000 Dollar, eine Milliarde Dollar liquidiert - Trending Topics",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9lTlBySHFZbHRySmtpeUZmSDZjWlFPeXIxNG5FZUJpSzZsckVrN21qMVI1NnMtMUdhelhEYW93MHVRRjhIRnd2ZjRHOWxkNThUdnVBU0IyNmNORlF2c2dSNC0yZ1B1b3VrWjRadTY1bldRMjQ?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
         "published": "14.11. 16:39 UTC",
         "score": 0,
         "title": "Bitcoin-Preisanalyse: BTC setzt am Samstag den Abwärtstrend fort und gelangt in die „Deep-Value-Zone“ - CoinDesk",
@@ -180,10 +178,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "14.11. 17:19 UTC",
+        "published": "14.11. 17:14 UTC",
         "score": 0,
-        "title": "Bitcoin rutscht auf 65.000 Dollar, eine Milliarde Dollar liquidiert - Trending Topics",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9lTlBySHFZbHRySmtpeUZmSDZjWlFPeXIxNG5FZUJpSzZsckVrN21qMVI1NnMtMUdhelhEYW93MHVRRjhIRnd2ZjRHOWxkNThUdnVBU0IyNmNORlF2c2dSNC0yZ1B1b3VrWjRadTY1bldRMjQ?oc=5"
+        "title": "Nach Binance-Angriff: Wie sicher ist der Bitcoin eigentlich noch? - Berliner Morgenpost",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNGJhT2xyMHZjV3ptVExNWm1lQWcxaExTRTBoMDNmYzRLVEtScmR3X0dPMVdHSGVJQzZxVENVTTJ6NVJGRWl0SWcza2FfUm1EdWtqSVZLM1lYLWFOeElPcXpqQ3p1a2ctdHJ6aElwbEVJUlZUaDdYRkJ6Wjd2ZXdhcEdCcFJEZHdWRGFhUlltbURiLTF0b0JWcUFJZG5xU2Zzdmx1Y3o1Ny1DUlZXSXlmMXJPQlZKV2NwYzhmSnpRTQ?oc=5"
       },
       {
         "coins": [
@@ -205,15 +203,6 @@
       },
       {
         "coins": [
-          "BTC"
-        ],
-        "published": "14.11. 17:24 UTC",
-        "score": 0,
-        "title": "Bitcoin fällt auf ein 3-Monats-Tief von 65.000 USD, da Analyst die vierte Kapitulationswelle warnt - Cryptonews.net",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9kSzI1RU9KSmZuT2YtZUh2QXV2a1ZkNzZsQkM2MEZ5Y2VfaVJKSnA0VUZWTk9sbEpIWGp2YXVxbGFiOU5pNDlpeTljeGtaaHBLU2JCWEdxWlNtdzhU?oc=5"
-      },
-      {
-        "coins": [
           "ADA"
         ],
         "published": "14.11. 18:19 UTC",
@@ -225,19 +214,30 @@
         "coins": [
           "BTC"
         ],
-        "published": "14.11. 09:00 UTC",
+        "published": "14.11. 17:24 UTC",
         "score": 0,
-        "title": "Bitcoin fällt weiter – am Terminmarkt droht neuer Ärger - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUHM5ZkxPXzNNaFJVaEU2WE1IdUZGeU5sR3pzWXVZZmZsSUhSYkVZbUV2QzJ6UmlRRU5uRG1jUjJ4cEh2Z3lkZEloLWtmX2hRYUtoMmFER2ZEWEh5aU9sYWlaN0w2WmNtZ3VwT0V1OTZCMEcwcTROelVMZm1kUmxNc1lQcTd2UWdEY0VMOThnZkhXV2dWUVNsMDh5NHFrQVZkNDBYcVdQQnkzckxh?oc=5"
+        "title": "Bitcoin fällt auf ein 3-Monats-Tief von 65.000 USD, da Analyst die vierte Kapitulationswelle warnt - Cryptonews.net",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9kSzI1RU9KSmZuT2YtZUh2QXV2a1ZkNzZsQkM2MEZ5Y2VfaVJKSnA0VUZWTk9sbEpIWGp2YXVxbGFiOU5pNDlpeTljeGtaaHBLU2JCWEdxWlNtdzhU?oc=5"
+      },
+      {
+        "coins": [
+          "BTC",
+          "ETH",
+          "DOGE"
+        ],
+        "published": "14.11. 16:23 UTC",
+        "score": 0,
+        "title": "Bitcoin, Dogecoin, Ethereum & Co. am Samstagnachmittag - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUUlOd2NTd3kxeE9TT3A5QTFPcm5QcURQbXlJRjBhYTM2dHJtLUxSZ3J5dnF1V3NQeEtiMldxZnB2bnpmMnlBS1loWWszbnJEN056Z0I5OERrV3FrdzNMdnMtR2V1b1NmZy1nVXRBNldFOUl0TVhsNFh6RkVMZGIzdGVQRW1ZazZ4REw2dnRlQUhRSXVTZTNHd0wtbHRtdjFaekJn?oc=5"
       },
       {
         "coins": [
           "BTC"
         ],
-        "published": "14.11. 18:40 UTC",
+        "published": "14.11. 09:00 UTC",
         "score": 0,
-        "title": "Bitcoin-Kurs nähert sich 65.000 US-Dollar: Zieht der Anthropic-Börsengang Geld ab? - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPWG1BSl83MW0wcmQ3dlQ2Ukk0Y3huZExFajNRQUwyMVNUd3NFQnZ2cHl6S1dWeU9Pc2FTd0NReS11Q2FYa2dNdjFQX2RwN04wTFdoaFV0eExnVUY2dDNZd2NoV1g3R2ZNbDMxbnN5VFhhZFFIcmxheVFobHBWSXh3UTVrZURlVFVpdDlzR3JmYS1MckNCemQ1QzZHWTZLV01BdVNPenZFMk9SRDhwYlgzMU5WME9WVXBBYzNvbGpSSDNRLXJDZFlLdVJ1WHptRHF4aHA2V0FnR2xZa0VjN1pWN09XajlaN0F0eHhESzV1ckRUQQ?oc=5"
+        "title": "Bitcoin fällt weiter – am Terminmarkt droht neuer Ärger - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUHM5ZkxPXzNNaFJVaEU2WE1IdUZGeU5sR3pzWXVZZmZsSUhSYkVZbUV2QzJ6UmlRRU5uRG1jUjJ4cEh2Z3lkZEloLWtmX2hRYUtoMmFER2ZEWEh5aU9sYWlaN0w2WmNtZ3VwT0V1OTZCMEcwcTROelVMZm1kUmxNc1lQcTd2UWdEY0VMOThnZkhXV2dWUVNsMDh5NHFrQVZkNDBYcVdQQnkzckxh?oc=5"
       },
       {
         "coins": [
@@ -394,6 +394,15 @@
       },
       {
         "coins": [
+          "ETH"
+        ],
+        "published": "14.11. 17:49 UTC",
+        "score": 0,
+        "title": "Ethereum Kurs bei 1.670,67 Euro – 3,56 % gefallen - tixio - Nachrichten",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd05uWW5kOTZwUnZpeWMtVUNHUFV6cWJYMWMzWE9XdHk1RURmcTdQd2dVZTRaUW1Reng1LVFyUXdRalE5MmRiRGNTa29XbmZSRE1EYmlUWDQ2elg2LTZPZy1TUzBxNGNTMWR4TkdhV2ZZYmZ5V2dzd285ZGY3VGIwTkhEVQ?oc=5"
+      },
+      {
+        "coins": [
           "BTC"
         ],
         "published": "14.11. 17:44 UTC",
@@ -410,15 +419,6 @@
         "score": 0,
         "title": "KW 46 am Kryptomarkt: So haben Bitcoin, Ether & Co. in der vergangenen Woche performt - Finanzen.net",
         "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOclE1OGhiaDhaTmpMc1d3eFpfekpGNWFob2s2TnJ1d3NMRmppZjA5eGdYUHUzNFhKbjY4V2VNcjBuR29ZNjdDdVl4ckxMRWExeGFKQVRxWUlCd0lYS0F2aHpHR0FRVDJUZzQ2LXZOUl92NjNocU9WaHVXYmJfNm83aVBYMmVUbW51N2d5UmROanh4Qk1JU0FRS1hwTzRlUGptMks3V1YwVmprenBsdmxDYjFnZkpKc0V1RFFFbVp2Z1JyZms2VkE4LUlVTGRlN3hhVTNua2ZZa2hkTFk?oc=5"
-      },
-      {
-        "coins": [
-          "ETH"
-        ],
-        "published": "14.11. 17:49 UTC",
-        "score": 0,
-        "title": "Ethereum Kurs bei 1.670,67 Euro – 3,56 % gefallen - tixio - Nachrichten",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd05uWW5kOTZwUnZpeWMtVUNHUFV6cWJYMWMzWE9XdHk1RURmcTdQd2dVZTRaUW1Reng1LVFyUXdRalE5MmRiRGNTa29XbmZSRE1EYmlUWDQ2elg2LTZPZy1TUzBxNGNTMWR4TkdhV2ZZYmZ5V2dzd285ZGY3VGIwTkhEVQ?oc=5"
       },
       {
         "coins": [
