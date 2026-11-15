@@ -3,7 +3,7 @@
   "shares": 2.10305,
   "price": 48.37,
   "peak": 1002.586779,
-  "tick": 199,
+  "tick": 200,
   "halted": false,
   "symbol": "SNY",
   "trades": [
@@ -54,10 +54,10 @@
       "equity": 1001.72
     }
   ],
-  "last_step_at": "2026-11-15T16:53:44.772915+00:00",
+  "last_step_at": "2026-11-15T17:30:49.807884+00:00",
   "crypto": {
     "cash": 198.03200863665313,
-    "checked": "2026-11-15T16:53:44.772915+00:00",
+    "checked": "2026-11-15T17:30:49.807884+00:00",
     "entry_price": 0.0,
     "error": null,
     "halted": false,
@@ -66,50 +66,50 @@
     "last_trade_date": "2026-11-13",
     "market": [
       {
-        "change_24h": -1.15,
-        "price": 64549.77,
+        "change_24h": -1.6,
+        "price": 64810.02,
         "source": "Coinbase Exchange",
         "symbol": "BTC"
       },
       {
-        "change_24h": -0.88,
-        "price": 1808.22,
+        "change_24h": -1.49,
+        "price": 1814.58,
         "source": "Coinbase Exchange",
         "symbol": "ETH"
       },
       {
-        "change_24h": -1.6,
-        "price": 71.2,
+        "change_24h": -1.98,
+        "price": 71.36,
         "source": "Coinbase Exchange",
         "symbol": "SOL"
       },
       {
-        "change_24h": -0.81,
-        "price": 0.9483,
+        "change_24h": -1.03,
+        "price": 0.9494,
         "source": "Coinbase Exchange",
         "symbol": "XRP"
       },
       {
-        "change_24h": -1.33,
-        "price": 0.15255,
+        "change_24h": -1.96,
+        "price": 0.15282,
         "source": "Coinbase Exchange",
         "symbol": "ADA"
       },
       {
-        "change_24h": 1.01,
-        "price": 9.165,
+        "change_24h": 0.71,
+        "price": 9.228,
         "source": "Coinbase Exchange",
         "symbol": "LINK"
       },
       {
-        "change_24h": -4.25,
-        "price": 7.164,
+        "change_24h": -3.77,
+        "price": 7.197,
         "source": "Coinbase Exchange",
         "symbol": "AVAX"
       },
       {
-        "change_24h": -2.74,
-        "price": 0.05825,
+        "change_24h": -2.85,
+        "price": 0.05859,
         "source": "Coinbase Exchange",
         "symbol": "DOGE"
       }
@@ -299,15 +299,6 @@
       },
       {
         "coins": [
-          "BTC"
-        ],
-        "published": "15.11. 10:00 UTC",
-        "score": 0,
-        "title": "“Der Zeitpunkt ist heikel”: Was der Anthropic-Börsengang für Bitcoin bedeutet - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQV9vZjh6SGxvcDQ1OHpMVENOMm4xMHA4WHluTmpzMW0yMUJraVhUOTIxcDYxV0NsYkJGZnNXRzdZNmd6T0JMLTBlUmpISjE5eEQ0S3p3VFZSZWtXWHllcWpuWVJMS1RYUFJyUTNyZVZ5Z2tpWlhSYU9xanJYNEhlcEI5WG9MQTVyaTJBTUJPZ1k?oc=5"
-      },
-      {
-        "coins": [
           "XRP"
         ],
         "published": "15.11. 02:50 UTC",
@@ -319,10 +310,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "14.11. 18:40 UTC",
+        "published": "15.11. 10:00 UTC",
         "score": 0,
-        "title": "Bitcoin-Kurs nähert sich 65.000 US-Dollar: Zieht der Anthropic-Börsengang Geld ab? - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPWG1BSl83MW0wcmQ3dlQ2Ukk0Y3huZExFajNRQUwyMVNUd3NFQnZ2cHl6S1dWeU9Pc2FTd0NReS11Q2FYa2dNdjFQX2RwN04wTFdoaFV0eExnVUY2dDNZd2NoV1g3R2ZNbDMxbnN5VFhhZFFIcmxheVFobHBWSXh3UTVrZURlVFVpdDlzR3JmYS1MckNCemQ1QzZHWTZLV01BdVNPenZFMk9SRDhwYlgzMU5WME9WVXBBYzNvbGpSSDNRLXJDZFlLdVJ1WHptRHF4aHA2V0FnR2xZa0VjN1pWN09XajlaN0F0eHhESzV1ckRUQQ?oc=5"
+        "title": "“Der Zeitpunkt ist heikel”: Was der Anthropic-Börsengang für Bitcoin bedeutet - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQV9vZjh6SGxvcDQ1OHpMVENOMm4xMHA4WHluTmpzMW0yMUJraVhUOTIxcDYxV0NsYkJGZnNXRzdZNmd6T0JMLTBlUmpISjE5eEQ0S3p3VFZSZWtXWHllcWpuWVJMS1RYUFJyUTNyZVZ5Z2tpWlhSYU9xanJYNEhlcEI5WG9MQTVyaTJBTUJPZ1k?oc=5"
       },
       {
         "coins": [
@@ -332,6 +323,15 @@
         "score": 0,
         "title": "Bitcoin unter Druck: Milliardenabflüsse schüren neue Verkaufsangst - Wallstreet Online",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcDdQc19VSllkUDNjaF9BeFZkMGpKWDlnYnduSU0tTU5SZkZ3T3E4WnVSeTJQYS1YRWNlVEZJTFpDTUpZY3Boa0ZQQVpMWTYxQzVHTlptTlZ3aEJuNnVab2Ffa2o1clhKWXJfVHgtTlJDT0RUMk9TdHo4cktsWVhOWTdzMmVUaEZxSjdDb3N1ZnBlaUVwOWxVWm10dWZlSmxkU3BwaWZIcVkwUGk3?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "14.11. 18:40 UTC",
+        "score": 0,
+        "title": "Bitcoin-Kurs nähert sich 65.000 US-Dollar: Zieht der Anthropic-Börsengang Geld ab? - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPWG1BSl83MW0wcmQ3dlQ2Ukk0Y3huZExFajNRQUwyMVNUd3NFQnZ2cHl6S1dWeU9Pc2FTd0NReS11Q2FYa2dNdjFQX2RwN04wTFdoaFV0eExnVUY2dDNZd2NoV1g3R2ZNbDMxbnN5VFhhZFFIcmxheVFobHBWSXh3UTVrZURlVFVpdDlzR3JmYS1MckNCemQ1QzZHWTZLV01BdVNPenZFMk9SRDhwYlgzMU5WME9WVXBBYzNvbGpSSDNRLXJDZFlLdVJ1WHptRHF4aHA2V0FnR2xZa0VjN1pWN09XajlaN0F0eHhESzV1ckRUQQ?oc=5"
       },
       {
         "coins": [
@@ -351,6 +351,15 @@
         "score": 0,
         "title": "Die Performance der Kryptowährungen in KW 46: Das hat sich bei Bitcoin, Ether & Co. getan - finanzen.ch",
         "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMWl5NndjdHY4MkNfWXVOTDM5dkczUWp2Nk5uR25YVUdjTG9pc3c5NnJSNWxOcllQNUtGWUV3a1ZBWUQ1cXdXQlJjS0E3SGM3Z0xEcjVQUkdpQlpERGxxeW56UXlDWGJMTldDam1GS1dVbUs4VTFBSm5fUmRmZUxNME80WHp1TEVpSGVOMElSWXU2aUxJLUUtU2R6VkdHOUl6NUYwVU1vejV0MGFSVHZ6Wi1hQWNZeVRiUno0VjZiSWNUVktXUXR0eGlrLU1YN0lwZjlfTV9KUUs?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "15.11. 17:08 UTC",
+        "score": 0,
+        "title": "Bitcoin Kurs bei 58.692,00 Euro – 1,10 % gefallen - tixio - Nachrichten",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNGVmcEZEdUtSM3NiekMxajlRQVh1M21KMDhtMnFDSlZHWVBLM2NXeHlKVHVIWkkwaW1GTGZJWk1fejZVUVZyOGQ5VGVoQXlMQ3ZfWTdFTkRhVjRMVFE2ZFRianhERGpGSGdETTRwY0RNamdBVl9XRkJ5VnljZWJ3LVI5MA?oc=5"
       },
       {
         "coins": [
@@ -400,15 +409,6 @@
         "coins": [
           "XRP"
         ],
-        "published": "15.11. 12:46 UTC",
-        "score": 0,
-        "title": "XRP Kurs bei 0,8771 Euro – 0,11 % gefallen - tixio - Nachrichten",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5LbDl0S2JNMExqSjlYTURFbzMtZGtmQ2w2WUZ5c21uQTJyNDdMeVFEM0VFX3psdzVfMjZxQk1rRFJiQTEzMTI2YUNXdk5LRzJuSWFxZUIwZlhtUkxuOWgtX1JndVlod19tOGdabFlGcVJFLVJRYzE0VFNB?oc=5"
-      },
-      {
-        "coins": [
-          "XRP"
-        ],
         "published": "15.11. 15:00 UTC",
         "score": 0,
         "title": "XRP: Alles anders! - Börse Express",
@@ -416,12 +416,12 @@
       },
       {
         "coins": [
-          "BTC"
+          "XRP"
         ],
-        "published": "15.11. 09:00 UTC",
-        "score": -2,
-        "title": "Satoshi-Ära-Bitcoin-Wallet verschiebt 75 BTC nach Klage in Höhe von 260 Milliarden US-Dollar - IDNFinancials",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOUkVFZTU4SUZTQVl6eVZGM3diYUdEOTlYeFFSSzZTRFlBbWNBWWhYUDcwendRbjRuZlJpYzYtcWNsdks0c0JaVkpnWGpFeWxYYVFQTkhVQXU5Z1RaR1labWV1OWtfVV9uLXZ4QnZYSnNTbE44ZEFUTFhGdFp3NENESmV2NUtzcWpuTHI4MU1Va2traWM3TndlcDF6VEpab2ZSdWhmeGZoQlBNR285S0ZhaENUaGFGX1ZURlJrTDk3amZGbS1xUTRfZjMyQ0l0bk5BczJmcjlfSGRBeUNHUjEwM2hqM3VqdDVrd1Nv?oc=5"
+        "published": "15.11. 12:46 UTC",
+        "score": 0,
+        "title": "XRP Kurs bei 0,8771 Euro – 0,11 % gefallen - tixio - Nachrichten",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5LbDl0S2JNMExqSjlYTURFbzMtZGtmQ2w2WUZ5c21uQTJyNDdMeVFEM0VFX3psdzVfMjZxQk1rRFJiQTEzMTI2YUNXdk5LRzJuSWFxZUIwZlhtUkxuOWgtX1JndVlod19tOGdabFlGcVJFLVJRYzE0VFNB?oc=5"
       },
       {
         "coins": [
@@ -431,6 +431,15 @@
         "score": -2,
         "title": "Q-Day rückt näher? Was neue Qubit-Schätzungen für Bitcoin und Bankverschlüsselung bedeuten - FinanzNachrichten.de",
         "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQNm5Hbm5nSXNaYU9abUhXTHU2ZXFXcnduU21LdG9VR0VDNThFeEZvQzV3OWJnZmRMSUd0SHZaNThFV09CeDNfdGxjbXZaNE1tMGRtQzdWbTQtT01DUVc2VGgxWXlmTmZ6Mmw2MXdET18ydXNLS3puSXFNY0tiQ0NIa2NTcXBUUTUzSnhPbVpzSFQ5MFZ1bXl6azlIMmhHWlJJQlctMllDU1phX0VXZmJabElzLUxWYXdCMDJqSTVRS1dMM2ZUSmJkV09NdmMyR2Myb19TbDlDbEU1dldiZkx0SjZXRV9RNnFFblgyaUs0X21qM29JODY4?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "15.11. 09:00 UTC",
+        "score": -2,
+        "title": "Satoshi-Ära-Bitcoin-Wallet verschiebt 75 BTC nach Klage in Höhe von 260 Milliarden US-Dollar - IDNFinancials",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOUkVFZTU4SUZTQVl6eVZGM3diYUdEOTlYeFFSSzZTRFlBbWNBWWhYUDcwendRbjRuZlJpYzYtcWNsdks0c0JaVkpnWGpFeWxYYVFQTkhVQXU5Z1RaR1labWV1OWtfVV9uLXZ4QnZYSnNTbE44ZEFUTFhGdFp3NENESmV2NUtzcWpuTHI4MU1Va2traWM3TndlcDF6VEpab2ZSdWhmeGZoQlBNR285S0ZhaENUaGFGX1ZURlJrTDk3amZGbS1xUTRfZjMyQ0l0bk5BczJmcjlfSGRBeUNHUjEwM2hqM3VqdDVrd1Nv?oc=5"
       },
       {
         "coins": [
@@ -460,22 +469,11 @@
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE95TDYzRmF3bG1NRTBkTmpIS3g2X25JaVNuLXVic3dKT3N1aU9XX09HTW9rNjc4SVBNaTQxa0I3SEhaczlGNF80THJJenU3VzI0MGpLUVVlNWd1N2h5bVVZQ21ZeUNtbUJ5YXJrVmdHVkUzdWMyNVlB?oc=5"
       },
       {
-        "coins": [
-          "ETH"
-        ],
-        "published": "15.11. 01:04 UTC",
+        "coins": [],
+        "published": "15.11. 17:01 UTC",
         "score": 0,
-        "title": "Ethereum fällt um 10% - Anleger brauchen starke Nerven - Investing.com Deutsch",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZXpBeUh2NkpJdU1uQjhGMUxtWmw5SHZCLThaNElnaExXSW05bk9SS0x2WFVLRVZpWmVNcWJYVVR2RWhJY01JcHduVHBxUkRENFlUTTdpM01aMTI4NVUyWXYxSWJKMEhrZ0Z4RndtMTRFengtNGJlVVB0Z3FQMEpOdG90d1BXRlVudjEzYlZ3aE1TTl9IaGZKNDhVZ1BQR2dmb0lhbE9ZdjYxZ2Z3SXVJ?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "15.11. 13:24 UTC",
-        "score": 0,
-        "title": "Porträt des 37-jährigen CEOs, der ein hochverschuldetes Bitcoin-Mining-Unternehmen auf einer Kohlehalde rettete. - Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZTE3azhYTmI1azFNWUdfajRUOU51UEM5cGJvVW5MNUNiRDBaaElPbHoybkZvZWlqY0lVNTFqRnNkYmF0S2NsNEx2eTd5bFhkdjBKeDBWYkFrQW0yRzBCYldOQThaSi1OOWlyYkZHbWJ3RnNqMEJQSktNQUxVdFk0MjdZOWVtZEpQaUlkMENmbjV4WmxXZ2FaWVpES0VUbGVFQlozMlpJQWhsOVU?oc=5"
+        "title": "TRM Labs hilft Polizei beim Einfrieren gestohlener Kryptowerte - Newsbit.de",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORzc0YlJqWGpsWUh6ZUFiLV9rT18yejk0eUh3bFc4RlRHTHQ1TG9rOEE3QjU3cG1Ray1PQVhmdVo4dEltbmstUGpVVldRQzlkX0dMcWJZaGFqNU01ZTUwZm5iZTVpR3pBeTVkNExld1BzM1dRYU0zMGttd21rRVd6WlNqZ3ZNd3NwOUE?oc=5"
       }
     ],
     "news_by_coin": {
@@ -496,7 +494,7 @@
         "score": 0
       },
       "ETH": {
-        "count": 7,
+        "count": 6,
         "score": 0
       },
       "LINK": {
