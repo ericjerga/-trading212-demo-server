@@ -3,7 +3,7 @@
   "shares": 4.1466,
   "price": 47.12,
   "peak": 1002.6039740000001,
-  "tick": 269,
+  "tick": 270,
   "halted": false,
   "symbol": "SNY",
   "trades": [
@@ -84,62 +84,62 @@
       "equity": 997.34
     }
   ],
-  "last_step_at": "2026-11-18T22:48:07.390995+00:00",
+  "last_step_at": "2026-11-18T23:45:38.514582+00:00",
   "crypto": {
     "cash": 197.0467388959642,
-    "checked": "2026-11-18T22:48:07.390995+00:00",
+    "checked": "2026-11-18T23:45:38.514582+00:00",
     "entry_price": 0.0,
     "error": null,
     "halted": false,
-    "last_decision": "Virtueller Krypto-Verkauf",
+    "last_decision": "Krypto-Cooldown aktiv",
     "last_trade_at": "2026-11-18T22:48:07.390995+00:00",
     "last_trade_date": "2026-11-18",
     "market": [
       {
-        "change_24h": -3.55,
-        "price": 62361.0,
+        "change_24h": -3.0,
+        "price": 62929.75,
         "source": "Coinbase Exchange",
         "symbol": "BTC"
       },
       {
-        "change_24h": -2.87,
-        "price": 1760.34,
+        "change_24h": -2.53,
+        "price": 1776.73,
         "source": "Coinbase Exchange",
         "symbol": "ETH"
       },
       {
-        "change_24h": -1.88,
-        "price": 72.61,
+        "change_24h": -2.0,
+        "price": 73.6,
         "source": "Coinbase Exchange",
         "symbol": "SOL"
       },
       {
-        "change_24h": -1.38,
-        "price": 0.9594,
+        "change_24h": -1.37,
+        "price": 0.9692,
         "source": "Coinbase Exchange",
         "symbol": "XRP"
       },
       {
-        "change_24h": -3.14,
-        "price": 0.14943,
+        "change_24h": -2.39,
+        "price": 0.15148,
         "source": "Coinbase Exchange",
         "symbol": "ADA"
       },
       {
-        "change_24h": -3.14,
-        "price": 8.957,
+        "change_24h": -2.37,
+        "price": 9.096,
         "source": "Coinbase Exchange",
         "symbol": "LINK"
       },
       {
-        "change_24h": -4.06,
-        "price": 6.904,
+        "change_24h": -3.48,
+        "price": 7.037,
         "source": "Coinbase Exchange",
         "symbol": "AVAX"
       },
       {
-        "change_24h": -2.73,
-        "price": 0.05799,
+        "change_24h": -1.97,
+        "price": 0.05885,
         "source": "Coinbase Exchange",
         "symbol": "DOGE"
       }
@@ -174,12 +174,30 @@
       },
       {
         "coins": [
+          "XRP"
+        ],
+        "published": "18.11. 15:01 UTC",
+        "score": 0,
+        "title": "XRP: Jetzt mischt sogar Goldman Sachs mit - Investing.com Deutsch",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZGY1WkpvTFc3T1JBcVhEaVotazRGV3RvTl93TXh5OW9ZaXoxSDU3OXRzSWc4VVROUUNqLWVIVFJ1T1ZEQURqZ1UzbUxCdEQwNkNZVmpKWXRobkZIN3dBWWxya0VpZHo0R1VNUWlBVDBQbVR6X2ZhaWI4MGN1dmU3bjA1Zloyemd4WW5LTjB1NVdHNTNhUkRFeXdqMmpTSWM?oc=5"
+      },
+      {
+        "coins": [
           "BTC"
         ],
         "published": "18.11. 17:53 UTC",
         "score": 0,
         "title": "\"Jeder Bitcoin-Einstieg unter 70.000 Dollar ist ein Geschenk\" - BTC-ECHO",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUzAwUDVWaXl0bVU3UUxiVlVJYUxCOWZLZjB6em1kLTY5NFNlUmhDakR1Q01YX29xZi1LclN5QmxlUmxZU1U0NVQ1bzl4VlFhQnA4M0NpWTNScnBKdzQ4ZVRncUZmSDh3UHVlVHNXbFp3bGpJNjdwRXFsZ1RYR0J4ZjlGeDlTS2x1WWpUb3JLSkptTzg?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "18.11. 11:42 UTC",
+        "score": 0,
+        "title": "Die Warnung des Economist für 2027: Was bedeutet das für Bitcoin? - Yahoo Finanzen Deutschland",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORWwtU05mR2NLUnRuOVRGaEp2b2hvX25OWEJPdzNRTVpDYmdjWERtbHdSSm1sRGhsN19ITzQtbjVXdU9VZGRYVy10ZFpueWxld0JvUldHelRSNk1YUGY2dTFteS1Qdkp1MzQ3WUs1Ymcwc2xBQ2xVbDdJNTZ3Qm1VMUl0U0pUSi1YM3hQNUNfUzdYS0N1QWg3WkN4cU0?oc=5"
       },
       {
         "coins": [
@@ -201,6 +219,15 @@
       },
       {
         "coins": [
+          "BTC"
+        ],
+        "published": "18.11. 17:23 UTC",
+        "score": 0,
+        "title": "US-Treasury: Sechs-Milliarden-USD-Anleihen sorgen für Warnsignale beim Bitcoin - BeInCrypto",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5XYnVLX041UXNqdklySXZCVF95UDFvOGlEYjlZVmNPSjRyUTlrelA1c3hkd1I3V2NseE11NnRBLS1WbmpKY0Z6NHJ1Yl9GRTBOU0JHS3dxR0c2VHJHaUpYcFpuYlN3U1VFWWk4?oc=5"
+      },
+      {
+        "coins": [
           "BTC",
           "ETH",
           "XRP"
@@ -214,10 +241,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "18.11. 17:23 UTC",
+        "published": "18.11. 11:36 UTC",
         "score": 0,
-        "title": "US-Treasury: Sechs-Milliarden-USD-Anleihen sorgen für Warnsignale beim Bitcoin - Yahoo Finanzen Deutschland",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMERCYXFObEE5eThaYVV5SXY1U0hNSHB2cFkxOTR3c1VjUDRER3JaSzJMSDBMeERQdlg1cFZvT20zU1hzdm9RaG1mUnVQYlR4X2hoWGNsNWdySDBCbVZTdExKVzhqOUVrU3UyZEFmRkN3OTJsSzdybUNoWEtqbElEZDFkNGF5RUZDelhHUXJFZUJNQQ?oc=5"
+        "title": "Bitcoin-Gewinne: Alte Bestände schützen nicht immer vor Steuern - Der Betrieb",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTUF4MGgzOVdGenJFd3hRcWthVU5HaG1LT2g4X1BtOEg2amQtbnJrWldtZTg2VlFlcmpWbU1xV0duNHJ0NFRKVktDY2RNekZWTFV2Q3psZWNWbmtiSFZGakg5WTNoUzZGM012Qlg2TWxobXg0YUhJTndpWFNCVm9QLXdUMmdwZ1RfM0pkV0RDQzl4ckxEdEVjZEx2RUNaSk1jaFM1aA?oc=5"
       },
       {
         "coins": [],
@@ -228,30 +255,21 @@
       },
       {
         "coins": [
-          "BTC"
-        ],
-        "published": "18.11. 11:36 UTC",
-        "score": 0,
-        "title": "Bitcoin-Gewinne: Alte Bestände schützen nicht immer vor Steuern - Der Betrieb",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTUF4MGgzOVdGenJFd3hRcWthVU5HaG1LT2g4X1BtOEg2amQtbnJrWldtZTg2VlFlcmpWbU1xV0duNHJ0NFRKVktDY2RNekZWTFV2Q3psZWNWbmtiSFZGakg5WTNoUzZGM012Qlg2TWxobXg0YUhJTndpWFNCVm9QLXdUMmdwZ1RfM0pkV0RDQzl4ckxEdEVjZEx2RUNaSk1jaFM1aA?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "18.11. 09:19 UTC",
-        "score": 0,
-        "title": "Besteuerung von Bitcoin bei Nutzung mehrerer Wallets - STB Web",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFNmtraUltWklicGxDWlRnNnhFT25aMm53NFU3TVl5Snlka1UtU1I3SDg2N0ZKQVZvYWx6dDhlcUFjODlnM19qdk84bEVjb0RSZmY3bWh3VTRSUTk3?oc=5"
-      },
-      {
-        "coins": [
           "AVAX"
         ],
-        "published": "18.11. 17:06 UTC",
+        "published": "18.11. 17:21 UTC",
         "score": 0,
-        "title": "Colorado Avalanche - Minnesota Wild - 27.11.2026 - NHL.com",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9NNV9HMzNLdDNESnl0ZGFEYnk0SmRxbnRYR2lNTWQ4aVRxaEktbExyZFYxUlNtRldWWGNDV3VrVXduSkp3dWtuSTVTYWFFZ0NZLTBfTW1xcUlHd09RWG50MHc4bmhLVHVZc25sQnoxdUdCeWZf?oc=5"
+        "title": "Colorado Avalanche - Minnesota Wild - 04.04.2027 - NHL.com",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9keFZkWXY5bmlpMTR0cWtVVjAxS2NXNnVFUGpOamNnMEppQnc2WW1JU2ZmQTJoVTJaWW92OTVQeXpkU25FRXZkT2txcDFLOHc1d0s4THVwZTVwR3dxYUlCMGM1dUVWb3BxQmlJOU5uOHVBeXo3?oc=5"
+      },
+      {
+        "coins": [
+          "ETH"
+        ],
+        "published": "18.11. 16:06 UTC",
+        "score": 0,
+        "title": "Ethereum ETH (ETH-USD) Live-Preis, Nachrichten, Diagramm und Preisverlauf – Yahoo Finance - Yahoo Finanzen Deutschland",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBnX3VzVWozSjgwUXhWaUc2UmdvQmZraXRrTWlKSzg4MjktekhRbllqLXpwTFNrVFExaWtUYUJvclBHRC1CWGJGVU9EQlVMcWdqMklxbW1n?oc=5"
       },
       {
         "coins": [
@@ -274,30 +292,12 @@
       },
       {
         "coins": [
-          "ETH"
-        ],
-        "published": "18.11. 15:58 UTC",
-        "score": 0,
-        "title": "Europas größter Krypto-Asset-Manager verkauft gesamte Ethereum-Treasury - Yahoo Finanzen Deutschland",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ1JkWWFrT2RTamUxNlJVSk11czYyTTEtOVRXSURGSEFqeloyanE4SDB1aERhdmNxaEJfU2swNEF0R3dSaWw2YjBGU25vZTBTSTNjTGx4SDZoSUVTckduSzJNZTR1MW96ZERHcTRUTk5VMURuTE9oSFpqX1p6bUJSbHRrV3oyREdqUXZ2Z0p3bF96bkJVMWxSRGNWTXhXQmRnbGxBdA?oc=5"
-      },
-      {
-        "coins": [
           "BTC"
         ],
         "published": "18.11. 19:18 UTC",
         "score": 0,
         "title": "Bitcoin ETF: 2,6 Milliarden Dollar Abflüsse im November, ein einziger Zuflusstag – wie lange hält die Institutionen-Nachfrage still? - AktienCheck.de",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ01haHVuV3p6bU9wRWtkX3prbXJFNFZKUHdLemNIUXJPRzdiRFl6eVR4RGtzS3FDODBFTlNFTV9MNEs3VVcyZ0dLaXdOYzFLQjVZLVVhM2ltUzV2d09tUnhIYUpSWUhVVzV3X0lNQ0Y0QU4zakU0UnlST01OX3JkMU5VTEtHOFhEWWRfWncwQjlZaE1vNERmUnJLSEhfMzdRMGpLOGhsOTJrNGNkSUE?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "18.11. 09:00 UTC",
-        "score": 0,
-        "title": "Bitcoin oder Gold? Harvard hat sich entschieden – das verrät sein Depot - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYUU2SDMxSzNJeGlwSG42S3ktNEtGT08zcXR2RDhTMkFDTGdzQ2tiXzhPVXVBaXdWUUFESDZ3OWZLUm5vX1BmY2VfUGszdlpDTGFHNUpWaDVrelZGSmJyaWFRWlFSUElsUWk0VmFnTUJ2eTdkWWxVaWhOZkNMVEYtTm5neFBPOXdQam5PSDhqbUJkaXQyNmNOXzE2c2Y0Yk0tSTFfdzNsVDJiellqdnNBQ3ZB?oc=5"
       },
       {
         "coins": [
@@ -310,12 +310,30 @@
       },
       {
         "coins": [
-          "DOGE"
+          "BTC"
         ],
-        "published": "18.11. 18:43 UTC",
+        "published": "18.11. 09:19 UTC",
         "score": 0,
-        "title": "So hätte sich eine Investition in Dogecoin von vor 10 Jahren ausgezahlt - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRHN4bWJnMXNqU1VjMVduUmdHSUVnbUJLUktGYldtOWUwazNBa0hKR3pKLWlTRkFXZFM0N0VIelh3UHBUb2Z2cmdLQWFUS3doLVBnQmp0RlRUYzNudThnNUR6NVVyNjkwMWNGNTNqRDRHZXMtNGoyQVZnVjY1T2FHcTdQZzdKZ1lBOGZobDU1VEFBRU1IVnFTaHh4dXVjcXNxTUF3dnEzQnB2ZFlHMkxIaFNQZGlEeVE2YlpUYVNfbklIQQ?oc=5"
+        "title": "Besteuerung von Bitcoin bei Nutzung mehrerer Wallets - STB Web",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFNmtraUltWklicGxDWlRnNnhFT25aMm53NFU3TVl5Snlka1UtU1I3SDg2N0ZKQVZvYWx6dDhlcUFjODlnM19qdk84bEVjb0RSZmY3bWh3VTRSUTk3?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "18.11. 09:00 UTC",
+        "score": 0,
+        "title": "Bitcoin oder Gold? Harvard hat sich entschieden – das verrät sein Depot - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYUU2SDMxSzNJeGlwSG42S3ktNEtGT08zcXR2RDhTMkFDTGdzQ2tiXzhPVXVBaXdWUUFESDZ3OWZLUm5vX1BmY2VfUGszdlpDTGFHNUpWaDVrelZGSmJyaWFRWlFSUElsUWk0VmFnTUJ2eTdkWWxVaWhOZkNMVEYtTm5neFBPOXdQam5PSDhqbUJkaXQyNmNOXzE2c2Y0Yk0tSTFfdzNsVDJiellqdnNBQ3ZB?oc=5"
+      },
+      {
+        "coins": [
+          "ETH"
+        ],
+        "published": "18.11. 15:58 UTC",
+        "score": 0,
+        "title": "Europas größter Krypto-Asset-Manager verkauft gesamte Ethereum-Treasury - Yahoo Finanzen Deutschland",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ1JkWWFrT2RTamUxNlJVSk11czYyTTEtOVRXSURGSEFqeloyanE4SDB1aERhdmNxaEJfU2swNEF0R3dSaWw2YjBGU25vZTBTSTNjTGx4SDZoSUVTckduSzJNZTR1MW96ZERHcTRUTk5VMURuTE9oSFpqX1p6bUJSbHRrV3oyREdqUXZ2Z0p3bF96bkJVMWxSRGNWTXhXQmRnbGxBdA?oc=5"
       },
       {
         "coins": [
@@ -326,6 +344,15 @@
         "score": 0,
         "title": "XRP unter 1 US-Dollar: Was jetzt für ein Comeback spricht - BTC-ECHO",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYjJxTnduM3I2d256Q0NrNHM5TnhrY2hLMEw0QW9jdXplVmVYNmNkMnJfMVZLU09nWEhKeWc3S2hIY0FEdjVWTUtkMXBSdGcxQmJmWVR0bTJrTy05NE5rZVZHaU1IaVViNW8tTW90dEhVQXZMZVNfaGpESzZvMHZNcTVGa0xyc1NFelAta2hpeExNYXZ3YmhHc3p3?oc=5"
+      },
+      {
+        "coins": [
+          "DOGE"
+        ],
+        "published": "18.11. 18:43 UTC",
+        "score": 0,
+        "title": "So hätte sich eine Investition in Dogecoin von vor 10 Jahren ausgezahlt - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRHN4bWJnMXNqU1VjMVduUmdHSUVnbUJLUktGYldtOWUwazNBa0hKR3pKLWlTRkFXZFM0N0VIelh3UHBUb2Z2cmdLQWFUS3doLVBnQmp0RlRUYzNudThnNUR6NVVyNjkwMWNGNTNqRDRHZXMtNGoyQVZnVjY1T2FHcTdQZzdKZ1lBOGZobDU1VEFBRU1IVnFTaHh4dXVjcXNxTUF3dnEzQnB2ZFlHMkxIaFNQZGlEeVE2YlpUYVNfbklIQQ?oc=5"
       },
       {
         "coins": [
@@ -349,19 +376,19 @@
         "coins": [
           "BTC"
         ],
-        "published": "18.11. 21:44 UTC",
+        "published": "18.11. 22:29 UTC",
         "score": 0,
-        "title": "Bitcoin-Kurs verliert 12 Prozent – historische Daten machen Hoffnung - Cryptonews.net",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rbEw3V2NQckNEbUFGQlNCRm1LeDYtWkZLRTc0TUpsWUgtVldkbGhFTUd0RFU1Y0loUk9QUkpsclZmaW1XeG9HTnlqaXFuRF9PVE5MYlFhN2x2d3M2?oc=5"
+        "title": "Bitcoin: Unter beiden Durchschnittslinien - Finanztrends",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ham9FWFJieU1LYjZhT1EtNUdHMUtkSEpxN1ZPejNnTWpZR3dDUDU1Y3YwTkxsbkE4Sm9ReTE4SHpLZjkzcnV0VmRoVXlGZm1MVlctT3hCZjkwV1dqUTRnZk00amprTTZMMTI4OGVTc0ZnTzI2eVZRQmt4ZERKTkE?oc=5"
       },
       {
         "coins": [
           "BTC"
         ],
-        "published": "18.11. 21:37 UTC",
+        "published": "18.11. 21:44 UTC",
         "score": 0,
-        "title": "Bitcoin-Kurs fällt um 17 Prozent: Grayscale sieht Kaufgelegenheit - Cryptonews.net",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ocXhtekJheWoyT1hvbnVPd0hNNDIybC1SN0lxNzA0VVQ1RW5lQXBZY210SWlXLU9VelVhbmtibFJSNVpEdEZYQWtQYUhkVlFtdFAtakdrLUE4Q2Z1?oc=5"
+        "title": "Bitcoin-Kurs verliert 12 Prozent – historische Daten machen Hoffnung - Cryptonews.net",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rbEw3V2NQckNEbUFGQlNCRm1LeDYtWkZLRTc0TUpsWUgtVldkbGhFTUd0RFU1Y0loUk9QUkpsclZmaW1XeG9HTnlqaXFuRF9PVE5MYlFhN2x2d3M2?oc=5"
       },
       {
         "coins": [
@@ -376,10 +403,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "18.11. 21:55 UTC",
+        "published": "18.11. 21:37 UTC",
         "score": 0,
-        "title": "Schwedische H100 Group: Coinbase wird Partner für 3.506 Bitcoin - Cryptonews.net",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5VX0xzUWY5UjZTZDQ5SWRHMDJiOHRKejV4RWo4NXgzdWY4R1NjTW1wa2tVQmtGRVZlRlN0eWVzSkUwcHN5WnA5Q0dLaUJpa0E1SkwwNXU2UTdaMURL?oc=5"
+        "title": "Bitcoin-Kurs fällt um 17 Prozent: Grayscale sieht Kaufgelegenheit - Cryptonews.net",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ocXhtekJheWoyT1hvbnVPd0hNNDIybC1SN0lxNzA0VVQ1RW5lQXBZY210SWlXLU9VelVhbmtibFJSNVpEdEZYQWtQYUhkVlFtdFAtakdrLUE4Q2Z1?oc=5"
       },
       {
         "coins": [
@@ -394,10 +421,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "18.11. 22:29 UTC",
+        "published": "18.11. 21:55 UTC",
         "score": 0,
-        "title": "Bitcoin: Unter beiden Durchschnittslinien - Finanztrends",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ham9FWFJieU1LYjZhT1EtNUdHMUtkSEpxN1ZPejNnTWpZR3dDUDU1Y3YwTkxsbkE4Sm9ReTE4SHpLZjkzcnV0VmRoVXlGZm1MVlctT3hCZjkwV1dqUTRnZk00amprTTZMMTI4OGVTc0ZnTzI2eVZRQmt4ZERKTkE?oc=5"
+        "title": "Schwedische H100 Group: Coinbase wird Partner für 3.506 Bitcoin - Cryptonews.net",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5VX0xzUWY5UjZTZDQ5SWRHMDJiOHRKejV4RWo4NXgzdWY4R1NjTW1wa2tVQmtGRVZlRlN0eWVzSkUwcHN5WnA5Q0dLaUJpa0E1SkwwNXU2UTdaMURL?oc=5"
       },
       {
         "coins": [
@@ -431,6 +458,15 @@
       },
       {
         "coins": [
+          "SOL"
+        ],
+        "published": "18.11. 22:21 UTC",
+        "score": 0,
+        "title": "Solana: Sicherheit unter KI-Druck - Finanztrends",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE80WERTNXR6dWh4ZXB2d3dtVzhlSXFUY2h5emR6TW16ZHhsSUNfeDNhZW9aRjhUc3pXU1l0VzVfdWIxUE8ya1I1cU1pZ21oZFhuVVE5UDVXNUp1U2FiNDNzUEd3NDNzRGZkWm44eU1UbE5nRkl3?oc=5"
+      },
+      {
+        "coins": [
           "BTC"
         ],
         "published": "18.11. 21:44 UTC",
@@ -440,12 +476,12 @@
       },
       {
         "coins": [
-          "SOL"
+          "BTC"
         ],
-        "published": "18.11. 22:21 UTC",
+        "published": "18.11. 23:04 UTC",
         "score": 0,
-        "title": "Solana: Sicherheit unter KI-Druck - Finanztrends",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE80WERTNXR6dWh4ZXB2d3dtVzhlSXFUY2h5emR6TW16ZHhsSUNfeDNhZW9aRjhUc3pXU1l0VzVfdWIxUE8ya1I1cU1pZ21oZFhuVVE5UDVXNUp1U2FiNDNzUEd3NDNzRGZkWm44eU1UbE5nRkl3?oc=5"
+        "title": "Satoshi Nakamotos vergessenes Bitcoin-Forum enthüllt ein Rätsel aus 2014 - BeInCrypto",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1QjZVU3JFQlNZNFI5bUZPX3VNaUFhN1dVMUxFeGJ4UTJkcFBna1NLZHZiTDJZMnI3UUgta093TkxvUzJ4cl9QQ1RPVFc2MVIzMnhvYnZWQVFlNWJUNDhwbXVqNXE1ZkNzODBYMWs0cFI3bkhjd1RmcExIQ0o?oc=5"
       },
       {
         "coins": [
@@ -458,34 +494,6 @@
       },
       {
         "coins": [
-          "ETH"
-        ],
-        "published": "18.11. 15:58 UTC",
-        "score": 0,
-        "title": "Europas größter Krypto-Asset-Manager verkauft gesamte Ethereum-Treasury - BeInCrypto",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9aS2R6dDhDeEpac0l0anlYRUpsSmpZTFQ1WVF6UE9zSUxaTkFUWDFNR0RwemM4c0ZPNDBRN1VaMnlDdmVvSFp4alcwUkVPTVAtNS03akd3N190bW15Y0ZhcGgwb3hHTmZfTGdPd2otNGVQZmxlbmw0?oc=5"
-      },
-      {
-        "coins": [
-          "BTC",
-          "XRP"
-        ],
-        "published": "18.11. 11:43 UTC",
-        "score": 0,
-        "title": "So entwickeln sich Bitcoin, Ripple & Co am Mittag am Kryptomarkt - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPa0hzQ053WU12TEJnTXVnZ1pacTBmMHZFdVZ0M1RkSjR4R2paMWw3MVota210czZaWEh1bTdyZlJNaVpacUZkWjlON1JpUTBPVEltYk0xQ2tBa0JMdUZRS1FIbkZ6Nld2M2ozaERqTjlyVFM3SGE1d3ZiaGlqcDRKY3RuUUZhSTVobE94d0U2aUhwRUtWOVlLNmhtV21OXzVsVDZaakVKQnBUdlhjdWVOOVh4aw?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "18.11. 11:42 UTC",
-        "score": 0,
-        "title": "Die Warnung des Economist für 2027: Was bedeutet das für Bitcoin? - Yahoo Finanzen Deutschland",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORWwtU05mR2NLUnRuOVRGaEp2b2hvX25OWEJPdzNRTVpDYmdjWERtbHdSSm1sRGhsN19ITzQtbjVXdU9VZGRYVy10ZFpueWxld0JvUldHelRSNk1YUGY2dTFteS1Qdkp1MzQ3WUs1Ymcwc2xBQ2xVbDdJNTZ3Qm1VMUl0U0pUSi1YM3hQNUNfUzdYS0N1QWg3WkN4cU0?oc=5"
-      },
-      {
-        "coins": [
           "BTC"
         ],
         "published": "18.11. 07:35 UTC",
@@ -495,21 +503,12 @@
       },
       {
         "coins": [
-          "BTC"
+          "ETH"
         ],
-        "published": "18.11. 21:43 UTC",
-        "score": -2,
-        "title": "Bitcoin-Preisprognose: BTC riskiert weitere Verluste, während Wintermute vor schwachen Marktbedingungen warnt - Cryptonews.net",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1MSHRxeGg3dElULXAxRkpWNEwxOWFVVHNFYjhFRjd6MkYyYXNkSDFWSUdRU1ljY29ub2wwYmUyVXg3QWttV1JTLXRKeWFqLURWWU8xZEVJRk1XR1pY?oc=5"
-      },
-      {
-        "coins": [
-          "XRP"
-        ],
-        "published": "18.11. 08:57 UTC",
+        "published": "18.11. 15:58 UTC",
         "score": 0,
-        "title": "Ripple-Nachrichten: XRP-Wale verlagerten 270 Millionen US-Dollar, während der Token um 15 % fiel - CoinDesk",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTnJpV2IyWDFtcUVXUVdRS0FIUDF3eVhxUUUxVnd0bEhXcS1NQlE5eGw2d2V4aGxmc1VxWkpQR1ExNzNSNVd3LTljREZxNTF4cmdFRVNtQXdMeXZfSGdEaTc1NjF4bm40Rm4wamktNUJwT3luOU5NWGdYc1FqYjJvVFpZdDRWT0NhQTBac0F2ak9Td21tVG9sd0xkNHR6cXhERkVFclpQUUtqdThpX0xNeUNiOUlMZk04djBDT3dVbzNUY2h4Sk5KSTh3?oc=5"
+        "title": "Europas größter Krypto-Asset-Manager verkauft gesamte Ethereum-Treasury - BeInCrypto",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9aS2R6dDhDeEpac0l0anlYRUpsSmpZTFQ1WVF6UE9zSUxaTkFUWDFNR0RwemM4c0ZPNDBRN1VaMnlDdmVvSFp4alcwUkVPTVAtNS03akd3N190bW15Y0ZhcGgwb3hHTmZfTGdPd2otNGVQZmxlbmw0?oc=5"
       }
     ],
     "news_by_coin": {
@@ -522,15 +521,15 @@
         "score": 0
       },
       "BTC": {
-        "count": 28,
-        "score": -4
+        "count": 27,
+        "score": -2
       },
       "DOGE": {
         "count": 1,
         "score": 0
       },
       "ETH": {
-        "count": 6,
+        "count": 7,
         "score": -2
       },
       "LINK": {
@@ -542,7 +541,7 @@
         "score": 0
       },
       "XRP": {
-        "count": 5,
+        "count": 4,
         "score": 0
       }
     },
