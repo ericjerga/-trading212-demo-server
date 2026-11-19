@@ -3,7 +3,7 @@
   "shares": 7.27449,
   "price": 27.2,
   "peak": 1002.6039740000001,
-  "tick": 291,
+  "tick": 292,
   "halted": false,
   "symbol": "SONY",
   "trades": [
@@ -106,10 +106,10 @@
       "equity": 992.39
     }
   ],
-  "last_step_at": "2026-11-19T22:35:43.577573+00:00",
+  "last_step_at": "2026-11-19T23:28:09.894300+00:00",
   "crypto": {
     "cash": 195.86004284939187,
-    "checked": "2026-11-19T22:35:43.577573+00:00",
+    "checked": "2026-11-19T23:28:09.894300+00:00",
     "entry_price": 0.0,
     "error": null,
     "halted": false,
@@ -118,51 +118,51 @@
     "last_trade_date": "2026-11-19",
     "market": [
       {
-        "change_24h": -0.07,
-        "price": 62119.95,
-        "source": "Coinbase Exchange",
+        "change_24h": -1.15,
+        "price": 61904.0,
+        "source": "CoinGecko",
         "symbol": "BTC"
       },
       {
-        "change_24h": 0.33,
-        "price": 1760.86,
-        "source": "Coinbase Exchange",
+        "change_24h": -0.93,
+        "price": 1753.04,
+        "source": "CoinGecko",
         "symbol": "ETH"
       },
       {
-        "change_24h": 0.79,
-        "price": 73.05,
-        "source": "Coinbase Exchange",
+        "change_24h": -0.34,
+        "price": 73.01,
+        "source": "CoinGecko",
         "symbol": "SOL"
       },
       {
-        "change_24h": 0.39,
-        "price": 0.9617,
-        "source": "Coinbase Exchange",
+        "change_24h": -0.57,
+        "price": 0.959671,
+        "source": "CoinGecko",
         "symbol": "XRP"
       },
       {
-        "change_24h": 1.82,
-        "price": 0.15198,
-        "source": "Coinbase Exchange",
+        "change_24h": 0.66,
+        "price": 0.151483,
+        "source": "CoinGecko",
         "symbol": "ADA"
       },
       {
-        "change_24h": 0.14,
-        "price": 8.981,
-        "source": "Coinbase Exchange",
+        "change_24h": -0.85,
+        "price": 8.97,
+        "source": "CoinGecko",
         "symbol": "LINK"
       },
       {
-        "change_24h": 1.16,
-        "price": 6.982,
-        "source": "Coinbase Exchange",
+        "change_24h": 0.18,
+        "price": 6.99,
+        "source": "CoinGecko",
         "symbol": "AVAX"
       },
       {
-        "change_24h": 0.45,
-        "price": 0.05823,
-        "source": "Coinbase Exchange",
+        "change_24h": -0.75,
+        "price": 0.058038,
+        "source": "CoinGecko",
         "symbol": "DOGE"
       }
     ],
@@ -259,6 +259,15 @@
       },
       {
         "coins": [
+          "SOL"
+        ],
+        "published": "19.11. 22:26 UTC",
+        "score": 0,
+        "title": "Solana Prognose: SOL steigt nach dem Ende der Beta um 7 Prozent, doch das Rekordhoch bleibt fern - FinanzNachrichten.de",
+        "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPc2cxeGxVUlYxMy1NcDFYVC1aUjAyTHN3UWVyMVFKZHRXZklocS1KdFRKTVJVYVVTdkZvcXhPZ3AtWWt6TXZJeUxjUGNzTzJwaFRpVzd6dTE5R0RnLWFMNjlWZWsxTEJDbE51NWJnMHhidVg2RFJYbGtGRl8wdTdGNTItNkZ3clJsWkEtQ3lkNHdyVnpBUDdZeFdhaml3R2NTaXotMWlvQnlpZDhjNkkxZ29yWUJkRjVRcnN5a1hQNzFGdnB1SW1VQlRPa096aXRxSUY3eV9FVnNNb0kwTXIweS1KWmFFUHZuN1AyTU5kcks0cXRDZXVZ?oc=5"
+      },
+      {
+        "coins": [
           "BTC",
           "ETH"
         ],
@@ -280,19 +289,19 @@
         "coins": [
           "BTC"
         ],
-        "published": "19.11. 21:24 UTC",
+        "published": "19.11. 14:13 UTC",
         "score": 0,
-        "title": "Bitcoin vor Anthropic-Börsengang wieder im Plus - Cryptonews.net",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9iU1F0MzJ6QWRHYmRVSzBNcG9EU3h2XzhfMl9OX3ZYZkE5VDBtYXBSbEJXc0w1bEtGTThvSzNmRHQ5QW55SDN1YVJENlVDWTQ1Q2Y4eXRFTXZ3N3lC?oc=5"
+        "title": "Family-Office-CEO: Eines Tages müssen Sie erklären, warum Sie Bitcoin ignoriert haben - Yahoo Finanzen Deutschland",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZGQ4WGRtWnNkZVNIc3B1a2xlalhRSC1HYmFSa2JyNHptQnc2bDFQTGNRc3RkOUJ3cWJWOTZxVjRWbW5nVUppR1NLbzdmV05COU5CNDBiTFpqRlhTUnZTUTJzWE42NGhlY0t0bGxlVGQ4UlVyWDRCZWRqNmpXODlKNzRMMkRZaVM1VHdydTFSNmF3cWVmSlE?oc=5"
       },
       {
         "coins": [
           "BTC"
         ],
-        "published": "19.11. 14:13 UTC",
+        "published": "19.11. 21:24 UTC",
         "score": 0,
-        "title": "Family-Office-CEO: Eines Tages müssen Sie erklären, warum Sie Bitcoin ignoriert haben - Yahoo Finanzen Deutschland",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZGQ4WGRtWnNkZVNIc3B1a2xlalhRSC1HYmFSa2JyNHptQnc2bDFQTGNRc3RkOUJ3cWJWOTZxVjRWbW5nVUppR1NLbzdmV05COU5CNDBiTFpqRlhTUnZTUTJzWE42NGhlY0t0bGxlVGQ4UlVyWDRCZWRqNmpXODlKNzRMMkRZaVM1VHdydTFSNmF3cWVmSlE?oc=5"
+        "title": "Bitcoin vor Anthropic-Börsengang wieder im Plus - Cryptonews.net",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9iU1F0MzJ6QWRHYmRVSzBNcG9EU3h2XzhfMl9OX3ZYZkE5VDBtYXBSbEJXc0w1bEtGTThvSzNmRHQ5QW55SDN1YVJENlVDWTQ1Q2Y4eXRFTXZ3N3lC?oc=5"
       },
       {
         "coins": [
@@ -361,15 +370,6 @@
         "coins": [
           "SOL"
         ],
-        "published": "19.11. 22:26 UTC",
-        "score": 0,
-        "title": "Solana Prognose: SOL steigt nach dem Ende der Beta um 7 Prozent, doch das Rekordhoch bleibt fern - FinanzNachrichten.de",
-        "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPc2cxeGxVUlYxMy1NcDFYVC1aUjAyTHN3UWVyMVFKZHRXZklocS1KdFRKTVJVYVVTdkZvcXhPZ3AtWWt6TXZJeUxjUGNzTzJwaFRpVzd6dTE5R0RnLWFMNjlWZWsxTEJDbE51NWJnMHhidVg2RFJYbGtGRl8wdTdGNTItNkZ3clJsWkEtQ3lkNHdyVnpBUDdZeFdhaml3R2NTaXotMWlvQnlpZDhjNkkxZ29yWUJkRjVRcnN5a1hQNzFGdnB1SW1VQlRPa096aXRxSUY3eV9FVnNNb0kwTXIweS1KWmFFUHZuN1AyTU5kcks0cXRDZXVZ?oc=5"
-      },
-      {
-        "coins": [
-          "SOL"
-        ],
         "published": "19.11. 18:43 UTC",
         "score": -2,
         "title": "Solana: So viel Verlust wäre bei einem Investment von vor 5 Jahren angefallen - finanzen.ch",
@@ -406,10 +406,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "19.11. 14:01 UTC",
+        "published": "19.11. 08:00 UTC",
         "score": 0,
-        "title": "Der Börsen-Tag: Bitcoin steigt - n-tv.de",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZTI5R18tNmRTWlk4NjdjRmFvSW5hVENFVWREbUo1Z1dNQ2hNMlVEZWxZTGpsUElaRGpIeHBEOW5fTEFESy1ISE5jV1d3SWxuTC03WnRZa1BnT0pIa24yTWNuNlR6MWZqbER6c3ozOHdOUmpHemxyUVNXX2FIaTJwc1hZdw?oc=5"
+        "title": "Großes Bitcoin-Comeback und Mega-Rallye? Experte gibt ernüchternde Antwort - Börse Online",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYWtUZS1Oa1BIUnhaMEpPU05xbXRtQ1dLbEQ2S0pOQnpjWmpoeGZHSG01b2g2ZjQ5TVBuLVpON2cwVi1Ub3pRazluQmtPMUpEdHVmTTlCcnFIZl95clhURnVqOEdSV3lXX1hCcGktREZjR2NQcXFSY0hFcnVUUk90aWFESERBYzZSU3IxSTFjOHAxWTlDbnVRV0ZFbGItcTRYZFhHeGYyam9nbFVJWHhpeU8tc1lUZHRxbUx1OC1oNThNUW91RHVlOFNjbVF0WmVlVWV5Y1BYZw?oc=5"
       },
       {
         "coins": [
@@ -425,10 +425,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "19.11. 08:00 UTC",
+        "published": "19.11. 14:01 UTC",
         "score": 0,
-        "title": "Großes Bitcoin-Comeback und Mega-Rallye? Experte gibt ernüchternde Antwort - Börse Online",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYWtUZS1Oa1BIUnhaMEpPU05xbXRtQ1dLbEQ2S0pOQnpjWmpoeGZHSG01b2g2ZjQ5TVBuLVpON2cwVi1Ub3pRazluQmtPMUpEdHVmTTlCcnFIZl95clhURnVqOEdSV3lXX1hCcGktREZjR2NQcXFSY0hFcnVUUk90aWFESERBYzZSU3IxSTFjOHAxWTlDbnVRV0ZFbGItcTRYZFhHeGYyam9nbFVJWHhpeU8tc1lUZHRxbUx1OC1oNThNUW91RHVlOFNjbVF0WmVlVWV5Y1BYZw?oc=5"
+        "title": "Der Börsen-Tag: Bitcoin steigt - n-tv.de",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZTI5R18tNmRTWlk4NjdjRmFvSW5hVENFVWREbUo1Z1dNQ2hNMlVEZWxZTGpsUElaRGpIeHBEOW5fTEFESy1ISE5jV1d3SWxuTC03WnRZa1BnT0pIa24yTWNuNlR6MWZqbER6c3ozOHdOUmpHemxyUVNXX2FIaTJwc1hZdw?oc=5"
       },
       {
         "coins": [
@@ -515,19 +515,19 @@
         "coins": [
           "BTC"
         ],
-        "published": "19.11. 21:03 UTC",
+        "published": "19.11. 09:31 UTC",
         "score": 0,
-        "title": "VanEck Bitcoin ETF beendet Verwahrvereinbarungen mit Gemini im Februar 2027 - Investing.com Deutsch",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNzVlZ0NwZGdndEhDTUxpS3c4TFEwR2hmYXJCTzVFd2pNX2VBUFNhNjRUOXdjMG1uS3libnVYb3lCU0Y4bXIwZ2JDdUNBdzA1NDh3SWN6OVJSc3J0NnpoUms3clVEX2JlNUZVTHU2ZzBjVW12dTJHTnZVNHcxczBRS1ZCaDlaSnZDTVE2a0Q2TEJPOGFyTTVYWlVmZDd0ODNmY1pTcFg3YjVyRkRpNXBXUlhnZ2haLWNDMDNZV082a2RKYmowOXZHLW5B?oc=5"
+        "title": "Podcast Bitcoin & Beyond: Der Krypto-König der Steuerfahnder - WirtschaftsWoche",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQ1pTUEV4ZU9XTEZQWFh1eEtqREg1RmRDY0hVSE9JQ2h6VEZNMWVRdTlPVTZhbm5fQ1NJbHJ3RUtXamxYN2hqYnozOEhqQ2xFcDV4c2RSeHNVa0d5UWZsSlVfTjE4d0xKSlZLUEVxbkYtWFhfU0lFQnVBdGJsUGxmaXJvWV9YV3RsVlREeWZueUpmbF9YOFhoU3NQekxBUG9zUnRsWXFHczlvdnZvd3c?oc=5"
       },
       {
         "coins": [
           "BTC"
         ],
-        "published": "19.11. 21:46 UTC",
+        "published": "19.11. 21:03 UTC",
         "score": 0,
-        "title": "Bitcoin-Miner verkauft letzten BTC und warnt vor Geldmangel für 1,2 Milliarden Dollar AI-Deal - Cryptonews.net",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE55VVJ3WFFCNThHZ01FVVNlUXRMYkFtcnpUN0Q5VThEVmZrRDBNM1hranp2TmcwYXRjQ0VnUnNCY0tjWHVDMERDWmNxZ2E3WFM5NTRYb1RzYkhhdTNl?oc=5"
+        "title": "VanEck Bitcoin ETF beendet Verwahrvereinbarungen mit Gemini im Februar 2027 - Investing.com Deutsch",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNzVlZ0NwZGdndEhDTUxpS3c4TFEwR2hmYXJCTzVFd2pNX2VBUFNhNjRUOXdjMG1uS3libnVYb3lCU0Y4bXIwZ2JDdUNBdzA1NDh3SWN6OVJSc3J0NnpoUms3clVEX2JlNUZVTHU2ZzBjVW12dTJHTnZVNHcxczBRS1ZCaDlaSnZDTVE2a0Q2TEJPOGFyTTVYWlVmZDd0ODNmY1pTcFg3YjVyRkRpNXBXUlhnZ2haLWNDMDNZV082a2RKYmowOXZHLW5B?oc=5"
       }
     ],
     "news_by_coin": {
