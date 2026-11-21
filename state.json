@@ -3,7 +3,7 @@
   "shares": 7.27449,
   "price": 27.29,
   "peak": 1002.6039740000001,
-  "tick": 335,
+  "tick": 336,
   "halted": false,
   "symbol": "SONY",
   "trades": [
@@ -114,10 +114,10 @@
       "equity": 993.04
     }
   ],
-  "last_step_at": "2026-11-21T19:43:15.901659+00:00",
+  "last_step_at": "2026-11-21T20:26:59.994397+00:00",
   "crypto": {
     "cash": 156.6880342795135,
-    "checked": "2026-11-21T19:43:15.901659+00:00",
+    "checked": "2026-11-21T20:26:59.994397+00:00",
     "entry_price": 70.13,
     "error": null,
     "halted": false,
@@ -126,50 +126,50 @@
     "last_trade_date": "2026-11-21",
     "market": [
       {
-        "change_24h": 3.11,
-        "price": 60288.58,
+        "change_24h": 3.38,
+        "price": 60328.71,
         "source": "Coinbase Exchange",
         "symbol": "BTC"
       },
       {
-        "change_24h": 4.95,
-        "price": 1684.99,
+        "change_24h": 5.38,
+        "price": 1685.19,
         "source": "Coinbase Exchange",
         "symbol": "ETH"
       },
       {
-        "change_24h": 3.73,
-        "price": 70.65,
+        "change_24h": 4.69,
+        "price": 70.55,
         "source": "Coinbase Exchange",
         "symbol": "SOL"
       },
       {
-        "change_24h": 4.66,
-        "price": 0.935,
+        "change_24h": 5.45,
+        "price": 0.9348,
         "source": "Coinbase Exchange",
         "symbol": "XRP"
       },
       {
         "change_24h": 4.22,
-        "price": 0.14524,
+        "price": 0.14485,
         "source": "Coinbase Exchange",
         "symbol": "ADA"
       },
       {
-        "change_24h": 3.41,
-        "price": 8.637,
+        "change_24h": 4.02,
+        "price": 8.645,
         "source": "Coinbase Exchange",
         "symbol": "LINK"
       },
       {
-        "change_24h": 2.48,
-        "price": 6.641,
+        "change_24h": 3.0,
+        "price": 6.629,
         "source": "Coinbase Exchange",
         "symbol": "AVAX"
       },
       {
-        "change_24h": 4.05,
-        "price": 0.05524,
+        "change_24h": 4.82,
+        "price": 0.05522,
         "source": "Coinbase Exchange",
         "symbol": "DOGE"
       }
@@ -388,6 +388,15 @@
         "coins": [
           "XRP"
         ],
+        "published": "21.11. 13:37 UTC",
+        "score": 0,
+        "title": "XRP-Kurs droht schlimmster Monat der jüngeren Vergangenheit - BeInCrypto",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5vYmlDajBfdEE0Z1BMNDVvXzNvaVp1N2xjMmxTZy16Q3BNNGw0YmVtc1hzUFdQOXNzaTBkU0ZwenFsNzdJQ0xMdWNFOF8zUlo2MVV0aXE1SDhQSkxtYVB1LVdPdFJlRnM?oc=5"
+      },
+      {
+        "coins": [
+          "XRP"
+        ],
         "published": "21.11. 05:59 UTC",
         "score": 0,
         "title": "XRP-Preis: Wie geht es weiter mit dem Ripple-verbundenen Token, während die ETF-Vermögenswerte unter 1 Milliarde US-Dollar fallen - CoinDesk",
@@ -413,12 +422,12 @@
       },
       {
         "coins": [
-          "XRP"
+          "BTC"
         ],
-        "published": "21.11. 13:37 UTC",
+        "published": "21.11. 06:16 UTC",
         "score": 0,
-        "title": "XRP-Kurs droht schlimmster Monat der jüngeren Vergangenheit - BeInCrypto",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5vYmlDajBfdEE0Z1BMNDVvXzNvaVp1N2xjMmxTZy16Q3BNNGw0YmVtc1hzUFdQOXNzaTBkU0ZwenFsNzdJQ0xMdWNFOF8zUlo2MVV0aXE1SDhQSkxtYVB1LVdPdFJlRnM?oc=5"
+        "title": "Bitcoin-Entwickler beheben „mittelschweren“ Fehler, der Transaktionen verzögern könnte - CoinDesk",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTFVKaHhpalhEN3J6WHhKb1Q3S2ZZTjR6QjBRUGxGY3dJTVoxc2pSRlBRdFhqb1c4bElSeWNfTjNVY01mRkJ0QXZjSzFYTk8xNjRaemRLVWdkbGc2eDJWMW10bndwUzdFbDFVaEtQM0xnWFE2SlAtWmw4OGlqa0xRYTFXZm1ZNnllOXVveTA2LUhLLWp4QXhudkZNZXRmUUxkSDhBY0JVQjR0Y2lZM1d2RnJaTUZlby1vczBSMURncWFNcFhKcEE?oc=5"
       },
       {
         "coins": [
@@ -428,15 +437,6 @@
         "score": 0,
         "title": "Bitcoin fällt auf den niedrigsten Stand seit 2 Jahren - وكالة سبأ",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LSjVJejRuZndHNGExeE9ob1lic0pFLWlDa0xFNWdGcS1iaFhpR0N5SGc3TXhiTzRUdHNxVldsMkpUTXE3cmJqVS13cEdyTk9IekF5YWlXSFI?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "21.11. 06:16 UTC",
-        "score": 0,
-        "title": "Bitcoin-Entwickler beheben „mittelschweren“ Fehler, der Transaktionen verzögern könnte - CoinDesk",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTFVKaHhpalhEN3J6WHhKb1Q3S2ZZTjR6QjBRUGxGY3dJTVoxc2pSRlBRdFhqb1c4bElSeWNfTjNVY01mRkJ0QXZjSzFYTk8xNjRaemRLVWdkbGc2eDJWMW10bndwUzdFbDFVaEtQM0xnWFE2SlAtWmw4OGlqa0xRYTFXZm1ZNnllOXVveTA2LUhLLWp4QXhudkZNZXRmUUxkSDhBY0JVQjR0Y2lZM1d2RnJaTUZlby1vczBSMURncWFNcFhKcEE?oc=5"
       },
       {
         "coins": [
@@ -576,7 +576,7 @@
     "news_error": null,
     "news_score": null,
     "peak": 200.41656915516032,
-    "price": 70.65,
+    "price": 70.55,
     "shares": 0.5585627915282815,
     "symbol": "SOL",
     "trades": [
