@@ -3,7 +3,7 @@
   "shares": 7.27449,
   "price": 27.29,
   "peak": 1002.6039740000001,
-  "tick": 340,
+  "tick": 341,
   "halted": false,
   "symbol": "SONY",
   "trades": [
@@ -112,12 +112,16 @@
     {
       "date": "2026-11-21",
       "equity": 993.04
+    },
+    {
+      "date": "2026-11-22",
+      "equity": 993.04
     }
   ],
-  "last_step_at": "2026-11-21T23:22:47.564273+00:00",
+  "last_step_at": "2026-11-22T00:07:23.451623+00:00",
   "crypto": {
     "cash": 156.6880342795135,
-    "checked": "2026-11-21T23:22:47.564273+00:00",
+    "checked": "2026-11-22T00:07:23.451623+00:00",
     "entry_price": 70.13,
     "error": null,
     "halted": false,
@@ -126,51 +130,51 @@
     "last_trade_date": "2026-11-21",
     "market": [
       {
-        "change_24h": 2.31,
-        "price": 60171.92,
-        "source": "Coinbase Exchange",
+        "change_24h": 2.21,
+        "price": 60132.0,
+        "source": "CoinGecko",
         "symbol": "BTC"
       },
       {
-        "change_24h": 3.81,
-        "price": 1680.87,
-        "source": "Coinbase Exchange",
+        "change_24h": 3.79,
+        "price": 1682.59,
+        "source": "CoinGecko",
         "symbol": "ETH"
       },
       {
-        "change_24h": 2.2,
+        "change_24h": 2.07,
         "price": 70.21,
-        "source": "Coinbase Exchange",
+        "source": "CoinGecko",
         "symbol": "SOL"
       },
       {
-        "change_24h": 2.54,
-        "price": 0.9316,
-        "source": "Coinbase Exchange",
+        "change_24h": 2.23,
+        "price": 0.930061,
+        "source": "CoinGecko",
         "symbol": "XRP"
       },
       {
-        "change_24h": 0.85,
-        "price": 0.14406,
-        "source": "Coinbase Exchange",
+        "change_24h": 0.81,
+        "price": 0.144083,
+        "source": "CoinGecko",
         "symbol": "ADA"
       },
       {
-        "change_24h": 0.81,
-        "price": 8.595,
-        "source": "Coinbase Exchange",
+        "change_24h": 0.68,
+        "price": 8.59,
+        "source": "CoinGecko",
         "symbol": "LINK"
       },
       {
-        "change_24h": 0.95,
+        "change_24h": 1.18,
         "price": 6.57,
-        "source": "Coinbase Exchange",
+        "source": "CoinGecko",
         "symbol": "AVAX"
       },
       {
-        "change_24h": 1.46,
-        "price": 0.05507,
-        "source": "Coinbase Exchange",
+        "change_24h": 1.72,
+        "price": 0.055172,
+        "source": "CoinGecko",
         "symbol": "DOGE"
       }
     ],
@@ -222,13 +226,6 @@
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFByRE9BMXpmYWRJWnR3SzNxRDZsYngtNHJoLURvU3cwdFdsTElhNVpFRWhZT0I3VGJTS1hBSFBrMmVTZm5iUWhRaWdWcHZRY0FtWnIwTW1TTUlQemh4UXZqdm53RjJFR2RVdUVvLWUtX2RIQUE3eEJDSFc1SS0?oc=5"
       },
       {
-        "coins": [],
-        "published": "21.11. 16:23 UTC",
-        "score": 0,
-        "title": "Bitcoinkurs & Co. aktuell: So steht es am Samstagnachmittag um die Kurse der Digitalwährungen - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbC1oR1ZmNmhjcExvV3FHZkpkN0ZwSktybnVac3pCTE0wV2FqdFlfOWNGaWdtM3FLbF9iNzhER0g0YmVXM1hlZkNZcnpXMTktVTVEcE9UbUs0a3VHWU9TZllyYXo1bkVZZmdtaFc2aFVsMUNlbTVpdWRpN3lNOHN4WUJpeDNPMzBONC0xSVVwNFhDNHR3M3NWOWlHTmFXMVdZMXdpS1BsSnNpTnZtX1VkbTRacG9WNTRXUkNFZEVFNTEzZDAzbDVicFppRl9FcU1NeWdCWVFVbEFsUQ?oc=5"
-      },
-      {
         "coins": [
           "BTC"
         ],
@@ -236,6 +233,13 @@
         "score": 0,
         "title": "411 Tage nach dem Allzeithoch: Bitcoin offiziell im längsten Bärenmarkt aller Zeiten - Blocktrainer",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQa3d5N01CMkxmUUphb1hJTnFZelp5NUdURGZLOEd6WWxLUzl3STZyU2w4Q200QUgxazFLYllfRUxIelNrZktGbnFPaUkyRFJycThtMTNxUmhOWWIxcXdvbTUwVkFDeXJHTFFGYVl5UXVXUHRJLTFmU3VibUtEZDIyVW9wamVTaWxWUFhCYmEyalpIUl9jYWlOSkVVLVJha1R3bGVjQkZTWlhUaVUxX3JucUo0V1g1Qzl0enc?oc=5"
+      },
+      {
+        "coins": [],
+        "published": "21.11. 16:23 UTC",
+        "score": 0,
+        "title": "Bitcoinkurs & Co. aktuell: So steht es am Samstagnachmittag um die Kurse der Digitalwährungen - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbC1oR1ZmNmhjcExvV3FHZkpkN0ZwSktybnVac3pCTE0wV2FqdFlfOWNGaWdtM3FLbF9iNzhER0g0YmVXM1hlZkNZcnpXMTktVTVEcE9UbUs0a3VHWU9TZllyYXo1bkVZZmdtaFc2aFVsMUNlbTVpdWRpN3lNOHN4WUJpeDNPMzBONC0xSVVwNFhDNHR3M3NWOWlHTmFXMVdZMXdpS1BsSnNpTnZtX1VkbTRacG9WNTRXUkNFZEVFNTEzZDAzbDVicFppRl9FcU1NeWdCWVFVbEFsUQ?oc=5"
       },
       {
         "coins": [
@@ -273,15 +277,6 @@
       },
       {
         "coins": [
-          "ADA"
-        ],
-        "published": "21.11. 14:54 UTC",
-        "score": 0,
-        "title": "Cardano: Market-Maker-Coup? - Börse Global",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZQVhmWERJMk8wbEVxNnJSanpCVGx1WHJqNGZhQnNkbDZsVjhvWmhZMmdWT3FUSVpPNWg3NGI3TzRsVjlENTZzRGlwX05BMzhieGpxcTFQeWNDRjJ5WGhyQjEwa00tbE9pcFRybFZn?oc=5"
-      },
-      {
-        "coins": [
           "BTC"
         ],
         "published": "21.11. 09:48 UTC",
@@ -291,21 +286,21 @@
       },
       {
         "coins": [
-          "BTC"
-        ],
-        "published": "21.11. 17:08 UTC",
-        "score": 0,
-        "title": "Bitcoin steigt, nachdem er auf ein Zweijahrestief gefallen war - TradingView",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ZV196cVd6aXd1ZTAxYlVzYl9XSzBUb0NwSzV3eXpSTERQWFBETXhsTnZwNFZjdU5xZUxoeXR4NUpzeXlqSnl5WHEwWnR6eG96ZEdQVlBrRnVMMTJHRDU0MDRhelRZVkx1cFFZQzYyNndGUG4zdjBN?oc=5"
-      },
-      {
-        "coins": [
           "SOL"
         ],
         "published": "21.11. 10:00 UTC",
         "score": 0,
         "title": "Solana vor 1.450-%-Rallye? – Bitwise wagt Mega-Prognose - wallstreetONLINE",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV1FucG10MDBqdXdoOXJwTUJzYk90RXlXNTJ1S3dzcmRTai1ZMDJYNlFVMG9VSlVpMXBMNXRyUTFURmlPM05Fb3JnVnU3YXJiQzhfSjZPZzIwTzNpRENhTmxNTG1HTzU3ekxnM3ZkdE5VcEFkVHdsVlFTRVZBWWRyLW0zWWtkT1RZa050SWhrdzViUXJCQ3ByS1dqVnQyZC1vSTNSWUt3?oc=5"
+      },
+      {
+        "coins": [
+          "XRP"
+        ],
+        "published": "21.11. 11:02 UTC",
+        "score": 0,
+        "title": "Analyst: XRP könnte binnen einer Woche auf 2 Dollar steigen - Newsbit.de",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTEcxUmNtYWxzb2VCZGNVTDZja3JCdGdURzBFekpMb1U0ZUVieDlJck9JUnBSX01CSUs2QW5tLXUxY1RMMmxyVW1BZllNN0RJUFNseGRxc0NybmNidTdFTFVLeGd6QzlLMzlOWnhjU19lbUpHSkJyMjJJSGJrLW1HM2RfZGxwQQ?oc=5"
       },
       {
         "coins": [
@@ -355,21 +350,30 @@
       },
       {
         "coins": [
+          "ADA"
+        ],
+        "published": "21.11. 14:54 UTC",
+        "score": 0,
+        "title": "Cardano: Market-Maker-Coup? - Börse Global",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZQVhmWERJMk8wbEVxNnJSanpCVGx1WHJqNGZhQnNkbDZsVjhvWmhZMmdWT3FUSVpPNWg3NGI3TzRsVjlENTZzRGlwX05BMzhieGpxcTFQeWNDRjJ5WGhyQjEwa00tbE9pcFRybFZn?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "21.11. 17:08 UTC",
+        "score": 0,
+        "title": "Bitcoin steigt, nachdem er auf ein Zweijahrestief gefallen war - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ZV196cVd6aXd1ZTAxYlVzYl9XSzBUb0NwSzV3eXpSTERQWFBETXhsTnZwNFZjdU5xZUxoeXR4NUpzeXlqSnl5WHEwWnR6eG96ZEdQVlBrRnVMMTJHRDU0MDRhelRZVkx1cFFZQzYyNndGUG4zdjBN?oc=5"
+      },
+      {
+        "coins": [
           "BTC"
         ],
         "published": "21.11. 03:42 UTC",
         "score": -2,
         "title": "Nvidia und SanDisk: Wetten führten zusammen mit Bitcoin zu Liquidationen in Höhe von 1,76 Milliarden USD - BeInCrypto",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9qUXN0SUgxb3BjQkFlWGk4WFJyT0RtLUQxN0FUNlZQaEVnM1dNTTJDRG9xbFdObXZDZ1FYWEF3U0FEUXR5c1hLVnFJR0g3TDJnRUlaaGE2cXpXc0RkTlgtdkp1eFRCclJqWFdLbm5HUjRhQnhCZWUycg?oc=5"
-      },
-      {
-        "coins": [
-          "XRP"
-        ],
-        "published": "21.11. 11:02 UTC",
-        "score": 0,
-        "title": "Analyst: XRP könnte binnen einer Woche auf 2 Dollar steigen - Newsbit.de",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTEcxUmNtYWxzb2VCZGNVTDZja3JCdGdURzBFekpMb1U0ZUVieDlJck9JUnBSX01CSUs2QW5tLXUxY1RMMmxyVW1BZllNN0RJUFNseGRxc0NybmNidTdFTFVLeGd6QzlLMzlOWnhjU19lbUpHSkJyMjJJSGJrLW1HM2RfZGxwQQ?oc=5"
       },
       {
         "coins": [
@@ -429,19 +433,19 @@
         "coins": [
           "BTC"
         ],
-        "published": "21.11. 15:09 UTC",
-        "score": -2,
-        "title": "Bitcoin-Crash: Was jetzt mit Krypto-Aktien wie Coinbase und Strategy passiert - Investing.com Deutsch",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWEJycmNSc3h2YWJ6Y3k3TVNYWlF5dFhJRHNBcWh3c3NGbmh3NjlQaU9sZVRySEFDaHd5NkdBbTZUVTdxTW1QbUxxNW1YNTJKRGRMb3NFZWYxSnZoalE5Sk5ObmRuSWg4YWhKOVVWRzl6NDVxMG0zNDV0OVpGdERidGplbGFJemVUMFpPdWJTb01MZC1jNzdXUFc1dlJRU3VuMDBBaENsMno0NmdyOFhHUTRWenNjSEt3VjJKdTRDcllCelloVkhyTXJXS2M?oc=5"
+        "published": "21.11. 13:00 UTC",
+        "score": 0,
+        "title": "Bitcoin-Anleger aufgepasst: Warum das neue Zollgesetz zur Steuerfalle wird - BTC-ECHO",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQNVZfbWp6emJ2RnY0WkpxV1JCUFA1bVZiTEdjU3F4MlJoYWl2RlcwNTVfdTVsUjRqMTBNT29OdnR6eFVmTDRHX29vLURKNUprVldqaTBCdFdFMVQxYzRXSW5nUEw4clMtZi16Nk9lX3h6Mm9tUEpKNExjUFloWWtjYTBxT1haNjctSm5BUFNvVkFIeHZJNnpuWDdYbw?oc=5"
       },
       {
         "coins": [
           "BTC"
         ],
-        "published": "21.11. 13:00 UTC",
-        "score": 0,
-        "title": "Bitcoin-Anleger aufgepasst: Warum das neue Zollgesetz zur Steuerfalle wird - BTC-ECHO",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQNVZfbWp6emJ2RnY0WkpxV1JCUFA1bVZiTEdjU3F4MlJoYWl2RlcwNTVfdTVsUjRqMTBNT29OdnR6eFVmTDRHX29vLURKNUprVldqaTBCdFdFMVQxYzRXSW5nUEw4clMtZi16Nk9lX3h6Mm9tUEpKNExjUFloWWtjYTBxT1haNjctSm5BUFNvVkFIeHZJNnpuWDdYbw?oc=5"
+        "published": "21.11. 15:09 UTC",
+        "score": -2,
+        "title": "Bitcoin-Crash: Was jetzt mit Krypto-Aktien wie Coinbase und Strategy passiert - Investing.com Deutsch",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWEJycmNSc3h2YWJ6Y3k3TVNYWlF5dFhJRHNBcWh3c3NGbmh3NjlQaU9sZVRySEFDaHd5NkdBbTZUVTdxTW1QbUxxNW1YNTJKRGRMb3NFZWYxSnZoalE5Sk5ObmRuSWg4YWhKOVVWRzl6NDVxMG0zNDV0OVpGdERidGplbGFJemVUMFpPdWJTb01MZC1jNzdXUFc1dlJRU3VuMDBBaENsMno0NmdyOFhHUTRWenNjSEt3VjJKdTRDcllCelloVkhyTXJXS2M?oc=5"
       },
       {
         "coins": [
@@ -508,19 +512,19 @@
         "coins": [
           "BTC"
         ],
-        "published": "21.11. 22:33 UTC",
+        "published": "21.11. 06:16 UTC",
         "score": 0,
-        "title": "Was geschah mit Bitcoin vor den beiden historischen Börsengängen? - Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS3hpQ2tYZWZYdnFwWnQwaHpobXcyUkpMRTk3VkJMZlBXamNXcjV3WFIxWlhfT3JjSl8wYW9FVVhGYU1jSTRXOFFfQXpDLTlpano2aTJyc3NiWmdKWnMyT1pHRHJELXcyRzY4YlozSVdETEtiekZwb2JUbVhLaE1aNkw1alRFYjBPeWlabA?oc=5"
+        "title": "Bitcoin-Entwickler beheben „mittelschweren“ Fehler, der Transaktionen verzögern könnte - CoinDesk",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTFVKaHhpalhEN3J6WHhKb1Q3S2ZZTjR6QjBRUGxGY3dJTVoxc2pSRlBRdFhqb1c4bElSeWNfTjNVY01mRkJ0QXZjSzFYTk8xNjRaemRLVWdkbGc2eDJWMW10bndwUzdFbDFVaEtQM0xnWFE2SlAtWmw4OGlqa0xRYTFXZm1ZNnllOXVveTA2LUhLLWp4QXhudkZNZXRmUUxkSDhBY0JVQjR0Y2lZM1d2RnJaTUZlby1vczBSMURncWFNcFhKcEE?oc=5"
       },
       {
         "coins": [
           "BTC"
         ],
-        "published": "21.11. 06:16 UTC",
+        "published": "21.11. 22:33 UTC",
         "score": 0,
-        "title": "Bitcoin-Entwickler beheben „mittelschweren“ Fehler, der Transaktionen verzögern könnte - CoinDesk",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTFVKaHhpalhEN3J6WHhKb1Q3S2ZZTjR6QjBRUGxGY3dJTVoxc2pSRlBRdFhqb1c4bElSeWNfTjNVY01mRkJ0QXZjSzFYTk8xNjRaemRLVWdkbGc2eDJWMW10bndwUzdFbDFVaEtQM0xnWFE2SlAtWmw4OGlqa0xRYTFXZm1ZNnllOXVveTA2LUhLLWp4QXhudkZNZXRmUUxkSDhBY0JVQjR0Y2lZM1d2RnJaTUZlby1vczBSMURncWFNcFhKcEE?oc=5"
+        "title": "Was geschah mit Bitcoin vor den beiden historischen Börsengängen? - Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS3hpQ2tYZWZYdnFwWnQwaHpobXcyUkpMRTk3VkJMZlBXamNXcjV3WFIxWlhfT3JjSl8wYW9FVVhGYU1jSTRXOFFfQXpDLTlpano2aTJyc3NiWmdKWnMyT1pHRHJELXcyRzY4YlozSVdETEtiekZwb2JUbVhLaE1aNkw1alRFYjBPeWlabA?oc=5"
       },
       {
         "coins": [
