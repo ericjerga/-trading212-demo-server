@@ -3,7 +3,7 @@
   "shares": 7.27449,
   "price": 27.29,
   "peak": 1002.6039740000001,
-  "tick": 358,
+  "tick": 359,
   "halted": false,
   "symbol": "SONY",
   "trades": [
@@ -118,10 +118,10 @@
       "equity": 993.04
     }
   ],
-  "last_step_at": "2026-11-22T17:15:34.927887+00:00",
+  "last_step_at": "2026-11-22T17:58:53.731606+00:00",
   "crypto": {
     "cash": 156.6880342795135,
-    "checked": "2026-11-22T17:15:34.927887+00:00",
+    "checked": "2026-11-22T17:58:53.731606+00:00",
     "entry_price": 70.13,
     "error": null,
     "halted": false,
@@ -131,19 +131,19 @@
     "market": [
       {
         "change_24h": 1.29,
-        "price": 60742.33,
+        "price": 60744.28,
         "source": "Coinbase Exchange",
         "symbol": "BTC"
       },
       {
-        "change_24h": 1.94,
-        "price": 1712.09,
+        "change_24h": 1.96,
+        "price": 1712.37,
         "source": "Coinbase Exchange",
         "symbol": "ETH"
       },
       {
-        "change_24h": -0.28,
-        "price": 70.29,
+        "change_24h": -0.37,
+        "price": 70.23,
         "source": "Coinbase Exchange",
         "symbol": "SOL"
       },
@@ -154,31 +154,40 @@
         "symbol": "XRP"
       },
       {
-        "change_24h": -0.2,
-        "price": 0.14452,
+        "change_24h": -0.35,
+        "price": 0.1443,
         "source": "Coinbase Exchange",
         "symbol": "ADA"
       },
       {
-        "change_24h": 2.67,
-        "price": 8.8,
+        "change_24h": 2.77,
+        "price": 8.808,
         "source": "Coinbase Exchange",
         "symbol": "LINK"
       },
       {
-        "change_24h": 0.95,
-        "price": 6.671,
+        "change_24h": 0.91,
+        "price": 6.668,
         "source": "Coinbase Exchange",
         "symbol": "AVAX"
       },
       {
-        "change_24h": 0.16,
-        "price": 0.05515,
+        "change_24h": 0.04,
+        "price": 0.05508,
         "source": "Coinbase Exchange",
         "symbol": "DOGE"
       }
     ],
     "news": [
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "22.11. 17:09 UTC",
+        "score": 0,
+        "title": "Bitcoin zurück an 60.000-US-Dollar-Marke: Kann der Rebound KI-Aktien und Co. stabilisieren? - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPVHNZRE1DTDR6dXMtMjdiUzhJbnpadkM2OGNLYXQwYXRqOHFibEtXTVdMTWNteVdpTWlaRVpKMWxfTllYNjdhbjZiUGQ3ckNDYlMxa1ZlcE14dy04OXh2RnBrN3VzVVJuN2sxQzRRZ29qeU9UYzJVZlpyejkxei1Hamt1TDY4TkkzWTJ0ZnZfemJGMlM0d3lMUEpFeHgyeUM3ekNYaWxoVTZUeFpFZ1dfT2I2NkpzTnUtWUhYU19rbGRSeEY5cDM1SDJPaHNXYUc4bUktODJqRG5sSGtmOVc4YTl6TzgxVmplR215UTZaaVZxbmlTY0IxUGZhZG5JR00?oc=5"
+      },
       {
         "coins": [
           "DOGE"
@@ -209,13 +218,12 @@
       },
       {
         "coins": [
-          "BTC",
-          "ETH"
+          "BTC"
         ],
-        "published": "22.11. 16:23 UTC",
+        "published": "22.11. 16:54 UTC",
         "score": 0,
-        "title": "Bitcoin, Ether & Co: So schlagen sich die Kryptowährungen am Sonntagnachmittag - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWUQtTDltMEJnZzRoTkNnblVzaTdoT0tUVUFHMXdqbXByOU1xdEtnUW55NEJCWVVxZlN4RFoxblNSeEhyUkdRelQ0NUNBak9GU0RkRTBVR3QtODRXeUYwV1hIY2l6R3dDMFoyOFlUODhKZ1BvZUtZX3hKTDg2VFFLNWhDeDRfV1h5Z1NIamdmSk9JU2xiaGN4M1dnODc0NFZGQkE5a0JnQzRjdnFUQ3dwRlhCLTE0Nmw2YmRpMWltcEEyMHNLcGc?oc=5"
+        "title": "Bitcoin-Kurs klettert über 60.000 USD: Bleibt die Marke stabil? - Yahoo Finanzen Deutschland",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOFlFRzlWY3ktRjlTa24wV1UwVFlNRWMydGFPY25PQ3M5YjA3ZDVlU3Ytbi1UQVJyNTZMdjZvTXFFdFF1aXZMd0p0d3RWX2t3WmFvMnJWSUE1LWszSl85ZEh2cHBBaG9mRlFSM1hyN3pyRWFRcWlabFFtVGwxZnU5b01fT3ZkOThfbXVseC1xekQ?oc=5"
       },
       {
         "coins": [
@@ -239,19 +247,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "22.11. 10:40 UTC",
+        "published": "22.11. 16:58 UTC",
         "score": 0,
-        "title": "3 Ereignisse, die den Bitcoin-Kurs in der Thanksgiving-Woche bewegen könnten - Yahoo Finanzen Deutschland",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd3BUbmcyVWJ6aFIyc3RVM05lbV9OOHY3Tm5HZVphQ1BBODJlNGR3ME82OTJpUUdYZFljV3NGQ0lUUlZPRUdNQW5iU21RaXMtdkhzVUxxb2kxbGw3WjBRMkxCSFd3WGhQd1IzTHdfNXBnaVBmYTF6ZWRiX0dMUDBRU3FZeXd3eEphV1Bvdl9vT0k5TFZidmRKdWhB?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "22.11. 10:15 UTC",
-        "score": 0,
-        "title": "Bitcoin fällt um mehr als fünf Prozent - Börsen-Zeitung",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQWtlRE9xMUNsZnloOWlVN0R2RTRPb0xfdnZmYTBjSThMSVdDOW11enpwTEVCbk5jV1dwWWNya2JjTU1XOEtKRGVVa0RoRnkwZUprc0h4RVVib3ZrLU5rX3d5akdnbDRyanRJSFpvLTIyOGRIbWVKcFJvQzVBYXZjV3FzbF9UejFrUDBwMUJkQQ?oc=5"
+        "title": "Strategy Aktie: Minus 30 Prozent in einer Woche, Bitcoin unter 60.000 Dollar – wackelt jetzt Saylors Bitcoin-Maschine? - AktienCheck.de",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdy1XRFBNTlN2b1I4TFY2c2VvSHlsbnlBTTM0MUFPRVNxdU9QbUQ5TnZXZHBjbG1uN0pwMUV1YURsb0ljMU9mNGhteW9pVS1iUkpSbTN6bzc1YW9ZQkRNaTdteDhFejJHMnp3SmhseHZvV0xFdmtQQmtJc1JuRHMzVUI4NFZKX1Z4bDB6Ni10dU5UX1Z6MXRoZGRwTlBLdm9sOUhTUGdyUQ?oc=5"
       },
       {
         "coins": [
@@ -275,6 +274,15 @@
         "coins": [
           "BTC"
         ],
+        "published": "22.11. 10:40 UTC",
+        "score": 0,
+        "title": "3 Ereignisse, die den Bitcoin-Kurs in der Thanksgiving-Woche bewegen könnten - BeInCrypto",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBKWE9oRHg3bDRIOHZxb0pQTk91UXAzdklwZmdZV1VVWTRfWk1ZUGthQnp1NTBCLUdWXzNoWERfa21GOWthNEp0WklTRmVKNUZvZmxjWjI1NDhjTXhrZGNWMlNISGUwdDc1cGlLYnA3V0Fxc2M?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
         "published": "22.11. 12:23 UTC",
         "score": -2,
         "title": "Bitcoin unter 17.000 Dollar: \"Flash Crash\" bei Kraken - BTC-ECHO",
@@ -282,12 +290,13 @@
       },
       {
         "coins": [
-          "BTC"
+          "BTC",
+          "ETH"
         ],
-        "published": "22.11. 15:35 UTC",
+        "published": "22.11. 16:23 UTC",
         "score": 0,
-        "title": "Bitcoin zurück an 60.000-US-Dollar-Marke: Kann der Rebound KI-Aktien und Co. stabilisieren? - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPVHNZRE1DTDR6dXMtMjdiUzhJbnpadkM2OGNLYXQwYXRqOHFibEtXTVdMTWNteVdpTWlaRVpKMWxfTllYNjdhbjZiUGQ3ckNDYlMxa1ZlcE14dy04OXh2RnBrN3VzVVJuN2sxQzRRZ29qeU9UYzJVZlpyejkxei1Hamt1TDY4TkkzWTJ0ZnZfemJGMlM0d3lMUEpFeHgyeUM3ekNYaWxoVTZUeFpFZ1dfT2I2NkpzTnUtWUhYU19rbGRSeEY5cDM1SDJPaHNXYUc4bUktODJqRG5sSGtmOVc4YTl6TzgxVmplR215UTZaaVZxbmlTY0IxUGZhZG5JR00?oc=5"
+        "title": "Bitcoin, Ether & Co: So schlagen sich die Kryptowährungen am Sonntagnachmittag - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWUQtTDltMEJnZzRoTkNnblVzaTdoT0tUVUFHMXdqbXByOU1xdEtnUW55NEJCWVVxZlN4RFoxblNSeEhyUkdRelQ0NUNBak9GU0RkRTBVR3QtODRXeUYwV1hIY2l6R3dDMFoyOFlUODhKZ1BvZUtZX3hKTDg2VFFLNWhDeDRfV1h5Z1NIamdmSk9JU2xiaGN4M1dnODc0NFZGQkE5a0JnQzRjdnFUQ3dwRlhCLTE0Nmw2YmRpMWltcEEyMHNLcGc?oc=5"
       },
       {
         "coins": [
@@ -335,13 +344,6 @@
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUXlIeWFFSU5zUmFfSlJPd001eFgyYUEtWVlXOHp0MkFQV2VhemNEVk13UV9rSERZRW5LelpzR0hhSWJqVERfek1VR0ItNDdvV0duVC1mbGkzWTZvYzlXZVluaGVEckVRYkZRcktkZTlORlhUeko2eG15TGlYTGZ0M2d3M3BVMnJyb0Vqc1RyT2I1Y3c5bmc?oc=5"
       },
       {
-        "coins": [],
-        "published": "22.11. 08:48 UTC",
-        "score": 0,
-        "title": "Kryptokurse am Vormittag - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcTZJbEpGa3N0U0pmaEU5Ty1TQjU0RFBtZ2hHN3ZfanJjR0dUU0JxVDhDSW5oY096eVIySWgxS0dhbkpTZXAwSTVEdXROMEl0V1NrVEVpWXpqbUdBZjBQTDdZWGxIbnlSSzVRQmpKb0FTOGg0U0tlMG1BNEMxLTBGMW1n?oc=5"
-      },
-      {
         "coins": [
           "BTC"
         ],
@@ -349,6 +351,13 @@
         "score": 0,
         "title": "Stichtag 30. November: Muss Trump Media tausende Bitcoin verkaufen? - BTC-ECHO",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVXNZcVEzeGhvRmk2X2VuejJDS002NHJnSk1LZ2tlVm1EQ3JmeGRLOTRKT2wwbnEyRVpNTUxuTmtUSC1kZjZDU0VSUG1hRFJoaTBrUzQzeS1UdDRlSzd0YkVuLXNVRVdneXZJY0RMYnRUMzUwUmJGRS1sVTFteDRTT0hiYUkxMGw4VGhYSGYyMWJxMXg4VVVadlBB?oc=5"
+      },
+      {
+        "coins": [],
+        "published": "22.11. 08:48 UTC",
+        "score": 0,
+        "title": "Kryptokurse am Vormittag - Finanzen.net",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcTZJbEpGa3N0U0pmaEU5Ty1TQjU0RFBtZ2hHN3ZfanJjR0dUU0JxVDhDSW5oY096eVIySWgxS0dhbkpTZXAwSTVEdXROMEl0V1NrVEVpWXpqbUdBZjBQTDdZWGxIbnlSSzVRQmpKb0FTOGg0U0tlMG1BNEMxLTBGMW1n?oc=5"
       },
       {
         "coins": [],
@@ -365,15 +374,6 @@
         "score": 0,
         "title": "Ethereum ETH (ETH-USD) Live-Preis, Nachrichten, Chart und Preisverlauf – Yahoo Finance - Yahoo Finanzen Deutschland",
         "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBnX3VzVWozSjgwUXhWaUc2UmdvQmZraXRrTWlKSzg4MjktekhRbllqLXpwTFNrVFExaWtUYUJvclBHRC1CWGJGVU9EQlVMcWdqMklxbW1n?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "22.11. 16:54 UTC",
-        "score": 0,
-        "title": "Bitcoin-Kurs klettert über 60.000 USD: Bleibt die Marke stabil? - BeInCrypto",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ubnRoZkd5QnNEb0pJRkdtYmNJWE9OLWRTSDAzc1ZkYV8wTVJqTHdkdk1pOTl3UDZlX0oxNW9aV1B3TW5XVHRmcXVfTE1yRVR2b0lCekZJMlA2RlhOTm5TbVhPM0pFUjFkS1BZ?oc=5"
       },
       {
         "coins": [
@@ -406,17 +406,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "22.11. 13:38 UTC",
+        "published": "22.11. 02:15 UTC",
         "score": 0,
-        "title": "Bitcoin erholt sich von Zweijahrestief: Was der Rebound für Aktien bedeutet - finanzen.ch",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeGMwV3lQblcwY2Q4cm13czc2Znp1TmtpNG9EY0hRM2VwNWVDNWRSR0IzUGtFbkU3cGR3VmpQbmxsN25vbEZ2MERPTjdOUmgwRExNNGktV1pJZUhzVm9udTN3MWdtOGhmT0tqZzdrbGpMZHBmRWxBSW56QUxEZ0FuNHNaV1hDMHlWRlRCZDlKMWN5cGlTZ1pKakljS2FqZHZWNWpYSDFuMGdlMzdYd2JRM0N4eDdTUGVYTGNrdXQyUkFvMTFPRi1iRWtB?oc=5"
-      },
-      {
-        "coins": [],
-        "published": "22.11. 11:23 UTC",
-        "score": 0,
-        "title": "Nur 5 % der Kryptowährungen steigen, während Sorgen über eine Zinserhöhung der Fed zunehmen - Yahoo Finanzen Deutschland",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdFlpeXdzN0t3TVlwcnlLOWI0aFg1MHVKYnFTZFQtdlJlWmhjWFVNM2t6SHp2LXFDeF91Qk9XS0xoWFEwMUgxRmtZZ1pUV0ZkRDVhaDNFWXRvc1FXOElYcGl1NWFwTlFlRG1KejZTSGtFakFiZ2dKbU8yQVFVV0Q0Q3g5RFI3c2M3T19mWFNITElyUTYxaENXQmtzQ3ZPVFJYN3dfMUVR?oc=5"
+        "title": "Bitcoin fällt um mehr als fünf Prozent - Börsen-Zeitung",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQWtlRE9xMUNsZnloOWlVN0R2RTRPb0xfdnZmYTBjSThMSVdDOW11enpwTEVCbk5jV1dwWWNya2JjTU1XOEtKRGVVa0RoRnkwZUprc0h4RVVib3ZrLU5rX3d5akdnbDRyanRJSFpvLTIyOGRIbWVKcFJvQzVBYXZjV3FzbF9UejFrUDBwMUJkQQ?oc=5"
       },
       {
         "coins": [
@@ -429,12 +422,21 @@
       },
       {
         "coins": [
+          "ETH"
+        ],
+        "published": "22.11. 17:43 UTC",
+        "score": 0,
+        "title": "Ethereum Kurs bei 1.560,19 Euro – 0,30 % gefallen - tixio - Nachrichten",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQUFNalBTbDZrV1BiTUVGbnAwNWpjckFSV1Bwb2JXNGJ3TkN5WnBORHViOEx0VWNmUVN1aHE5S2lXNXdWMXFwNnNPVHBaMjZrQk5fYU1lWTZBanFJbHV2VGM2bjBfQWtzRGJFamVlMnUzN1R4R2lqZU13ZTBGWlphQ3J4WQ?oc=5"
+      },
+      {
+        "coins": [
           "BTC"
         ],
-        "published": "21.11. 20:05 UTC",
+        "published": "22.11. 13:38 UTC",
         "score": 0,
-        "title": "Bitcoin steigt um 9 % von einem Zwei-Jahres-Tief und erobert 60.000 US-Dollar zurück, während Händler den Börsenstart am Montag im Blick behalten - CoinDesk",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMTNWYzJfdG1VQ1dHV0Y5R0FpQnM2NWJMQzRuRGtSWFlxTUVkQUFSTkdBOUo3WUZ0WXpUaWJ3Q2VtOGpoeFhXbmlaZkpqR2wzZWpzUC1IWDV6VndNOGZEbl9XVDhGS2lSMHdaeEJKWGVuMjJyUjNBWm1uS09SclZUeVVOdV9CNHFZQTlsaXFfNHdoelQzUjlhcWhoUDJrbkNFWFFJTWszUUExM2xfeHB3ZUJXbU1sanZFU0dXMmFBM2puTWZCQkdQRkNnRFFKNEZrRWVj?oc=5"
+        "title": "Bitcoin erholt sich von Zweijahrestief: Was der Rebound für Aktien bedeutet - finanzen.ch",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeGMwV3lQblcwY2Q4cm13czc2Znp1TmtpNG9EY0hRM2VwNWVDNWRSR0IzUGtFbkU3cGR3VmpQbmxsN25vbEZ2MERPTjdOUmgwRExNNGktV1pJZUhzVm9udTN3MWdtOGhmT0tqZzdrbGpMZHBmRWxBSW56QUxEZ0FuNHNaV1hDMHlWRlRCZDlKMWN5cGlTZ1pKakljS2FqZHZWNWpYSDFuMGdlMzdYd2JRM0N4eDdTUGVYTGNrdXQyUkFvMTFPRi1iRWtB?oc=5"
       },
       {
         "coins": [
@@ -444,6 +446,22 @@
         "score": 0,
         "title": "Heizpanel, Luftreiniger und Heizstab: Heatbit integriert Bitcoin-Mining in den Alltag - Blocktrainer",
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaHltMlNvMktheDdzeG41bWdYTFZ2NURCYllveDkwTHRiNlMwZ3pJOFF3TkRfTVBndWZLWGljbUtoYnNQVDR1SmNUNDJ2VndnUmhDdXhQWDllYjE1SzRHS3lFWHE4UWJ4MUR6TkNDN3h5SmtLaTM2dWRFZVFNUU9nT1U5OEY1NGc?oc=5"
+      },
+      {
+        "coins": [],
+        "published": "22.11. 11:23 UTC",
+        "score": 0,
+        "title": "Nur 5 % der Kryptowährungen steigen, während Sorgen über eine Zinserhöhung der Fed zunehmen - Yahoo Finanzen Deutschland",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdFlpeXdzN0t3TVlwcnlLOWI0aFg1MHVKYnFTZFQtdlJlWmhjWFVNM2t6SHp2LXFDeF91Qk9XS0xoWFEwMUgxRmtZZ1pUV0ZkRDVhaDNFWXRvc1FXOElYcGl1NWFwTlFlRG1KejZTSGtFakFiZ2dKbU8yQVFVV0Q0Q3g5RFI3c2M3T19mWFNITElyUTYxaENXQmtzQ3ZPVFJYN3dfMUVR?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "22.11. 17:26 UTC",
+        "score": 0,
+        "title": "Bitcoin Kurs bei 55.639,00 Euro – 0,02 % gestiegen - tixio - Nachrichten",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQU2c4Wk9IeEVsenk5Y3M4dFRMUXFnQk0zRlFZXzdFRjF1c2lxRktjRkE3QnNIQzBKVHpDTkhhZHk5VXV0dkx2WmtBaFhBb1ZJODVVWHB5czlZT09GWGZiMHhqTWZNUFdEYzdNZ3pSUEJGUmtoQ2VQZDdBd3YyZHJkVU05b0Q?oc=5"
       },
       {
         "coins": [
@@ -467,57 +485,10 @@
         "coins": [
           "BTC"
         ],
-        "published": "22.11. 07:29 UTC",
-        "score": 0,
-        "title": "Bitcoin verharrt unter der $60.000-Marke: Einbrechende Mining-Margen und Sicherheitsrisiken belasten - Investing.com Deutsch",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVVk0TTdNcnRQUDRhZTlqQmQ5OTNMX0xRVVF1S2FvdkNQZkZzYjJPZXRWVHowTnJJYUkwRDlHaGV0bm9KbThGNDJTQldEQW9zLWtubkdMUnc5WjZaWjhuYlA1eGp0bHJ3VVBMeVFmbWMzZDR1UENwdEZUam1VdEExT053b2gyN1RNV2dseGYyc2k5VGtKc19sMXhWSG0wQy1RcENHcW1YUGZ0QU1paUNqbnR3LUNmNFVoRW01eDN3bFpPNzdEYkd2RnFBRG1ibGQ1MVZzSGdvN1NleERTM181ZHNOdTYybnln?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "22.11. 16:58 UTC",
-        "score": 0,
-        "title": "Strategy Aktie: Minus 30 Prozent in einer Woche, Bitcoin unter 60.000 Dollar – wackelt jetzt Saylors Bitcoin-Maschine? - AktienCheck.de",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdy1XRFBNTlN2b1I4TFY2c2VvSHlsbnlBTTM0MUFPRVNxdU9QbUQ5TnZXZHBjbG1uN0pwMUV1YURsb0ljMU9mNGhteW9pVS1iUkpSbTN6bzc1YW9ZQkRNaTdteDhFejJHMnp3SmhseHZvV0xFdmtQQmtJc1JuRHMzVUI4NFZKX1Z4bDB6Ni10dU5UX1Z6MXRoZGRwTlBLdm9sOUhTUGdyUQ?oc=5"
-      },
-      {
-        "coins": [
-          "BTC",
-          "ETH"
-        ],
-        "published": "22.11. 10:12 UTC",
-        "score": 0,
-        "title": "Die Performance der Kryptowährungen in KW 47: Das hat sich bei Bitcoin, Ether & Co. getan - finanzen.ch",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTGVpLVZ3SDdnYnp5YXhHTUtlbVA4ZExtbUQtYkVuRnpWN0RDcDFiaG5OejdiQnVDUHVKMnpsRWVDOXhnQUxfWVN1OUlYOEJFYlZrQkhSLWlHWmNQOHdGNkdJZHBJYkxpbkd1dlFXcHFBejl1SFJIUTNWc1dRT2FJOUZRbjhDb3Y5MkhPN291VEJJZWNvendjRUItUnlfN2lQamQ0cGxXUlYxdzBReFo5ZGlTaTFlbnB2cUVSZDJ3WkJFSElOVHNRTkFsejNBTVExeC1ZTHFjWU8?oc=5"
-      },
-      {
-        "coins": [
-          "BTC",
-          "ETH"
-        ],
-        "published": "21.11. 21:10 UTC",
-        "score": 0,
-        "title": "KW 47 am Kryptomarkt: So haben Bitcoin, Ether & Co. in der vergangenen Woche performt - Finanzen.net",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZHY1MVQtcklxTTZxY1ZqWUx4cjB2WW9xc2h2dDE3emZ4YkxEN1VxaGRGSlN6dFFVNTZ6XzBMRER3M3RQaWNJNHVrdklOZHVUX1lIbVlmRWJpalBwYnpFSktDOTBkNDNKVVY1ZWpUcndlUnQ0OTlENE9XSzg2ODVoeUFjM3AtS2ZSWmJJZ3VGcHBFUG1iRk9vNGUyV2t4RW80RmFFUEdnRGJLMERZQWdPTzdvcHFPYmJicG9qcElfaUlxZVdiN0F2cTFVMDZCU2IwbURncnJwbU1NS0U?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
         "published": "22.11. 12:17 UTC",
         "score": 0,
         "title": "Bitcoin Kurs bei 55.626,00 Euro – 1,53 % gestiegen - tixio - Nachrichten",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPU1hrX2I1dVEzdHdUaF8zRWRyMGhIaFV4MTh0WjczZzN2OGRkWlF1QmpJa2s3S1NIdDdMZ1RGd2VIblgzWGktY3FHUkJmc1hNVjBPN0pYZEd2dFRPNFQ3d2R1M0NuZTJYcHM3NDR4bk5MTjF0Ykt4ZW13clNQenVGTDRHUzk?oc=5"
-      },
-      {
-        "coins": [
-          "BTC"
-        ],
-        "published": "22.11. 12:51 UTC",
-        "score": 0,
-        "title": "Bitcoin steigt wieder über Marke von 60.000 Dollar - 22.11.26 - News - Ariva",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOejBRMHRENThHOEFqSDNYU19JSG9ZcEJHMjhwNlEtWTZ2cXg4c0hMV25vanVtejJmbHQ4RFdyLTFFYzd6V0lMYWdfejd3LXhyd3ZoczhnZ1Bfb0dTYlgtY1BCcmdrV2d1M2xLbl9FMHZKampxM3JHNUc0MVFiSjRtV19aN1FuZU9QTzRZRFFFRQ?oc=5"
       },
       {
         "coins": [
@@ -532,10 +503,38 @@
         "coins": [
           "BTC"
         ],
-        "published": "22.11. 11:00 UTC",
+        "published": "22.11. 07:29 UTC",
         "score": 0,
-        "title": "Bitcoin erholte sich kurzzeitig um 9% von Zweijahrestief - IDNFinancials",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNUxnSjVoOHlSTlNta2hDLUkyZm1TZ2RabVE4YTR5M3pLWUdLODFSenBJOGlqb2xUWW1JS2lvRGRBaUdrT1lpcVNmR0NncVJHSFBxVC04VFJkMU13WXQ2cTNrUTNZNDBLM3Z5QUdydXIyeW8wR0NTZVhXWTlnckdWdVhkZ1Z5NXFfZWxDblVnalJDWFQxUlV5VzV4R3pyRlF3aU14SDRId0xyRnZk?oc=5"
+        "title": "Bitcoin verharrt unter der $60.000-Marke: Einbrechende Mining-Margen und Sicherheitsrisiken belasten - Investing.com Deutsch",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVVk0TTdNcnRQUDRhZTlqQmQ5OTNMX0xRVVF1S2FvdkNQZkZzYjJPZXRWVHowTnJJYUkwRDlHaGV0bm9KbThGNDJTQldEQW9zLWtubkdMUnc5WjZaWjhuYlA1eGp0bHJ3VVBMeVFmbWMzZDR1UENwdEZUam1VdEExT053b2gyN1RNV2dseGYyc2k5VGtKc19sMXhWSG0wQy1RcENHcW1YUGZ0QU1paUNqbnR3LUNmNFVoRW01eDN3bFpPNzdEYkd2RnFBRG1ibGQ1MVZzSGdvN1NleERTM181ZHNOdTYybnln?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "22.11. 12:51 UTC",
+        "score": 0,
+        "title": "Bitcoin steigt wieder über Marke von 60.000 Dollar - 22.11.26 - News - Ariva",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOejBRMHRENThHOEFqSDNYU19JSG9ZcEJHMjhwNlEtWTZ2cXg4c0hMV25vanVtejJmbHQ4RFdyLTFFYzd6V0lMYWdfejd3LXhyd3ZoczhnZ1Bfb0dTYlgtY1BCcmdrV2d1M2xLbl9FMHZKampxM3JHNUc0MVFiSjRtV19aN1FuZU9QTzRZRFFFRQ?oc=5"
+      },
+      {
+        "coins": [
+          "BTC"
+        ],
+        "published": "21.11. 20:05 UTC",
+        "score": 0,
+        "title": "Bitcoin steigt um 9 % von einem Zwei-Jahres-Tief und erobert 60.000 US-Dollar zurück, während Händler den Börsenstart am Montag im Blick behalten - CoinDesk",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMTNWYzJfdG1VQ1dHV0Y5R0FpQnM2NWJMQzRuRGtSWFlxTUVkQUFSTkdBOUo3WUZ0WXpUaWJ3Q2VtOGpoeFhXbmlaZkpqR2wzZWpzUC1IWDV6VndNOGZEbl9XVDhGS2lSMHdaeEJKWGVuMjJyUjNBWm1uS09SclZUeVVOdV9CNHFZQTlsaXFfNHdoelQzUjlhcWhoUDJrbkNFWFFJTWszUUExM2xfeHB3ZUJXbU1sanZFU0dXMmFBM2puTWZCQkdQRkNnRFFKNEZrRWVj?oc=5"
+      },
+      {
+        "coins": [
+          "BTC",
+          "ETH"
+        ],
+        "published": "22.11. 10:12 UTC",
+        "score": 0,
+        "title": "Die Performance der Kryptowährungen in KW 47: Das hat sich bei Bitcoin, Ether & Co. getan - finanzen.ch",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTGVpLVZ3SDdnYnp5YXhHTUtlbVA4ZExtbUQtYkVuRnpWN0RDcDFiaG5OejdiQnVDUHVKMnpsRWVDOXhnQUxfWVN1OUlYOEJFYlZrQkhSLWlHWmNQOHdGNkdJZHBJYkxpbkd1dlFXcHFBejl1SFJIUTNWc1dRT2FJOUZRbjhDb3Y5MkhPN291VEJJZWNvendjRUItUnlfN2lQamQ0cGxXUlYxdzBReFo5ZGlTaTFlbnB2cUVSZDJ3WkJFSElOVHNRTkFsejNBTVExeC1ZTHFjWU8?oc=5"
       }
     ],
     "news_by_coin": {
@@ -548,7 +547,7 @@
         "score": null
       },
       "BTC": {
-        "count": 30,
+        "count": 29,
         "score": -2
       },
       "DOGE": {
@@ -575,7 +574,7 @@
     "news_error": null,
     "news_score": null,
     "peak": 200.41656915516032,
-    "price": 70.29,
+    "price": 70.23,
     "shares": 0.5585627915282815,
     "symbol": "SOL",
     "trades": [
